@@ -1,0 +1,9 @@
+<div class="callout">
+  <div class="error caption">
+    Tip Removed
+  </div>
+  <div class="error content">
+    Sorry, this tip has been removed because it doesn't work properly and no
+    fix has yet been found.
+  </div>
+</div>
