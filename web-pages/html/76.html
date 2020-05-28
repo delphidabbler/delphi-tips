@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>How to implement drag and drop at design time</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="How to implement drag and drop at design time" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/76" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	How to implement drag and drop at design time
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<div class="question">
+  <div class="title">
+    Question
+  </div>
+  <div class="content">
+    I'm writing a component (descendant of <var>TCustomControl</var>) that
+    owns a button and a panel. When the button is clicked, the panel will
+    either show or hide. But now I want to be able to put other controls on
+    the panel (in design-mode). Somehow this does not seem to work. I can
+    put i.e. a button on the panel, and it seems that the button is owned by
+    the panel, because I can no longer drag the button off the panel. But
+    when I then view the form as text <span class="smallcaps">(Alt
+    F12)</span>, there's no button. Somehow the dropped control is not added
+    to the panel.
+  </div>
+</div>
+
+<p>
+  I misread your post first, not seeing that you want to put controls on the
+  panel rather than the <var>CustomControl</var>. The component below allows
+  this, but you have to be aware that this way you hand the panel over to the
+  IDE, more or less, and your component user can do whatever with it,
+  including removing the panel at design time without removing your control.
+  I've tried to get it to be recreated in this case, but it looks a bit
+  kludgy. This is the 2nd or 3rd time I'm posting a compound component like
+  this, but I feel the solution isn't optimal.
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasH -->
+<pre class="pas-source"><span class="pas-kwd">unit</span><span class="pas-space"> </span><span class="pas-ident">CustomControl2</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">interface</span>
+
+<span class="pas-kwd">uses</span>
+<span class="pas-space">  </span><span class="pas-ident">Windows</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Messages</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">SysUtils</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Classes</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Graphics</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Controls</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Forms</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Dialogs</span><span class="pas-sym">,</span>
+  <span class="pas-ident">StdCtrls</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">ExtCtrls</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">type</span>
+<span class="pas-space">  </span><span class="pas-ident">TCustomControl2</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-kwd">class</span><span class="pas-sym">(</span><span class="pas-ident">TCustomControl</span><span class="pas-sym">)</span>
+<span class="pas-space">  </span><span class="pas-kwd">private</span>
+<span class="pas-space">    </span><span class="pas-ident">fbutton</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TButton</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">fPanel</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TPanel</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TogglePanel</span><span class="pas-sym">(</span><span class="pas-ident">sender</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">CreatePanel</span><span class="pas-sym">(</span><span class="pas-ident">AOwner</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TComponent</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">protected</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">Loaded</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">Notification</span><span class="pas-sym">(</span><span class="pas-ident">AComponent</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TComponent</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">Operation</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TOperation</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+      <span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">public</span>
+<span class="pas-space">    </span><span class="pas-kwd">constructor</span><span class="pas-space"> </span><span class="pas-ident">Create</span><span class="pas-sym">(</span><span class="pas-ident">AOwner</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TComponent</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-kwd">Register</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">implementation</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-kwd">Register</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">RegisterComponents</span><span class="pas-sym">(</span><span class="pas-str">'Samples'</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-sym">[</span><span class="pas-ident">TCustomControl2</span><span class="pas-sym">]</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-comment">{ TCustomControl2 }</span>
+
+<span class="pas-kwd">constructor</span><span class="pas-space"> </span><span class="pas-ident">TCustomControl2</span><span class="pas-sym">.</span><span class="pas-ident">Create</span><span class="pas-sym">(</span><span class="pas-ident">AOwner</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TComponent</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">inherited</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">fPanel</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-kwd">nil</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-sym">(</span><span class="pas-ident">csDesigning</span><span class="pas-space"> </span><span class="pas-kwd">in</span><span class="pas-space"> </span><span class="pas-ident">ComponentState</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">and</span><span class="pas-space"> </span><span class="pas-kwd">not</span><span class="pas-space">
+    </span><span class="pas-sym">(</span><span class="pas-ident">csReading</span><span class="pas-space"> </span><span class="pas-kwd">in</span><span class="pas-space"> </span><span class="pas-ident">AOwner</span><span class="pas-sym">.</span><span class="pas-ident">ComponentState</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-comment">{this is true if the component is dropped on the form}</span>
+<span class="pas-space">    </span><span class="pas-ident">CreatePanel</span><span class="pas-sym">(</span><span class="pas-ident">AOwner</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-comment">{now the panel is part of the streaming system and will be created from
+    the dfm file of the form in the future}</span>
+<span class="pas-space">  </span><span class="pas-ident">fbutton</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">TButton</span><span class="pas-sym">.</span><span class="pas-ident">Create</span><span class="pas-sym">(</span><span class="pas-ident">self</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-comment">{the button is owned by self, not part of streaming}</span>
+<span class="pas-space">  </span><span class="pas-ident">fbutton</span><span class="pas-sym">.</span><span class="pas-ident">Parent</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">self</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">fbutton</span><span class="pas-sym">.</span><span class="pas-ident">SetBounds</span><span class="pas-sym">(</span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">100</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">25</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">fbutton</span><span class="pas-sym">.</span><span class="pas-ident">Caption</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-str">'Toggle Panel'</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">fbutton</span><span class="pas-sym">.</span><span class="pas-ident">OnClick</span><span class="pas-sym">:=</span><span class="pas-ident">TogglePanel</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TCustomControl2</span><span class="pas-sym">.</span><span class="pas-ident">CreatePanel</span><span class="pas-sym">(</span><span class="pas-ident">AOwner</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TComponent</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">fPanel</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">TPanel</span><span class="pas-sym">.</span><span class="pas-ident">Create</span><span class="pas-sym">(</span><span class="pas-ident">AOwner</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">fPanel</span><span class="pas-sym">.</span><span class="pas-ident">Parent</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">self</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">fPanel</span><span class="pas-sym">.</span><span class="pas-ident">height</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-num">200</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">fPanel</span><span class="pas-sym">.</span><span class="pas-ident">align</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">alBottom</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">fPanel</span><span class="pas-sym">.</span><span class="pas-kwd">Name</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-str">'MyPanel'</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-comment">{giving the panel a name and creating it with the form/ frame as owner
+  makes it streamable to dfm file}</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TCustomControl2</span><span class="pas-sym">.</span><span class="pas-ident">Loaded</span><span class="pas-sym">;</span>
+<span class="pas-kwd">var</span>
+<span class="pas-space">  </span><span class="pas-ident">i</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">inherited</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">for</span><span class="pas-space"> </span><span class="pas-ident">i</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-space"> </span><span class="pas-kwd">to</span><span class="pas-space"> </span><span class="pas-ident">ControlCount</span><span class="pas-space"> </span><span class="pas-sym">-</span><span class="pas-space"> </span><span class="pas-num">1</span><span class="pas-space"> </span><span class="pas-kwd">do</span>
+<span class="pas-space">    </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Controls</span><span class="pas-sym">[</span><span class="pas-ident">i</span><span class="pas-sym">]</span><span class="pas-sym">.</span><span class="pas-kwd">Name</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-str">'MyPanel'</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-kwd">begin</span>
+<span class="pas-space">      </span><span class="pas-ident">fPanel</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">TPanel</span><span class="pas-sym">(</span><span class="pas-ident">Controls</span><span class="pas-sym">[</span><span class="pas-ident">i</span><span class="pas-sym">]</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">      </span><span class="pas-comment">{make fPanel point to the right control}</span>
+<span class="pas-space">      </span><span class="pas-ident">break</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-comment">{this is a kludgy try to recreate the panel in case the user removes it
+  at design time. But it only kicks in when the dfm file is being loaded
+  again, so e.g. by viewing the form as text, then as form again}</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-kwd">not</span><span class="pas-space"> </span><span class="pas-ident">assigned</span><span class="pas-sym">(</span><span class="pas-ident">fPanel</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">csDesigning</span><span class="pas-space"> </span><span class="pas-kwd">in</span><span class="pas-space"> </span><span class="pas-ident">ComponentState</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">  </span><span class="pas-kwd">begin</span>
+<span class="pas-space">    </span><span class="pas-ident">CreatePanel</span><span class="pas-sym">(</span><span class="pas-ident">Owner</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-comment">{recreate it}</span>
+<span class="pas-space">    </span><span class="pas-ident">ShowMessage</span><span class="pas-sym">(</span><span class="pas-str">'Control ''MyPanel'' has been recreated'</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TCustomControl2</span><span class="pas-sym">.</span><span class="pas-ident">Notification</span><span class="pas-sym">(</span><span class="pas-ident">AComponent</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TComponent</span><span class="pas-sym">;
+  <span class="pas-ident">Operation</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TOperation</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">inherited</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-kwd">not</span><span class="pas-space"> </span><span class="pas-sym">(</span><span class="pas-ident">csDestroying</span><span class="pas-space"> </span><span class="pas-kwd">in</span><span class="pas-space"> </span><span class="pas-ident">ComponentState</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">operation</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-ident">opRemove</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">AComponent</span><span class="pas-sym">.</span><span class="pas-kwd">Name</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-str">'MyPanel'</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">  </span><span class="pas-comment">{someone removes the panel without removing our component}</span>
+<span class="pas-space">  </span><span class="pas-kwd">begin</span>
+<span class="pas-space">    </span><span class="pas-ident">ShowMessage</span><span class="pas-sym">(</span><span class="pas-str">'Control ''MyPanel'' should not be removed'</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-comment">{we can't recreate it here right now...}</span>
+<span class="pas-space">    </span><span class="pas-ident">fPanel</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-kwd">nil</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-comment">{but we can prevent AVs}</span>
+<span class="pas-space">    </span><span class="pas-comment">{Loaded recreates it the next time the dfm is being loaded}</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TCustomControl2</span><span class="pas-sym">.</span><span class="pas-ident">TogglePanel</span><span class="pas-sym">(</span><span class="pas-ident">sender</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">assigned</span><span class="pas-sym">(</span><span class="pas-ident">fPanel</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-ident">fPanel</span><span class="pas-sym">.</span><span class="pas-ident">visible</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-kwd">not</span><span class="pas-space"> </span><span class="pas-ident">fPanel</span><span class="pas-sym">.</span><span class="pas-ident">visible</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">initialization</span>
+
+<span class="pas-ident">RegisterClass</span><span class="pas-sym">(</span><span class="pas-ident">TPanel</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">end</span><span class="pas-sym">.</span></pre>
+</div>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Renate Schaaf</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2009-08-12</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2009-08-12</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/72">72</a></li>
+<li><a href="/tips/73">73</a></li>
+<li><a href="/tips/74">74</a></li>
+<li><a href="/tips/75">75</a></li>
+<li><span class="current">76</span></li>
+<li><a href="/tips/77">77</a></li>
+<li><a href="/tips/78">78</a></li>
+<li><a href="/tips/79">79</a></li>
+<li><a href="/tips/80">80</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>

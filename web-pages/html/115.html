@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>How to create a TListBox with Drag and Drop capabilities</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="How to create a TListBox with Drag and Drop capabilities" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/115" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	How to create a TListBox with Drag and Drop capabilities
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<div class="question">
+  <div class="title">
+    Question
+  </div>
+  <div class="content">
+    How do I drag and drop an item from one position in a listbox to another
+    manually? That is, the user can determine the order of the items.
+  </div>
+</div>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasH -->
+<pre class="pas-source"><span class="pas-kwd">unit</span><span class="pas-space"> </span><span class="pas-ident">PBReorderListBox</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">interface</span>
+
+<span class="pas-kwd">uses</span>
+<span class="pas-space">  </span><span class="pas-ident">Windows</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Messages</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">SysUtils</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Classes</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Graphics</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Controls</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Forms</span><span class="pas-sym">,</span>
+<span class="pas-space">  </span><span class="pas-ident">Dialogs</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">StdCtrls</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">type</span>
+<span class="pas-space">  </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-kwd">Class</span><span class="pas-sym">(</span><span class="pas-ident">TListBox</span><span class="pas-sym">)</span>
+<span class="pas-space">  </span><span class="pas-kwd">private</span>
+<span class="pas-space">    </span><span class="pas-ident">FDragIndex</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">FDragImage</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragImagelist</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">protected</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DoStartDrag</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">DragObject</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DragOver</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">;</span>
+<span class="pas-space">      </span><span class="pas-ident">State</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragState</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">Accept</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Boolean</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">public</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DefaultDragOver</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">;</span>
+<span class="pas-space">      </span><span class="pas-ident">State</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragState</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">Accept</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Boolean</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">virtual</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DefaultStartDrag</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">DragObject</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">virtual</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DefaultDragDrop</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">virtual</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">CreateDragImage</span><span class="pas-sym">(</span><span class="pas-kwd">const</span><span class="pas-space"> </span><span class="pas-ident">S</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-kwd">String</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DragDrop</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">function</span><span class="pas-space"> </span><span class="pas-ident">GetDragImages</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragImagelist</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">property</span><span class="pas-space"> </span><span class="pas-ident">DragIndex</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-space"> </span><span class="pas-kwd">read</span><span class="pas-space"> </span><span class="pas-ident">FDragIndex</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">property</span><span class="pas-space"> </span><span class="pas-ident">DragImages</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragImageList</span><span class="pas-space"> </span><span class="pas-kwd">read</span><span class="pas-space"> </span><span class="pas-ident">GetDragImages</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-kwd">Register</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">implementation</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-kwd">Register</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">RegisterComponents</span><span class="pas-sym">(</span><span class="pas-str">'PBGoodies'</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-sym">[</span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">]</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">.</span><span class="pas-ident">CreateDragImage</span><span class="pas-sym">(</span><span class="pas-kwd">const</span><span class="pas-space"> </span><span class="pas-ident">S</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-kwd">String</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">var</span>
+<span class="pas-space">  </span><span class="pas-ident">size</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TSize</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">bmp</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TBitmap</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-kwd">not</span><span class="pas-space"> </span><span class="pas-ident">Assigned</span><span class="pas-sym">(</span><span class="pas-ident">FDragImage</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-ident">FDragImage</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">TDragImagelist</span><span class="pas-sym">.</span><span class="pas-ident">Create</span><span class="pas-sym">(</span><span class="pas-ident">self</span><span class="pas-sym">)</span>
+<span class="pas-space">  </span><span class="pas-kwd">else</span>
+<span class="pas-space">    </span><span class="pas-ident">FDragImage</span><span class="pas-sym">.</span><span class="pas-ident">Clear</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">Canvas</span><span class="pas-sym">.</span><span class="pas-ident">Font</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Font</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">size</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Canvas</span><span class="pas-sym">.</span><span class="pas-ident">TextExtent</span><span class="pas-sym">(</span><span class="pas-ident">S</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">FDragImage</span><span class="pas-sym">.</span><span class="pas-ident">Width</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">size</span><span class="pas-sym">.</span><span class="pas-ident">cx</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">FDragImage</span><span class="pas-sym">.</span><span class="pas-ident">Height</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">size</span><span class="pas-sym">.</span><span class="pas-ident">cy</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">bmp</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">TBitmap</span><span class="pas-sym">.</span><span class="pas-ident">Create</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">try</span>
+<span class="pas-space">    </span><span class="pas-ident">bmp</span><span class="pas-sym">.</span><span class="pas-ident">Width</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">size</span><span class="pas-sym">.</span><span class="pas-ident">cx</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">bmp</span><span class="pas-sym">.</span><span class="pas-ident">Height</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">size</span><span class="pas-sym">.</span><span class="pas-ident">cy</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">bmp</span><span class="pas-sym">.</span><span class="pas-ident">Canvas</span><span class="pas-sym">.</span><span class="pas-ident">Font</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Font</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">bmp</span><span class="pas-sym">.</span><span class="pas-ident">Canvas</span><span class="pas-sym">.</span><span class="pas-ident">Font</span><span class="pas-sym">.</span><span class="pas-ident">Color</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">clBlack</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">bmp</span><span class="pas-sym">.</span><span class="pas-ident">Canvas</span><span class="pas-sym">.</span><span class="pas-ident">Brush</span><span class="pas-sym">.</span><span class="pas-ident">Color</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">clWhite</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">bmp</span><span class="pas-sym">.</span><span class="pas-ident">Canvas</span><span class="pas-sym">.</span><span class="pas-ident">Brush</span><span class="pas-sym">.</span><span class="pas-ident">Style</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">bsSolid</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">bmp</span><span class="pas-sym">.</span><span class="pas-ident">Canvas</span><span class="pas-sym">.</span><span class="pas-ident">TextOut</span><span class="pas-sym">(</span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">S</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">FDragImage</span><span class="pas-sym">.</span><span class="pas-ident">AddMasked</span><span class="pas-sym">(</span><span class="pas-ident">bmp</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">clWhite</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">finally</span>
+<span class="pas-space">    </span><span class="pas-ident">bmp</span><span class="pas-sym">.</span><span class="pas-ident">free</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">ControlStyle</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">ControlStyle</span><span class="pas-space"> </span><span class="pas-sym">+</span><span class="pas-space"> </span><span class="pas-sym">[</span><span class="pas-ident">csDisplayDragImage</span><span class="pas-sym">]</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">.</span><span class="pas-ident">DefaultDragDrop</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">var</span>
+<span class="pas-space">  </span><span class="pas-ident">dropindex</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">ti</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">S</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-kwd">String</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">obj</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Source</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-ident">Self</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">  </span><span class="pas-kwd">begin</span>
+<span class="pas-space">    </span><span class="pas-ident">S</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Items</span><span class="pas-sym">[</span><span class="pas-ident">FDragIndex</span><span class="pas-sym">]</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">obj</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Items</span><span class="pas-sym">.</span><span class="pas-ident">Objects</span><span class="pas-sym">[</span><span class="pas-ident">FDragIndex</span><span class="pas-sym">]</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">dropIndex</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">ItemAtPos</span><span class="pas-sym">(</span><span class="pas-ident">Point</span><span class="pas-sym">(</span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">)</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">True</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">ti</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">TopIndex</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">dropIndex</span><span class="pas-space"> </span><span class="pas-sym">&gt;</span><span class="pas-space"> </span><span class="pas-ident">FDragIndex</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">      </span><span class="pas-ident">Dec</span><span class="pas-sym">(</span><span class="pas-ident">dropIndex</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">Items</span><span class="pas-sym">.</span><span class="pas-ident">Delete</span><span class="pas-sym">(</span><span class="pas-ident">FDragIndex</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">dropIndex</span><span class="pas-space"> </span><span class="pas-sym">&lt;</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">      </span><span class="pas-ident">items</span><span class="pas-sym">.</span><span class="pas-ident">AddObject</span><span class="pas-sym">(</span><span class="pas-ident">S</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">obj</span><span class="pas-sym">)</span>
+<span class="pas-space">    </span><span class="pas-kwd">else</span>
+<span class="pas-space">      </span><span class="pas-ident">items</span><span class="pas-sym">.</span><span class="pas-ident">InsertObject</span><span class="pas-sym">(</span><span class="pas-ident">dropIndex</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">S</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">obj</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">TopIndex</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">ti</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">Procedure</span><span class="pas-space"> </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">.</span><span class="pas-ident">DefaultDragOver</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">State</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragState</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">Var</span><span class="pas-space"> </span><span class="pas-ident">Accept</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Boolean</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">Accept</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Source</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-ident">Self</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Accept</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">  </span><span class="pas-kwd">begin</span>
+<span class="pas-space">    </span><span class="pas-comment">{Handle autoscroll in the &quot;hot zone&quot; 5 pixels from top or bottom of</span>
+<span class="pas-comment">    client area}</span>
+<span class="pas-space">    </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-sym">(</span><span class="pas-ident">Y</span><span class="pas-space"> </span><span class="pas-sym">&lt;</span><span class="pas-space"> </span><span class="pas-num">5</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">or</span><span class="pas-space"> </span><span class="pas-sym">(</span><span class="pas-sym">(</span><span class="pas-ident">ClientHeight</span><span class="pas-space"> </span><span class="pas-sym">-</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-sym">&lt;=</span><span class="pas-space"> </span><span class="pas-num">5</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-kwd">begin</span>
+<span class="pas-space">      </span><span class="pas-ident">FDragImage</span><span class="pas-sym">.</span><span class="pas-ident">HideDragImage</span><span class="pas-sym">;</span>
+<span class="pas-space">      </span><span class="pas-kwd">try</span>
+<span class="pas-space">        </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-space"> </span><span class="pas-sym">&lt;</span><span class="pas-space"> </span><span class="pas-num">5</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">        </span><span class="pas-kwd">begin</span>
+<span class="pas-space">          </span><span class="pas-ident">Perform</span><span class="pas-sym">(</span><span class="pas-ident">WM_VSCROLL</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">SB_LINEUP</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">          </span><span class="pas-ident">Perform</span><span class="pas-sym">(</span><span class="pas-ident">WM_VSCROLL</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">SB_ENDSCROLL</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">        </span><span class="pas-kwd">end</span>
+<span class="pas-space">        </span><span class="pas-kwd">else</span>
+<span class="pas-space">        </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-sym">(</span><span class="pas-ident">ClientHeight</span><span class="pas-space"> </span><span class="pas-sym">-</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-sym">&lt;=</span><span class="pas-space"> </span><span class="pas-num">5</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">        </span><span class="pas-kwd">begin</span>
+<span class="pas-space">          </span><span class="pas-ident">Perform</span><span class="pas-sym">(</span><span class="pas-ident">WM_VSCROLL</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">SB_LINEDOWN</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">          </span><span class="pas-ident">Perform</span><span class="pas-sym">(</span><span class="pas-ident">WM_VSCROLL</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">SB_ENDSCROLL</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">        </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-space">      </span><span class="pas-kwd">finally</span>
+<span class="pas-space">        </span><span class="pas-ident">FDragImage</span><span class="pas-sym">.</span><span class="pas-ident">ShowDragImage</span><span class="pas-sym">;</span>
+<span class="pas-space">      </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">end</span><span class="pas-sym">;</span><span class="pas-space">  </span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">.</span><span class="pas-ident">DefaultStartDrag</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">DragObject</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">FDragIndex</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">ItemIndex</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">FDragIndex</span><span class="pas-space"> </span><span class="pas-sym">&gt;=</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-ident">CreateDragImage</span><span class="pas-sym">(</span><span class="pas-ident">Items</span><span class="pas-sym">[</span><span class="pas-ident">FDragIndex</span><span class="pas-sym">]</span><span class="pas-sym">)</span>
+<span class="pas-space">  </span><span class="pas-kwd">else</span>
+<span class="pas-space">    </span><span class="pas-ident">CancelDrag</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">.</span><span class="pas-ident">DoStartDrag</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">DragObject</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Assigned</span><span class="pas-sym">(</span><span class="pas-ident">OnStartDrag</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-kwd">inherited</span>
+<span class="pas-space">  </span><span class="pas-kwd">else</span>
+<span class="pas-space">    </span><span class="pas-ident">DefaultStartDrag</span><span class="pas-sym">(</span><span class="pas-ident">DragObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">.</span><span class="pas-ident">DragDrop</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Assigned</span><span class="pas-sym">(</span><span class="pas-ident">OnDragDrop</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-kwd">inherited</span>
+<span class="pas-space">  </span><span class="pas-kwd">else</span>
+<span class="pas-space">    </span><span class="pas-ident">DefaultDragDrop</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">.</span><span class="pas-ident">DragOver</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">State</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragState</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">Accept</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Boolean</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Assigned</span><span class="pas-sym">(</span><span class="pas-ident">OnDragOver</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-kwd">inherited</span>
+<span class="pas-space">  </span><span class="pas-kwd">else</span>
+<span class="pas-space">    </span><span class="pas-ident">DefaultDragOver</span><span class="pas-sym">(</span><span class="pas-ident">Source</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">State</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Accept</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">function</span><span class="pas-space"> </span><span class="pas-ident">TPBReorderListBox</span><span class="pas-sym">.</span><span class="pas-ident">GetDragImages</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TDragImagelist</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">Result</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">FDragImage</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">end</span><span class="pas-sym">.</span></pre>
+</div>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Peter Below</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2009-10-26</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2009-10-26</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/111">111</a></li>
+<li><a href="/tips/112">112</a></li>
+<li><a href="/tips/113">113</a></li>
+<li><a href="/tips/114">114</a></li>
+<li><span class="current">115</span></li>
+<li><a href="/tips/116">116</a></li>
+<li><a href="/tips/117">117</a></li>
+<li><a href="/tips/118">118</a></li>
+<li><a href="/tips/119">119</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>How to call CopyFileEx and let the callback update a progress bar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="How to call CopyFileEx and let the callback update a progress bar" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/160" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	How to call CopyFileEx and let the callback update a progress bar
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<div class="question">
+  <div class="title">
+      Question
+  </div>
+  <div class="content">
+    Does anyone have an example of using <var>CopyFileEx</var> with a
+    <var>CopyProgressRoutine</var>? I have created a function that takes the
+    same parameters as the <var>CopyProgressRoutine</var>, but when I pass
+    it using <var>@</var> or <var>Addr()</var> I get a &quot;Variable
+    Required&quot; error message.
+  </div>
+</div>
+
+<p>
+  Let's assume you call <var>CopyFileEx</var> and want the callback to update
+  a progress bar. The callback cannot be an object's method but you can use the
+  <var>lpData</var> parameter of <var>CopyFileEx</var> to pass any kind of
+  data to the callback, e.g. a form reference. So, if you want to serve a
+  progress form in the callback here's a little project that does the job.
+</p>
+
+<p>
+  Create a new Delphi project with two forms. Name the main form
+  <var>Form1</var> and save it as <code>Unit1.pas</code>. Name the second form
+  <var>ProgressForm</var> and save it as <code>Unit2.pas</code>. Ensure
+  that <var>ProgressForm</var> is not auto-created by the project. Set
+  <var>ProgressForm</var>'s <var>FormStyle</var> property to
+  <var>fsStayOnTop</var>.
+</p>
+
+<p>
+  On the main form drop a <var>TButton</var> named <var>CopyFileButton</var> and
+  a <var>TOpenDialog</var> component named <var>OpenDialog</var>. Create an
+  <var>OnClick</var> event handler for the button with the following code.
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<pre class="pas-source"><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TForm1</span><span class="pas-sym">.</span><span class="pas-ident">CopyFileButtonClick</span><span class="pas-sym">(</span><span class="pas-ident">Sender</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">OpenDialog</span><span class="pas-sym">.</span><span class="pas-ident">Execute</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-ident">DoFileCopy</span><span class="pas-sym">(</span><span class="pas-ident">OpenDialog</span><span class="pas-sym">.</span><span class="pas-ident">FileName</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">OpenDialog</span><span class="pas-sym">.</span><span class="pas-ident">FileName</span><span class="pas-space"> </span><span class="pas-sym">+</span><span class="pas-space"> </span><span class="pas-str">'.bak'</span><span class="pas-sym">)</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span></pre>
+</div>
+
+<p>
+  Somewhere above <var>TForm1.CopyFileButtonClick</var> in the implementation
+  section of <var>Unit1</var> add the following code:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<pre class="pas-source"><span class="pas-kwd">function</span><span class="pas-space"> </span><span class="pas-ident">CopyCallback</span><span class="pas-sym">(</span><span class="pas-ident">TotalFileSize</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">TotalBytesTransferred</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">StreamSize</span><span class="pas-sym">,</span>
+<span class="pas-space">  </span><span class="pas-ident">StreamBytesTransferred</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Int64</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">dwStreamNumber</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">dwCallbackReason</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">DWORD</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">hSourceFile</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">hDestinationFile</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">THandle</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">progressform</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TProgressForm</span><span class="pas-space"> </span><span class="pas-sym">)</span><span class="pas-sym">:</span>
+<span class="pas-space">  </span><span class="pas-ident">DWORD</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">stdcall</span><span class="pas-sym">;</span>
+<span class="pas-kwd">var</span>
+<span class="pas-space">  </span><span class="pas-ident">newpos</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Integer</span><span class="pas-sym">;</span>
+<span class="pas-kwd">const</span>
+<span class="pas-space">  </span><span class="pas-ident">PROCESS_CONTINUE</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">Result</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">PROCESS_CONTINUE</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">dwCallbackReason</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-ident">CALLBACK_CHUNK_FINISHED</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">  </span><span class="pas-kwd">begin</span>
+<span class="pas-space">    </span><span class="pas-ident">newpos</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Round</span><span class="pas-sym">(</span><span class="pas-ident">TotalBytesTransferred</span><span class="pas-space"> </span><span class="pas-sym">/</span><span class="pas-space"> </span><span class="pas-ident">TotalFileSize</span><span class="pas-space"> </span><span class="pas-sym">*</span><span class="pas-space"> </span><span class="pas-num">100</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">with</span><span class="pas-space"> </span><span class="pas-ident">progressform</span><span class="pas-sym">.</span><span class="pas-ident">Progressbar</span><span class="pas-space"> </span><span class="pas-kwd">do</span>
+<span class="pas-space">      </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">newpos</span><span class="pas-space"> </span><span class="pas-sym">&lt;&gt;</span><span class="pas-space"> </span><span class="pas-ident">Position</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">        </span><span class="pas-ident">Position</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">newpos</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">Application</span><span class="pas-sym">.</span><span class="pas-ident">ProcessMessages</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">function</span><span class="pas-space"> </span><span class="pas-ident">DoFilecopy</span><span class="pas-sym">(</span><span class="pas-kwd">const</span><span class="pas-space"> </span><span class="pas-ident">source</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">target</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-kwd">string</span><span class="pas-sym">)</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Boolean</span><span class="pas-sym">;</span>
+<span class="pas-kwd">var</span>
+<span class="pas-space">  </span><span class="pas-ident">progressform</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TProgressForm</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">progressform</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">TProgressform</span><span class="pas-sym">.</span><span class="pas-ident">Create</span><span class="pas-sym">(</span><span class="pas-ident">Form1</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">try</span>
+<span class="pas-space">    </span><span class="pas-ident">progressform</span><span class="pas-sym">.</span><span class="pas-ident">Show</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">Application</span><span class="pas-sym">.</span><span class="pas-ident">ProcessMessages</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-ident">Result</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">CopyFileEx</span><span class="pas-sym">(</span>
+<span class="pas-space">      </span><span class="pas-ident">PChar</span><span class="pas-sym">(</span><span class="pas-ident">source</span><span class="pas-sym">)</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">PChar</span><span class="pas-sym">(</span><span class="pas-ident">target</span><span class="pas-sym">)</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-sym">@</span><span class="pas-ident">CopyCallback</span><span class="pas-sym">,</span>
+<span class="pas-space">      </span><span class="pas-ident">Pointer</span><span class="pas-sym">(</span><span class="pas-ident">progressform</span><span class="pas-sym">)</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-sym">@</span><span class="pas-ident">progressform</span><span class="pas-sym">.</span><span class="pas-ident">FCancel</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span>
+<span class="pas-space">    </span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space"> </span><span class="pas-kwd">finally</span>
+<span class="pas-space">   </span><span class="pas-ident">progressform</span><span class="pas-sym">.</span><span class="pas-ident">Hide</span><span class="pas-sym">;</span>
+<span class="pas-space">   </span><span class="pas-ident">progressform</span><span class="pas-sym">.</span><span class="pas-ident">free</span><span class="pas-sym">;</span>
+<span class="pas-space"> </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span></pre>
+</div>
+
+<p>
+  <var>DoFileCopy</var> set up the file copy operation and displays the progress
+  dialog box (which we'll come to in a moment) and <var>CopyCallback</var> is
+  the <var>CopyProgressRoutine</var>. This callback calculates the progress of
+  the file copy and updates the progress bar on the progress form.
+</p>
+
+<p>
+  New for the progress form. Drop a <var>TProgessBar</var> named
+  <var>ProgressBar</var> and a <var>TButton</var> named <var>AbortButton</var>
+  on <var>ProgressForm</var>. Add a public Boolean field named
+  <var>fCancel</var> to <var>TProgressForm</var> and add an <var>OnClick</var>
+  event handler to <var>AbortButton</var> as follows:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<pre class="pas-source"><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TProgressForm</span><span class="pas-sym">.</span><span class="pas-ident">AbortButtonClick</span><span class="pas-sym">(</span><span class="pas-ident">Sender</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">fCancel</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">True</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span></pre>
+</div>
+
+<p>
+  Add a reference to <var>Unit2</var> in the uses clause of <var>Unit1</var>.
+</p>
+
+<p>
+  You can now compile and run the program. Click the button in the main form
+  to display the open file dialog box. Select a file to copy &ndash; something
+  largish, say 60MB should enable the progress dialog to display for long enough
+  to see what's happening. OK the dialog box and the file copy begins and the
+  progress dialog displays, updating the progress bar as the file copy proceeds.
+  Try clicking the progress dialog's abort button to cancel the copy.
+</p>
+
+<p class="credits">
+  Tip revised and made to work correctly by DelphiDabbler.
+</p>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Peter Below</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2010-06-02</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2011-01-20</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/156">156</a></li>
+<li><a href="/tips/157">157</a></li>
+<li><a href="/tips/158">158</a></li>
+<li><a href="/tips/159">159</a></li>
+<li><span class="current">160</span></li>
+<li><a href="/tips/161">161</a></li>
+<li><a href="/tips/162">162</a></li>
+<li><a href="/tips/163">163</a></li>
+<li><a href="/tips/164">164</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>How to minimize the controls in a form</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="How to minimize the controls in a form" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/174" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	How to minimize the controls in a form
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<p>
+  This more than a trick... it is a curiosity.
+</p>
+
+<p>
+  All the Delphi controls derived from <var>TWinControl</var> are no more than
+  windows. Keeping this in mind what happens if for example, we minimize a
+  <var>TMemo</var> or a <var>TButton</var>?
+</p>
+
+<p>
+  Test it and you will see. Put a <var>TMemo</var> and a <var>TButton</var> on
+  your form. Then put this code in the <var>OnClick</var> event handler of the
+  <var>TButton</var>:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<pre class="pas-source"><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TForm1</span><span class="pas-sym">.</span><span class="pas-ident">Button3Click</span><span class="pas-sym">(</span><span class="pas-ident">Sender</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span><span class="pas-space"> </span>
+<span class="pas-space">  </span><span class="pas-ident">CloseWindow</span><span class="pas-sym">(</span><span class="pas-ident">Memo1</span><span class="pas-sym">.</span><span class="pas-ident">Handle</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span><span class="pas-space"> </span></pre>
+</div>
+
+<p>
+  Here is how to minimize a control on your form at given X,Y coordinates:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<pre class="pas-source"><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">MinimizaEn</span><span class="pas-sym">(</span><span class="pas-ident">Que</span><span class="pas-sym">:</span><span class="pas-ident">THandle</span><span class="pas-sym">;</span><span class="pas-ident">X</span><span class="pas-sym">,</span><span class="pas-ident">Y</span><span class="pas-sym">:</span><span class="pas-ident">integer</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">var</span><span class="pas-space"> </span>
+<span class="pas-space">  </span><span class="pas-ident">Posiciones</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWindowPlacement</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span><span class="pas-space"> </span>
+<span class="pas-space">  </span><span class="pas-ident">Posiciones</span><span class="pas-sym">.</span><span class="pas-ident">length</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">SizeOf</span><span class="pas-sym">(</span><span class="pas-ident">Posiciones</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">GetWindowPlacement</span><span class="pas-sym">(</span><span class="pas-ident">Que</span><span class="pas-sym">,</span><span class="pas-sym">@</span><span class="pas-ident">Posiciones</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">Posiciones</span><span class="pas-sym">.</span><span class="pas-ident">flags</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">WPF_SETMINPOSITION</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">Posiciones</span><span class="pas-sym">.</span><span class="pas-ident">ptMinPosition</span><span class="pas-sym">.</span><span class="pas-ident">x</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">X</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">Posiciones</span><span class="pas-sym">.</span><span class="pas-ident">ptMinPosition</span><span class="pas-sym">.</span><span class="pas-ident">y</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Y</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">SetWindowPlacement</span><span class="pas-sym">(</span><span class="pas-ident">Que</span><span class="pas-sym">,</span><span class="pas-sym">@</span><span class="pas-ident">Posiciones</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">CloseWindow</span><span class="pas-sym">(</span><span class="pas-ident">Que</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span></pre>
+</div>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <th scope="row">Contributor:</th>
+    <td>geotech</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2010-12-17</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2010-12-17</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/170">170</a></li>
+<li><a href="/tips/171">171</a></li>
+<li><a href="/tips/172">172</a></li>
+<li><a href="/tips/173">173</a></li>
+<li><span class="current">174</span></li>
+<li><a href="/tips/175">175</a></li>
+<li><a href="/tips/176">176</a></li>
+<li><a href="/tips/177">177</a></li>
+<li><a href="/tips/178">178</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>

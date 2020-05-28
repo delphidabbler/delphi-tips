@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>How to create a TEdit that accepts only numeric input</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="How to create a TEdit that accepts only numeric input" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/86" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	How to create a TEdit that accepts only numeric input
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<p>
+  Here's a rather simple-minded component that will do that for you:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasH -->
+<pre class="pas-source"><span class="pas-kwd">unit</span><span class="pas-space"> </span><span class="pas-ident">GSSimp</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">interface</span>
+
+<span class="pas-kwd">uses</span>
+<span class="pas-space">  </span><span class="pas-ident">Windows</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Messages</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">SysUtils</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Classes</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Graphics</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Controls</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Forms</span><span class="pas-sym">,</span>
+<span class="pas-space">  </span><span class="pas-ident">Dialogs</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">StdCtrls</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">type</span>
+<span class="pas-space">  </span><span class="pas-ident">TGSErrorType</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-sym">(</span><span class="pas-ident">etChange</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">etPress</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">type</span>
+<span class="pas-space">  </span><span class="pas-ident">TErrorEvent</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-kwd">procedure</span><span class="pas-sym">(</span><span class="pas-ident">Sender</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-ident">ErrType</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TGSErrorType</span><span class="pas-sym">)</span>
+<span class="pas-space">    </span><span class="pas-kwd">of</span><span class="pas-space"> </span><span class="pas-kwd">object</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">type</span>
+<span class="pas-space">  </span><span class="pas-ident">TGsSimpleNumEdit</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-kwd">class</span><span class="pas-sym">(</span><span class="pas-ident">TEdit</span><span class="pas-sym">)</span>
+<span class="pas-space">  </span><span class="pas-kwd">private</span>
+<span class="pas-space">    </span><span class="pas-ident">FOnError</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TErrorEvent</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">protected</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">Change</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">KeyPress</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">Key</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Char</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">published</span>
+<span class="pas-space">    </span><span class="pas-kwd">property</span><span class="pas-space"> </span><span class="pas-ident">OnError</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TErrorEvent</span><span class="pas-space"> </span><span class="pas-kwd">read</span><span class="pas-space"> </span><span class="pas-ident">FOnError</span><span class="pas-space"> </span><span class="pas-kwd">write</span><span class="pas-space"> </span><span class="pas-ident">FOnError</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-kwd">Register</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">implementation</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TGsSimpleNumEdit</span><span class="pas-sym">.</span><span class="pas-ident">Change</span><span class="pas-sym">;</span>
+<span class="pas-kwd">var</span>
+<span class="pas-space">  </span><span class="pas-ident">tmpI</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">integer</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">try</span>
+<span class="pas-space">    </span><span class="pas-ident">tmpI</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">StrToInt</span><span class="pas-sym">(</span><span class="pas-ident">Text</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">inherited</span><span class="pas-space"> </span><span class="pas-ident">Change</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">except</span>
+<span class="pas-space">    </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Assigned</span><span class="pas-sym">(</span><span class="pas-ident">FOnError</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">      </span><span class="pas-ident">FOnError</span><span class="pas-sym">(</span><span class="pas-ident">self</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">etChange</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TGsSimpleNumEdit</span><span class="pas-sym">.</span><span class="pas-ident">KeyPress</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-ident">Key</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">Char</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">var</span>
+<span class="pas-space">  </span><span class="pas-ident">tText</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-kwd">string</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">SelLength</span><span class="pas-space"> </span><span class="pas-sym">&lt;&gt;</span><span class="pas-space"> </span><span class="pas-ident">Length</span><span class="pas-sym">(</span><span class="pas-ident">Text</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-ident">tText</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">Text</span>
+<span class="pas-space">  </span><span class="pas-kwd">else</span>
+<span class="pas-space">    </span><span class="pas-ident">tText</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">EmptyStr</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Key</span><span class="pas-space"> </span><span class="pas-kwd">in</span><span class="pas-space"> </span><span class="pas-sym">[</span><span class="pas-str">'0'</span><span class="pas-sym">..</span><span class="pas-str">'9'</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-str">#8</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-str">#127</span><span class="pas-sym">]</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">    </span><span class="pas-kwd">inherited</span><span class="pas-space"> </span><span class="pas-ident">KeyPress</span><span class="pas-sym">(</span><span class="pas-ident">Key</span><span class="pas-sym">)</span>
+<span class="pas-space">  </span><span class="pas-kwd">else</span>
+<span class="pas-space">  </span><span class="pas-kwd">begin</span>
+<span class="pas-space">    </span><span class="pas-ident">Key</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-str">#0</span><span class="pas-sym">;</span>
+<span class="pas-space">    </span><span class="pas-kwd">if</span><span class="pas-space"> </span><span class="pas-ident">Assigned</span><span class="pas-sym">(</span><span class="pas-ident">FOnError</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">then</span>
+<span class="pas-space">      </span><span class="pas-ident">FOnError</span><span class="pas-sym">(</span><span class="pas-ident">self</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">etPress</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-kwd">Register</span><span class="pas-sym">;</span>
+<span class="pas-kwd">begin</span>
+<span class="pas-space">  </span><span class="pas-ident">RegisterComponents</span><span class="pas-sym">(</span><span class="pas-str">'Garlin'</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-sym">[</span><span class="pas-ident">TGsSimpleNumEdit</span><span class="pas-sym">]</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-kwd">end</span><span class="pas-sym">;</span>
+
+<span class="pas-kwd">end</span><span class="pas-sym">.</span></pre>
+</div>
+
+<div class="xref">
+  See <a href="/tips/151">Tip #151</a> for an alternative solution.
+</div>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Ralph Friedman &amp; Chris Luck</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2009-08-24</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2009-12-05</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/82">82</a></li>
+<li><a href="/tips/83">83</a></li>
+<li><a href="/tips/84">84</a></li>
+<li><a href="/tips/85">85</a></li>
+<li><span class="current">86</span></li>
+<li><a href="/tips/87">87</a></li>
+<li><a href="/tips/88">88</a></li>
+<li><a href="/tips/89">89</a></li>
+<li><a href="/tips/90">90</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>

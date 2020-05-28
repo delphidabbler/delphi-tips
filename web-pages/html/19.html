@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>How to read bitmap file information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="How to read bitmap file information" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/19" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	How to read bitmap file information
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<p>
+  You can easily get information about bitmap files such the file size, image
+  height &amp; width, bit count and colors used.
+</p>
+
+<p>
+  The <var>TBitmapFileHeader</var> (<var>tagBITMAPFILEHEADER</var> - Windows
+  API) record is declared in <code>Windows.pas</code> although it is not
+  mentioned in Delphi help. The same situation is with the
+  <var>TBitmapInfoHeader</var> (<var>tagBITMAPINFOHEADER</var> - Windows API)
+  record.
+</p>
+
+<div class="frame">
+  <table summary="Description of TBitmapInfoHeader fields">
+    <caption>
+      tagBITMAPINFOHEADER Struct Reference - TBitmapInfoHeader
+    </caption>
+    <tr>
+      <td class="top">DWORD</td>
+      <td class="top">biSize</td>
+      <td class="last top">Size of tagBITMAPINFOHEADER</td>
+    </tr>
+    <tr>
+      <td>LONG</td>
+      <td>biWidth</td>
+      <td class="last">width of bitmap</td>
+    </tr>
+    <tr>
+      <td>LONG</td>
+      <td>biHeight</td>
+      <td class="last">height of bitmap</td>
+    </tr>
+    <tr>
+      <td>WORD</td>
+      <td>biPlanes</td>
+      <td class="last">1</td>
+    </tr>
+    <tr>
+      <td>WORD</td>
+      <td>biBitCount</td>
+      <td class="last">
+        1 (mono) or 4 (16 colors ) or 8 (256 colors) or 24 (16 Mil
+        colors)
+      </td>
+    </tr>
+    <tr>
+      <td>DWORD</td>
+      <td>biCompression</td>
+      <td class="last">RLE COMPRESSION</td>
+    </tr>
+    <tr>
+      <td>DWORD</td>
+      <td>biSizeImage</td>
+      <td class="last">Width x height</td>
+    </tr>
+    <tr>
+      <td>LONG</td>
+      <td>biXPelsPerMeter</td>
+      <td class="last">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>LONG</td>
+      <td>biYPelsPerMeter</td>
+      <td class="last">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>LONG</td>
+      <td>biClrUsed</td>
+      <td class="last">
+        Number of palettes used (if less than standard)
+      </td>
+    </tr>
+    <tr>
+      <td>DWORD</td>
+      <td>biClrImportant</td>
+      <td class="last">Number of important color</td>
+    </tr>
+  </table>
+</div>
+
+<div class="frame">
+  <table summary="Description of TBitmapFileHeader fields">
+    <caption>
+      tagBITMAPFILEHEADER Struct Reference - TBitmapFileHeader
+    </caption>
+    <tr>
+      <td class="top">Word</td>
+      <td class="top">bfType</td>
+      <td class="last top">$4d42 (i.e. 'BM')</td>
+    </tr>
+    <tr>
+      <td>DWORD</td>
+      <td>bfSize</td>
+      <td class="last">Size of file</td>
+    </tr>
+    <tr>
+      <td>DWORD</td>
+      <td>Reserved1</td>
+      <td class="last">Reserved</td>
+    </tr>
+    <tr>
+      <td>UNIT</td>
+      <td>Reserved2</td>
+      <td class="last">Reserved</td>
+    </tr>
+    <tr>
+      <td>DWORD</td>
+      <td>bfOffBits</td>
+      <td class="last">
+        Byte location in the file which is first byte of image
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasH -->
+<pre class="pas-source"><span class="pas-kwd">var</span>
+  BitmapFileHeader: TBitmapFileHeader;
+  BitmapInfoHeader: TBitmapInfoHeader;
+  FileStream      : TFileStream;
+<span class="pas-kwd">Begin</span>
+  ...
+  <span class="pas-comment">// The file stream to the file. You should change the file path :-)</span>
+  FileStream := TFileStream.Create(<span class="pas-str">'C:WindowsBubbles.bmp'</span>, fmOpenRead);
+  <span class="pas-kwd">try</span>
+    FileStream.Read(BitmapFileHeader, SizeOf(BitmapFileHeader));
+    FileStream.Read(BitmapInfoHeader, SizeOf(BitmapInfoHeader));
+  <span class="pas-kwd">finally</span>
+    FileStream.Free;
+  <span class="pas-kwd">end</span>;
+  ...
+<span class="pas-kwd">end</span>;</pre>
+</div>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2007-06-02</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2009-05-04</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/15">15</a></li>
+<li><a href="/tips/16">16</a></li>
+<li><a href="/tips/17">17</a></li>
+<li><a href="/tips/18">18</a></li>
+<li><span class="current">19</span></li>
+<li><a href="/tips/20">20</a></li>
+<li><a href="/tips/21">21</a></li>
+<li><a href="/tips/22">22</a></li>
+<li><a href="/tips/23">23</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>What is a DispInterface?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="What is a DispInterface?" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/216" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	What is a DispInterface?
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<p>
+  Short answer: it is a specification for an <var>IDispatch</var> interface.
+</p>
+
+<p>
+  Long answer: The <var>IDispatch</var> interface is the basis of all
+  automation. It has two methods that allow pointerless scripting languages to
+  call methods by name, instead of using method pointers:
+  <var>GetIDsOfNames</var>, and <var>Invoke</var>. <var>GetIdsOfNames</var>
+  retrieves the numerical ID of a method with a given name (provided that the
+  object implements another interface that has method with that name).
+  <var>Invoke</var> uses the numerical ID of a method to call that method.
+  The numerical ID of a method is called the <em>DispID</em>. For example,
+  suppose you create an interface that looks like this:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<div class="pas-source">
+<pre class="line"><span class="pas-kwd">type</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">IMyIntf</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-kwd">Interface</span><span class="pas-sym">(</span><span class="pas-ident">IDispatch</span><span class="pas-sym">)</span></pre>
+<pre class="line"><span class="pas-space">    </span><span class="pas-sym">[</span><span class="pas-str">'{4D733280-C514-11D4-8481-A68F52CBDB56}'</span><span class="pas-sym">]</span></pre>
+<pre class="line"><span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DoThis</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span></pre>
+</div>
+</div>
+
+<p>
+  and an object that implements it that looks like this:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<div class="pas-source">
+<pre class="line"><span class="pas-kwd">type</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">TMyDispatchObj</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-kwd">class</span><span class="pas-sym">(</span><span class="pas-ident">TAutoObject</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">IMyIntf</span><span class="pas-sym">)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-kwd">public</span></pre>
+<pre class="line"><span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DoThis</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span></pre>
+</div>
+</div>
+
+<p>
+  Delphi will call both <var>GetIDSOfNames</var> and <var>Invoke</var> for you
+  &ndash; all you need to do is use a variant. Like this:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<div class="pas-source">
+<pre class="line"><span class="pas-comment">{ ... }</span></pre>
+<pre class="line"><span class="pas-kwd">var</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">AVar</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">OleVariant</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">{ ... }</span></pre>
+<pre class="line"> </pre>
+<pre class="line"><span class="pas-comment">{ ... }</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">AVar</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">CreateComObject</span><span class="pas-sym">(</span><span class="pas-ident">CLASS_TMyAutoObj</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">as</span><span class="pas-space"> </span><span class="pas-ident">IDispatch</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">AVar</span><span class="pas-sym">.</span><span class="pas-ident">DoThis</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">{ ... }</span></pre>
+</div>
+</div>
+
+<p>
+  Every time you call a method of an variant referencing an <var>IDispatch</var>
+  interface, <var>GetIDsOfNames</var> and <var>Invoke</var> are called for you
+  behind the scenes. However, calling <var>GetIdsOfNames</var> for every method
+  is quite slow. And since all it does is find a numerical ID for a given method
+  name, it might be nice if you could look up that ID in advance and pass it to
+  <var>Invoke</var> directly, rather than go through <var>GetIdsOfNames</var>
+  every time. Enter the <em>DispInterface</em>:
+</p>
+
+<div class="frames">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<div class="pas-source">
+<pre class="line"><span class="pas-kwd">type</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">IMyDispInterface</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-kwd">dispinterface</span></pre>
+<pre class="line"><span class="pas-space">    </span><span class="pas-sym">[</span><span class="pas-str">'{4D733284-C514-11D4-8481-A68F52CBDB56}'</span><span class="pas-sym">]</span></pre>
+<pre class="line"><span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">DoThis</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">DispID</span><span class="pas-space"> </span><span class="pas-num">1</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span></pre>
+</div>
+</div>
+
+<p>
+  This declaration tells Delphi the DispID of each method in an interface. So if
+  you use a DispInterface variable, rather than a variant, Delphi can call
+  <var>Invoke</var> directly using that, rather than go through
+  <var>GetIdsOfNames</var>:
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<div class="pas-source">
+<pre class="line"><span class="pas-comment">{ ... }</span></pre>
+<pre class="line"><span class="pas-kwd">var</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">Disp</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">IDispatch</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">Dispint</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">IMyDispInterface</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-comment">{ ... }</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">Disp</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">CreateComObject</span><span class="pas-sym">(</span><span class="pas-ident">CLASS_TMyAutoObj</span><span class="pas-sym">)</span><span class="pas-space"> </span><span class="pas-kwd">as</span><span class="pas-space"> </span><span class="pas-ident">IDispatch</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">Dispint</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">IMyDispInterface</span><span class="pas-sym">(</span><span class="pas-ident">Disp</span><span class="pas-sym">)</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">Dispint</span><span class="pas-sym">.</span><span class="pas-ident">DoThis</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">{ ... }</span></pre>
+</div>
+</div>
+
+<p>
+  A DispInterface is not a true interface. When you use a DispInterface, you are
+  actually using the <var>IDispatch</var> interface of an object, just as you
+  are when you use a variant. That's why you can cast an <var>IDispatch</var>
+  interface directly to a dispinterface, as in the second line above. All you're
+  doing here is telling the compiler that you already know what other methods a
+  particular object will implement, and what DispIDs can be used to invoke them
+  with.
+</p>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Deborah Pate</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2013-03-13</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2013-03-13</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/212">212</a></li>
+<li><a href="/tips/213">213</a></li>
+<li><a href="/tips/214">214</a></li>
+<li><a href="/tips/215">215</a></li>
+<li><span class="current">216</span></li>
+<li><a href="/tips/217">217</a></li>
+<li><a href="/tips/218">218</a></li>
+<li><a href="/tips/219">219</a></li>
+<li><a href="/tips/220">220</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>

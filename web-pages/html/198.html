@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>How to draw on the Windows desktop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="How to draw on the Windows desktop" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/198" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	How to draw on the Windows desktop
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<p>
+  Need to draw text or graphic on screen?
+</p>
+
+<p>
+  Here's how to do it:
+</p>
+
+<ol>
+  <li>
+    File -&gt; New -&gt; Application
+  </li>
+  <li>
+    Put a button anywhere on the form
+  </li>
+  <li>
+    Double-click the button and Copy / Paste this code
+  </li>
+</ol>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<div class="pas-source">
+<pre class="line"><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TForm1</span><span class="pas-sym">.</span><span class="pas-ident">Button1Click</span><span class="pas-sym">(</span><span class="pas-ident">Sender</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TObject</span><span class="pas-sym">)</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-kwd">const</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* our text *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">CTHE_TEXT</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-str">'I Love Delphigeist'</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-kwd">var</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* we need a canvas object *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TCanvas</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-kwd">begin</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* create theCanvas *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">TCanvas</span><span class="pas-sym">.</span><span class="pas-ident">Create</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* get Desktop canvas handle *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">Handle</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">GetWindowDC</span><span class="pas-sym">(</span><span class="pas-num">0</span><span class="pas-sym">)</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* we don't want a rectangle behind our text this is optional you can comment</span></pre>
+<pre class="line"><span class="pas-comment">  next line with &quot;//&quot; and see how it looks *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">Brush</span><span class="pas-sym">.</span><span class="pas-ident">Style</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">bsClear</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* set the font name *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">Font</span><span class="pas-sym">.</span><span class="pas-ident">Name</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-str">'Courier New'</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* we want it bold *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">Font</span><span class="pas-sym">.</span><span class="pas-ident">Style</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-sym">[</span><span class="pas-ident">fsBold</span><span class="pas-sym">]</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* set the size *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">Font</span><span class="pas-sym">.</span><span class="pas-ident">Size</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-num">60</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* lime looks good if your wallpaper has dark colors *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">Font</span><span class="pas-sym">.</span><span class="pas-ident">Color</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">clLime</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* draw the text *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">TextOut</span><span class="pas-sym">(</span><span class="pas-num">50</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">50</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">CTHE_TEXT</span><span class="pas-sym">)</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* clear allocated memory to our theCanvas object *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">FreeAndNil</span><span class="pas-sym">(</span><span class="pas-ident">theCanvas</span><span class="pas-sym">)</span><span class="pas-sym">;</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* that's it *)</span></pre>
+<pre class="line"><span class="pas-kwd">end</span><span class="pas-sym">;</span></pre>
+</div>
+</div>
+
+<p>
+  Now if you want to draw a <var>TBitmap</var> or <var>TJPEGImage</var> on the
+  desktop then replace
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<div class="pas-source">
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">TextOut</span><span class="pas-sym">(</span><span class="pas-num">50</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">50</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">CTHE_TEXT</span><span class="pas-sym">)</span><span class="pas-sym">;</span></pre>
+</div>
+</div>
+
+<p>
+  with
+</p>
+
+<div class="frame">
+<!-- Highlighted Pascal code generated by DelphiDabbler PasHi -->
+<div class="pas-source">
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* create a TBitmap named thisBitmap and load image into it *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-comment">(* now do the drawing *)</span></pre>
+<pre class="line"><span class="pas-space">  </span><span class="pas-ident">theCanvas</span><span class="pas-sym">.</span><span class="pas-ident">Draw</span><span class="pas-sym">(</span><span class="pas-num">50</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">50</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">thisBitmap</span><span class="pas-sym">)</span><span class="pas-sym">;</span></pre>
+</div>
+</div>
+
+<p>
+  To use a <var>TJPEGImage</var> is similar, just replace <var>thisBitmap</var>
+  with some suitable <var>TJPEGImage</var> variable.
+</p>
+
+<p class="credits">
+  This tip lightly modified by DelphiDabbler.
+</p>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Dorin Duminica</td>
+  </tr>
+  <tr>
+    <th scope="row">Contributor:</th>
+    <td>topellina</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2012-09-17</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2012-09-17</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/194">194</a></li>
+<li><a href="/tips/195">195</a></li>
+<li><a href="/tips/196">196</a></li>
+<li><a href="/tips/197">197</a></li>
+<li><span class="current">198</span></li>
+<li><a href="/tips/199">199</a></li>
+<li><a href="/tips/200">200</a></li>
+<li><a href="/tips/201">201</a></li>
+<li><a href="/tips/202">202</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>

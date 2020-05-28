@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Install components and IDE extensions into the Delphi IDE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="Install components and IDE extensions into the Delphi IDE" />
+<meta name="keywords" content="programming, Delphi, hints, tips, hints and tips" />
+<meta name="copyright" content="Copyright (c) 2002-2020 Peter D Johnson" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="canonical" href="http://delphidabbler.com/tips/106" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main-multicol-scr.css" media="screen" />
+<link rel="stylesheet" href="/css/main-2col-scr.css" media="screen" />
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/offsite-win.js"></script>
+<link rel="stylesheet" href="/css/tips.css" />
+<script type="text/javascript" src="/js/popup-win.js"></script>
+<script type="text/javascript" src="/js/show-hide.js"></script>
+<link rel="alternate" href="/feeds/site-news-feed?id=tips" type="application/rss+xml" title="DelphiDabbler.com Tips News" />
+<link rel="stylesheet" href="/css/source.css" />
+<link rel="stylesheet" href="/css/js-detect.css" />
+<script type="text/javascript" src="/js/js-detect.js"></script>
+<script type="text/javascript">
+  function showDemo(linkId, demoId) {
+    showHide(linkId, demoId, 'Show demo code', 'Hide demo code');
+  }
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This site uses cookies to deliver its services, to enable targeted advertising and to support various social media buttons, and to analyse traffic. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"More info","link":"http://delphidabbler.com/subsid/cookies","theme":"dark-top"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+<body>
+<!-- Facebook script -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div id="header">
+<div class="hide-from-css">
+<h1>DelphiDabbler.com</h1>
+<p>Open source software, Delphi components, Tutorials &amp; more.</p>
+</div> <!-- .hide-from-css -->
+<div id="header-right">
+<div id="quicklink" style="padding-right:4px;">
+&raquo; <a href="/sitemap">Sitemap</a></div>
+</div>
+</div> <!-- #header -->
+<div class="noprint" style="padding: 0 .5em .5em .5em; margin: .5em; background-color: #fcc;">
+  <h2 class="smallcaps centre-align">
+    &laquo;&laquo; Site Rescued &raquo;&raquo;
+  </h2>
+  <p class="highlight">
+    While the site is still going to move from its current host, a new site will now take its place. <strong><a href="https://delphidabbler.blogspot.com/2020/03/delphidabblercom-is-no-longer-closing.html">More Info</a></strong>.
+  </p>
+  <p>
+    The new site may have less content, but the core will now remain. And it will now play nicely with phones! Keep an eye on the <a href="https://delphidabbler.blogspot.com/">DelphiDabbler Blog</a> for news.
+  </p>
+</div>
+<div id="navigation">
+<hr class="hide-from-css" />
+<h2 class="hide-from-css">Navigation</h2>
+<ul>
+<li><a href="/index">Home&nbsp;Page</a></li>
+<li><a href="/programs">Programs</a></li>
+<li><a href="/codelib">Delphi&nbsp;Library</a></li>
+<li><a href="/snips-n-tips">Snippets&nbsp;&amp;&nbsp;Tips</a>
+<ul>
+<li class="sub-item"><a href="http://snippets.delphidabbler.com/" class="offsite-no-glyph">Code Snippets (Take 2)</a></li>
+<li class="sub-item"><a href="/tips" class="selected ">Delphi&nbsp;Tips</a></li>
+<li class="sub-item"><a href="http://swag.delphidabbler.com/" class="offsite-no-glyph">SWAG&nbsp;Archive</a></li>
+</ul>
+</li>
+<li><a href="/articles">Articles</a></li>
+<li><a href="http://wiki.delphidabbler.com/" class="offsite-no-glyph">Documentation</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/background">About</a></li>
+</ul>
+</div> <!-- #navigation -->
+<div id="main">
+<div id="content">
+<span class="help noprint">&raquo <a href="/help/tips-help.html" class="js-popup">Help</a></span>
+<h1>
+	Install components and IDE extensions into the Delphi IDE
+</h1>
+
+<div class="noprint">
+<!-- style in following div and non-breaking spaces are a work around for a
+     rendering bug in IE7 that sometimes hides preceeding h1 section if nothing
+     is printed before this show_ads.js code is run.
+     Tested and runs OK on Safari, Opera, Firefox, Chrome, but then, so did the
+     original code! -->
+<div class="centre-align" style="font-size:1pt;">&nbsp;
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0907703677935617";
+/* 468x60, created 11/04/09 */
+google_ad_slot = "8060165044";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+&nbsp;
+</div>
+</div>
+<p>
+  In this tip I draw together in one place information on how to install
+  components into the Delphi IDE for various Win32 versions of Delphi. The notes
+  also cover how to install IDE extensions or make simple units available in
+  design time packages. The tip assumes you are installing source code, not
+  pre-compiled units or packages.
+</p>
+
+<p>
+  Before you start copy all the files needed to install the component, IDE
+  extension or unit into some suitable location on your hard disk. Files should
+  include <code>.pas</code> files and any associated <code>.dfm</code>,
+  <code>.res</code>, <code>.dfm</code> and, for components, <code>.dcr</code>
+  files.
+</p>
+
+<p>
+  You then proceed differently for different versions of Delphi:
+</p>
+
+<ul>
+  <li>
+    <a href="#d2005">Installation with Delphi 2005 and later</a>
+  </li>
+  <li>
+    <a href="#d3">Installation with Delphi 3 to 7</a>
+  </li>
+  <li>
+    <a href="#d2">Installation with Delphi 2</a>
+  </li>
+</ul>
+
+
+<h3 id="d2005">
+  Installation with Delphi 2005 and later
+</h3>
+
+<p>
+  To add a component or IDE extension to the IDE it must be included in a design
+  package. You can either create a new design package or add the component to an
+  existing one. These instructions assume you will be installing into an
+  existing package. See the Delphi help for information on how to create a new
+  package. If your component came with its own package, use that.
+</p>
+
+<ol class="spaced">
+  <li>
+    Open the required package. Select <em>File | Open</em> menu and choose a
+    suitable package source file (<code>.dpk</code> extension. You may decide to
+    install into the &quot;user&quot; package that is often supplied with
+    Delphi.
+  </li>
+
+  <li>
+    The selected package (with <code>.bpl</code> extension) will now be
+    displayed in the Project Manager. If the package has not been installed yet
+    right click the <code>.bpl</code> entry in the Project Manager and select
+    <em>Install</em>. Dismiss any resulting message dialogue.
+  </li>
+
+  <li>
+    <p>
+      Now right click the <code>.bpl</code> entry again and select <em>Add</em>.
+      What happens next depends on the version of Delphi.
+    </p>
+    <ul>
+      <li>
+        For Delphi 2009 and earlier the &quot;Add&quot; dialogue box will be
+        displayed. Click the dialogue's <em>Browse</em> button then select the
+        <code>.pas</code> file(s) to be installed from the resulting file open
+        dialogue. The full path to the file(s) should now be displayed in the
+        &quot;Add&quot; dialogue's <em>Unit file name</em> edit box. Click
+        <em>OK</em> to add the file(s) to the package.
+      </li>
+      <li>
+        For Delphi 2010 and later a simple file dialogue box will open from
+        where you can choose the required <code>.pas</code> file(s). Just press
+        <em>OK</em> to add the file(s) to the package.
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    Back in the Project Manager, check that the <code>.pas</code> file(s) you
+    added appear under the package's &quot;Contains&quot; node. Also check that
+    any associated <code>.dcr</code> files also appear. If any <code>.dcr</code>
+    file does not appear you need to display the package's source file and add
+    the line <kbd>{$R <em>FileName</em>.dcr}</kbd> to the code between the
+    package name and the <var>requires</var> section. To display the source
+    right click the package name in the project manager and select <em>View
+    Source</em>.
+  </li>
+
+  <li>
+    If you are installing an IDE enhancement, like a property editor, make sure
+    the <code>designide</code> package is included in the package's
+    <var>requires</var> section.
+  </li>
+
+  <li>
+    Now right click the <code>.bpl</code> entry again and select
+    <em>Compile</em>. If no errors are displayed the package has been recompiled
+    correctly.
+  </li>
+
+  <li>
+    <p>
+      When adding components the package may need to be (re)installed. Right
+      click the <code>.bpl</code> entry again and select <em>Install</em>. If
+      all goes well a message should be displayed indicating that the component
+      has been registered and it will appear in the appropriate tab of the Tool
+      Palette (which will be named &quot;DelphiDabbler&quot; when installing one
+      of the components from the <a href="/codelib">DelphiDabbler Code Library</a>).
+    </p>
+    <p>
+      Should a message appear saying that the installation has failed you will
+      need to un-install the package and try again. How this is done depends on
+      the version of Delphi.
+    </p>
+    <ul>
+      <li>
+        In Delphi 2009 and earlier select the <em>Components | Install
+        Packages</em> menu option then select the required package in the
+        resulting dialogue box. Press the <em>Remove</em> button followed by
+        <em>OK</em>. The package will now be uninstalled.
+      </li>
+      <li>
+        In Delphi 2010 and later the <code>.bpl</code> entry's context menu has
+        an <em>Uninstall</em> option. Simply click that option to uninstall the
+        package.
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    Close the package project using the <em>File | Close</em> menu
+    item. Accept any prompts to save the package project.
+  </li>
+
+  <li>
+    If you wish you can now delete the <code>.pas</code> file. Other files
+    must be left in place.
+  </li>
+</ol>
+
+<h4>
+  Building for 64 bit Windows (Delphi XE2 and later)
+</h4>
+
+<p>
+  If the components etc. are compatible with 64 bit Windows add to a package as
+  described above. Now add a Windows 64 bit target to the package project and
+  rebuild.
+</p>
+
+
+<h3 id="d3">
+  Installation with Delphi 3 to 7
+</h3>
+
+<p>
+  To add a component or IDE extenstion to the IDE it must be included in a
+  design package. You can either create a new design package or add the
+  component to an existing one. These instructions assume you will be
+  installing into an existing package. See the Delphi help for information on
+  how to create a new package. If your component came with its own package,
+  use that.
+</p>
+
+<ol class="spaced">
+
+  <li>
+    Open the required package. Select <em>File | Open</em> menu, make sure
+    that files with the <code>*.dpk</code> extenstion are being displayed,
+    and choose a suitable package source file. You may decide to install
+    into the &quot;user&quot; package. This is found in the <code>Lib</code>
+    sub-directory of your Delphi installation and is named
+    <code>dclusr.dpk</code> or <code>dclusrXX.dpk</code> where
+    <code>XX</code> is a version number.
+  </li>
+
+  <li>
+    The package editor will now be displayed. If its <em>Install</em> button
+    is not disabled then click it to ensure the package is installed into
+    Delphi. Dismiss any resulting message dialogue.
+  </li>
+
+  <li>
+    Now click the package editor's <em>Add</em> button. The &quot;Add&quot;
+    dialogue box will be displayed. Click the dialogue's <em>Browse</em> button
+    then select the required <code>.pas</code> file(s) from the resulting
+    file open dialogue. The full path to the file should now be displayed in
+    the &quot;Add&quot; dialogue's <em>Unit file name</em> edit box. Click
+    <em>OK</em> to add the file(s) to the package.
+  </li>
+
+  <li>
+    Click the package editor's <em>Compile</em> button. The package will now
+    be recompiled and, if no errors are displayed, the package has been
+    recompiled correctly. When adding components a message may be displayed at
+    this stage indicating that the component has been registered. In some cases
+    it is necessary to click the <em>Install</em> button after compiling before
+    the component will be registered and the message displayed. Any components
+    will now appear appropriate tab of the Tool Palette (which will be named
+    &quot;DelphiDabbler&quot; when installing one of the components from the
+    <a href="/codelib">DelphiDabbler Code Library</a>).
+  </li>
+
+  <li>
+    Now close the package editor window. You will probably be prompted to
+    save the package. Agree to this and the package source file will be
+    updated with information about the new component.
+  </li>
+
+  <li>
+    If you wish you can now delete the <code>.pas</code> file. Other files
+    must be left in place.
+  </li>
+
+</ol>
+
+
+<h3 id="d2">
+  Installation with Delphi 2
+</h3>
+
+<ol class="spaced">
+
+  <li>
+    Select the <em>Component | Install</em> menu option to display the
+    &quot;Install Components&quot; dialogue box.
+  </li>
+
+  <li>
+    Click the <em>Add</em> button to display the &quot;Add Module&quot;
+    dialogue box.
+  </li>
+
+  <li>
+    Click the <em>Browse</em> button and choose the required
+    <code>.pas</code> file from the resulting standard file open dialogue box
+    and click <em>Open</em>.
+  </li>
+
+  <li>
+    This returns you to the &quot;Install Components&quot; dialogue box.
+    Click <em>OK</em> here to rebuild the component library. If you were
+    installing component it should now appear on the component palette (which
+    will be named &quot;DelphiDabbler&quot; when installing one of the
+    components from the
+    <a href="/codelib">DelphiDabbler Code Library</a>).
+  </li>
+
+  <li>
+    If you wish you can now delete the <code>.pas</code> file. Other files
+     must be left in place.
+  </li>
+
+</ol>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Peter Johnson</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2009-10-06</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2010-02-22</td>
+  </tr>
+</table>
+
+<div class="search noprint">
+<form name="tipsSearchForm" id="tipsSearchForm" method="post" action="/tips">
+<input class="text" type="text" name="txtSearch" id="txtSearch" value="" size="24" maxlength="80" />
+<input class="button" type="submit" name="btnSearch" id="btnSearch" value="Search" />
+</form>
+</div>
+<ul class="tip-nav noprint">
+<li><a href="/tips/1">First</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/102">102</a></li>
+<li><a href="/tips/103">103</a></li>
+<li><a href="/tips/104">104</a></li>
+<li><a href="/tips/105">105</a></li>
+<li><span class="current">106</span></li>
+<li><a href="/tips/107">107</a></li>
+<li><a href="/tips/108">108</a></li>
+<li><a href="/tips/109">109</a></li>
+<li><a href="/tips/110">110</a></li>
+<li><span class="spacer">...</span></li>
+<li><a href="/tips/234">Last</a></li>
+</ul>
+
+<p class="centre-align noprint">
+  &laquo; <a href="/tips">Return to contents</a> &raquo;
+</p>
+
+</div> <!-- #content -->
+</div> <!-- #main -->
+<div id="footer">
+<div class="hide-from-css"><hr /></div> <!-- .hide-from-css -->
+<a href="/copyright">Copyright</a> &copy; Peter Johnson (<a href="/background">DelphiDabbler</a>) 2002-2020</div> <!-- #footer -->
+</div> <!-- #wrapper -->
+</body>
+</html>
