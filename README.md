@@ -1,11 +1,19 @@
 # delphi-tips
 
-This is a bunch of Delphi language tips migrated from the DelphiDabbler.com webiste, plus some others.
+This is a bunch of Delphi language tips migrated from the DelphiDabbler.com website, plus some others.
 
-The tips from DelphiDabbler.com are in the `tips` and `src` folders. There is one PDF file for each tip in the `tips` folders. The files are named with the title of the tip, or an approximation of it. In the `src` folder are partial HTML documents for each tip. These HTML files are numbered according to the tip number on the delphidabbler original website.
+> The main reason for this repo is to ensure the survival of the tips beyond the June 2020 closure of the old delphidabbler.com web site.
 
-There is also an SQL file in the `db` named `tips.sql` that can be used to recreate the database used on the original delphidabbler website. The database references the partial HTML documents in the `src` directory. 
+There are the following folders:
 
-The additional tips are in the `extra` folder. There are two open document format documents. One contains a large number of tips downloaded from the former _Delphi Pool_ website. The second contains tips collected online by _"topellina"_. There may be some duplication of tips between the PDF files and these documents. Conversely, some tips that appear in the PDFs may have been sourced and deleted from these files.
+* `db`: Contains a single SQL file that provides meta data about the tips: can be used with the content of the `src` folder and some suitable CSS to generate complete tips web pages.
+
+* `extra`: There are two open document format documents. One contains a large number of tips downloaded from the former _Delphi Pool_ website. The second contains tips collected online by _"topellina"_. There may be some duplication of tips between the PDF files and these documents. Conversely, some tips that appear in the PDFs may have been sourced and deleted from these files.
+
+* `src`: Contains partial HTML documents for each tip.
+
+* `tips`: Contains a PDF "print out" of each of the DelphiDabbler.com tips page.
+
+* `web-pages`: An archive of the actual .html web pages display by the "old" delphidabbler.com site. Copies of the .css and .js files, hosted on delphidabbler.com, that are referenced by the web pages. Although .css and .js files are present, the links to them in the .html files are broken. This directory is merely an archive: a last resort backup to ensure that data isn't lost.
 
 Bear in mind that all the tips are old now. Very few of the tips in the `tips` folder and none of those in the `extra` folder have been tested. **Use with care and at your own risk!**
