@@ -1,0 +1,34 @@
+/*
+  js-detect.css
+
+  A set of CSS classes that can be used to display different parts of a
+  document depending on whether JavaScript is enabled. All classes can be
+  combined with other classes in an element's class attribute.
+
+  Used in conjunction with js-detect.js.
+
+  v1.0 of 10 Sep 2007  - Original version.
+*/
+
+/*
+ * Hidden by default. If JavaScript is enabled js-detect.js will display as an
+ * inline element. Intended to hide elements when JavaScript is disabled.
+ */
+.js-reveal-inline {
+    display: none;
+}
+
+/*
+ * Hidden by default. If JavaScript is enabled js-detect.js will display as a
+ * block element. Intended to hide elements when JavaScript is disabled.
+ */
+.js-reveal-block {
+    display: none;
+}
+
+/*
+ * Displayed by default. If JavaScript is enabled js-detect.js will hide the
+ * element. Intended to display elements only if JavaScript disabled.
+ */
+.js-hide {
+}

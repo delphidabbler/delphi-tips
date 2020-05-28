@@ -1,0 +1,953 @@
+/*
+ * main.css
+ *
+ * Site's main CSS file used by all pages.
+ *
+ * $Rev: 1954 $
+ * $Date: 2015-11-23 03:40:35 +0000 (Mon, 23 Nov 2015) $
+ */
+
+@media all {
+  * {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  body {
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #wrapper {
+  }
+
+  #header {
+  }
+
+  #header-right {
+  }
+
+  #main {
+  }
+
+  #navigation {
+  }
+
+  #content {
+  }
+
+  #extra {
+  }
+
+  #footer {
+    border-top: 1px silver solid;
+    padding: 0.5em;
+    clear: both;
+    color: gray;
+    text-align: center;
+  }
+  #footer a {
+    color: gray;
+  }
+
+  #quicklink {
+  }
+  #quicklink a {
+  }
+  #quicklink a:hover {
+  }
+
+  div.para,
+  p, h2, h3, h4, h5, h6, blockquote {
+    margin: 0.5em 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Palatino Linotype", Palatino, Georgia, Garamond,
+      "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+  h1 {
+    padding: 0.1em 2px;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    padding-bottom: 2px;
+  }
+  h3 {
+  }
+  h4 {
+  }
+  h5 {
+  }
+  h6 {
+    font-style: italic;
+  }
+
+  pre {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  blockquote {
+    margin: 0.5em 2em;
+  }
+
+  table {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-collapse: collapse;
+    caption-side: top;
+    font-size: 100%;
+  }
+
+  dl {
+    margin: 0.5em 0;
+    padding: 0;
+  }
+
+  div.linklist, dl.linklist {
+    border: 1px silver dotted;
+    padding: 0.5em;
+  }
+
+  dt {
+    margin: 0.5em 0;
+    padding: 0;
+  }
+
+  dd {
+    margin: 0.5em 0 0.5em 2em;
+    padding: 0;
+  }
+
+  ul, ol {
+    margin: 0.5em 0 0.5em 2em;
+    padding: 0;
+  }
+
+  li ol, li ul {
+    margin: 0 0 0 2em;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    list-style-image: url("/img/markup/list-bullet-black.gif");
+    list-style-position: outside;
+  }
+
+  ol {
+    padding: 0;
+    list-style: decimal none outside;
+  }
+  ol ol {
+    list-style-type: lower-alpha;
+  }
+  ol ol ol{
+    list-style-type: lower-roman;
+  }
+
+  ul.spaced li,
+  ol.spaced li {
+    margin-top: 0.5em;
+  }
+
+  ul.unspaced li,
+  ol.unspaced li {
+    margin-top: 0;
+  }
+  ul.unspaced li.first,
+  ol.unspaced li.first {
+    margin-top: 0.5em;
+  }
+  ul.unspaced li.first,
+  ol.unspaced li.first {
+    margin-top: 0.5em;
+  }
+
+  dl.feature {
+  }
+  dl.feature dt {
+    margin: 1em 0 0 0;
+    padding: 0.25em;
+  }
+  dl.feature dd {
+  }
+  dl.feature dd {
+    border: 1px silver solid;
+    border-top: none;
+    margin: 0 0 1em 2em;
+  }
+  dl.feature dd .comment {
+    padding: 0.25em;
+  }
+
+  a {
+  }
+  a:link {
+  }
+  a:visited {
+  }
+  a:active {
+  }
+  a:hover {
+  }
+  a.offsite  {
+  }
+
+  em, cite, dfn, var {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  code, samp, kbd, tt {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  abbr, acronym {
+  }
+
+  img {
+    border: 0;
+  }
+  img.inline-before {
+    padding-right: 3px;
+    vertical-align: baseline;
+  }
+  img.inline-after {
+    padding-left: 3px;
+    vertical-align: baseline;
+  }
+  img.inline {
+    vertical-align: baseline;
+  }
+  img.right-align {
+    float: right;
+    margin: 0 0 0 0.5em;
+  }
+
+  form {
+    margin: 0;
+    padding: 0;
+  }
+
+  textarea {
+    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  input.text,
+  input.password {
+    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  input.button {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+  input.button:hover {
+  }
+
+  input.checkbox {
+  }
+
+  input.radio {
+  }
+
+  select {
+    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  .hide-from-css {
+    display: none;
+  }
+
+  .exclaim {
+    color: #C90;
+    font-weight: bold;
+  }
+
+  .highlight {
+    color: #336;
+    font-weight: bold;
+  }
+
+  .error {
+    color: #C03;
+  }
+
+  .disabled {
+    color: #999;
+  }
+
+  .ddab {
+    font-style: italic;
+  }
+
+  .noprint {
+  }
+
+  .print-only {
+  }
+
+  .centre-align {
+    text-align: center;
+  }
+
+  .right-align {
+    text-align: right;
+  }
+
+  .left-align {
+    text-align: left;
+  }
+
+  .indent {
+  }
+
+  .smalltext {
+  }
+
+  .smallcaps {
+    font-variant: small-caps;
+  }
+
+  ul.tabset {
+  }
+  ul.tabset li {
+  }
+  ul.tabset li:hover {
+  }
+  ul.tabset li.selected {
+  }
+  ul.tabset li a {
+  }
+  ul.tabset li a:link,
+  ul.tabset li a:visited,
+  ul.tabset li a:active {
+  }
+  ul.tabset li a:hover {
+  }
+
+  .scrollbox {
+  }
+
+  .img-scrollbox {
+  }
+
+  div.boxout {
+    float: right;
+    margin: 0 0 1em 1em;
+    padding: 4px;
+    font-size: 80%;
+    line-height: 120%;
+    width: 25%;
+  }
+  div.boxout div.caption {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.25em;
+  }
+  div.boxout div.content {
+    margin: 0.25em 0;
+  }
+
+  p.callout,
+  div.callout {
+    margin: 0.5em 0;
+    padding: 0.25em;
+    font-size: 90%;
+    line-height: 120%;
+  }
+  div.callout .caption {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.25em;
+  }
+  div.callout .content {
+    padding-bottom: 0.25em;
+  }
+
+  .xref {
+    background-image: url("/img/markup/xref.gif");
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    border: 1px #ccc dashed;
+    padding: 0.25em 0.25em 0.25em 50px;
+    margin: 1em 0;
+    min-height: 16px; /* not supported in IE6 and below */
+  }
+  /* hack for IE6 and below */
+  * html .xref {
+    height: 16px;
+  }
+
+  .update-new {
+    background-image: url("/img/markup/update-new.gif");
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    padding: 7px 0.25em 0.25em 48px;
+    margin: 0;
+    min-height: 24px; /* not supported in IE6 and below */
+  }
+  /* hack for IE6 and below */
+  * html .update-new {
+    height: 24px;
+  }
+
+  .update-rev {
+    background-image: url("/img/markup/update-rev.gif");
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    padding: 7px 0.25em 0.25em 48px;
+    margin: 0;
+    min-height: 24px; /* not supported in IE6 and below */
+  }
+  /* hack for IE6 and below */
+  * html .update-rev {
+    height: 24px;
+  }
+
+  .form {
+  }
+
+  /* Outer division for all framed elements */
+  div.frame {
+    margin: 0.5em 0;
+    padding: 0;
+    border: 1px silver solid;
+  }
+  /* Class of inner block in framed elements - used where there is no specific
+     style for inner block element */
+  div.frame .inner {
+    margin: 0;
+    padding: 0.25em;
+    border: none;
+  }
+
+  /* Style for tables inside frames */
+  div.frame table {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  /* Style for table caption */
+  div.frame table caption {
+    border-bottom: 1px #ccf solid;
+    padding: 0.25em;
+    font-style: italic;
+  }
+  div.frame table th,
+  div.frame table td {
+    margin: 0;
+    padding: 0.25em;
+    border-right: 1px #ccf solid;
+  }
+  div.frame table td {
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+  }
+  div.frame table th {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+  /* table cell / heading in rightmost column */
+  div.frame table th.last,
+  div.frame table td.last {
+    border-right: none;
+  }
+  /* table cell in top table row */
+  div.frame table td.top {
+    border-top: none;
+  }
+
+  /* Style of footer divisions inside frames */
+  div.frame div.footer {
+    margin: 0;
+    padding: 0.25em;
+    border-top: 1px silver solid;
+    font-weight: normal;
+    text-align: right;
+    font-style: italic;
+  }
+
+  /* Style of links that show / hide blocks of text */
+  a.show-hide-link {
+  }
+  a.show-hide-link:link,
+  a.show-hide-link:visited,
+  a.show-hide-link:hover,
+  a.show-hide-link:active {
+  }
+
+  /* Div used to display messages about mothballed projects */
+  div.mothballed {
+    margin: 0.5em 0;
+    border: 1px silver dotted;
+  }
+  div.mothballed h2:first-child,
+  div.mothballed h3:first-child {
+    margin-top: 0;
+  }
+  div.mothballed h2 {
+    border-bottom: none;
+    margin-bottom: 0.25em;
+    padding-bottom: 0;
+  }
+
+  /* Div that draws box round contained text */
+  div.boxed {
+    margin: 0.5em 0;
+    padding: 0.25em 0.5em;
+    background-color: transparent;
+    border: 1px silver dotted;
+  }
+  div.boxed h3:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen {
+  body {
+    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: white;
+    overflow-y: scroll; /* CSS 3 fix that forces vertical scroll bar */
+  }
+
+  #wrapper {
+    width: 56em;
+    border: 1px silver solid;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header {
+    height: 76px;
+    background-image: url("/img/markup/logo-blue.gif");
+    background-repeat: no-repeat;
+    background-color: #336;
+    margin-bottom: 0.5em;
+  }
+
+  #header-right {
+    float: right;
+    text-align: right;
+    padding-right: 0.5em;
+    padding-top: 12px;
+  }
+
+  #footer {
+    font-size: 90%;
+    background-color: transparent;
+  }
+
+  #quicklink {
+    color: white;
+    font-size: 90%;
+  }
+  #quicklink a {
+    color: white;
+    text-decoration: underline;
+  }
+  #quicklink a:hover {
+    background-color: #669;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #336;
+  }
+  h1 {
+    font-size: 200%;
+    border-bottom: 1px #cc9 solid;
+    background-color: #eef;
+  }
+  h2 {
+    font-size: 180%;
+    border-bottom: 1px #cc9 dotted;
+  }
+  h3 {
+    font-size: 160%;
+  }
+  h4 {
+    font-size: 140%;
+  }
+  h5 {
+    font-size: 120%;
+  }
+  h6 {
+    font-size: 120%;
+  }
+
+  pre {
+    font-size: 90%;
+  }
+
+  dl.feature dt {
+    background-color: #eef;
+    border: 1px silver solid;
+  }
+  dl.feature dd .comment {
+    background-color: transparent;
+  }
+
+  a:link {
+    color: #336;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #669;
+    text-decoration: underline;
+  }
+  a:active {
+    color: #336;
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a.offsite  {
+    background-image: url("/img/markup/off-site.gif");
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    padding-right: 16px;
+  }
+
+  abbr, acronym {
+    color: purple;
+  }
+
+  textarea {
+    font-size: 0.9em;
+    border: 1px #996 solid;
+    padding: 0.25em;
+  }
+
+  input.text, input.password {
+    font-size: 0.9em;
+    border: 1px #996 solid;
+    padding: 0.25em;
+  }
+
+  input.button {
+    border-left: 1px #ccc solid;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #999 solid;
+    border-right: 1px #999 solid;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  input.button:hover {
+    background-color: #cc9;
+  }
+
+  select {
+    font-size: 0.9em;
+    border: 1px #996 solid;
+    padding: 0.25em;
+  }
+
+  .print-only {
+    display: none;
+  }
+
+  .indent {
+    margin-left: 2em;
+  }
+
+  .smalltext {
+    font-size: 0.8em;
+  }
+
+  ul.tabset {
+    margin: 0;
+    margin-bottom: 1em;
+    padding-left: 4px;
+    padding-bottom: 2px;
+    border-bottom: 1px #cc9 solid;
+    line-height: normal;
+    list-style-type: none;
+    list-style-image: none;
+  }
+  ul.tabset li {
+    display: inline;
+    margin: 0 4px 0 0;
+    padding: 2px 6px 2px 6px;
+    border-left: 1px #cc9 solid;
+    border-right: 1px #cc9 solid;
+    border-top: 1px #cc9 solid;
+    background-color: #eeb;
+  }
+  ul.tabset li:hover {
+    background-color: #eec;
+  }
+  ul.tabset li.selected {
+    background-color: #eef;
+    border-left: 1px #aa7 solid;
+    border-top: 1px #aa7 solid;
+  }
+  ul.tabset li a {
+    color: #336;
+  }
+  ul.tabset li a:link,
+  ul.tabset li a:visited,
+  ul.tabset li a:active {
+    text-decoration: none;
+  }
+  ul.tabset li a:hover {
+    text-decoration: underline;
+  }
+
+  .scrollbox {
+    width: auto;      /* override this in style attribute to specify width */
+    height: 30em;     /* overrride this in style attribute to change height */
+    margin: 1em auto;
+    overflow: auto;
+    border: 1px #cc9 solid;
+    padding: 0.25em;
+  }
+
+  .img-scrollbox {
+    width: auto;      /* override this in style attribute to specify width */
+    height: auto;     /* overrride this in style attribute to change height */
+    margin: 1em auto;
+    overflow: auto;
+    border: 1px #cc9 solid;
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  div.boxout {
+    border-top: 4px #669 solid;
+    border-bottom: 1px #669 solid;
+    border-left: 1px #669 solid;
+    border-right: 1px #669 solid;
+    background-color: #eef;
+  }
+
+  p.callout,
+  div.callout {
+    border-top: 2px #669 solid;
+    border-bottom: 2px #669 solid;
+    border-left: 1px #ccf solid;
+    border-right: 1px #ccf solid;
+    background-color: #eef;
+  }
+
+  .xref {
+    background-color: #ffc;
+  }
+
+  .update-new {
+    background-color: #ffc;
+  }
+
+  .update-rev {
+    background-color: #ffc;
+  }
+
+  .form {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background-color: #eef;
+    border: 1px solid silver;
+  }
+
+  div.frame table caption {
+    background-color: #eef;
+  }
+
+  div.frame table th,
+  div.frame table td {
+    border-right: 1px #ccf solid;
+  }
+  div.frame table td {
+    border-top: 1px #ccf solid;
+  }
+  div.frame table th {
+    background-color: #eef;
+  }
+
+  div.frame div.footer {
+    background-color: #ccf;
+    font-size: 0.8em;
+  }
+
+  a.show-hide-link {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a.show-hide-link:link,
+  a.show-hide-link:visited,
+  a.show-hide-link:hover,
+  a.show-hide-link:active {
+    border-bottom: 1px #336 dotted;
+  }
+
+  div.mothballed {
+    min-height: 76px;
+    padding: 0.25em 0.5em 0.25em 90px;
+    background-image: url("/img/markup/moth-balls.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 4px 8px;
+  }
+}
+
+@media print {
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    text-align: left;
+  }
+
+  #header {
+    display: none;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+  #extra {
+    display: none;
+  }
+
+  #footer {
+    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+  }
+
+  h1 {
+    font-size: 22pt;
+    border-bottom: 1px silver solid;
+  }
+  h2 {
+    font-size: 20pt;
+    border-bottom: 1px silver dotted;
+  }
+  h3 {
+    font-size: 18pt;
+  }
+  h4 {
+    font-size: 16pt;
+  }
+  h5 {
+    font-size: 14pt;
+  }
+  h6 {
+    font-size: 14pt;
+  }
+
+  pre {
+    font-size: 9pt;
+  }
+
+  dl.feature dt {
+    border: 1px silver solid;
+  }
+
+  a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+  }
+  a.offsite {
+    background-image: none; /* query if this needed */
+  }
+
+  textarea {
+    font-size: 10pt;
+    border: 1px silver solid;
+    padding: 2pt;
+  }
+
+  input.text, input.password {
+    font-size: 10pt;
+    border: 1px silver solid;
+    padding: 2pt;
+  }
+
+  input.button {
+    font-size: 10pt;
+    border: 1px silver outset;
+    background-color: #ccc;
+  }
+
+  select {
+    font-size: 10pt;
+    border: 1px silver solid;
+    padding: 2pt;
+  }
+
+  .noprint {
+    display: none;
+  }
+
+  .indent {
+    margin-left: 20pt;
+  }
+
+  .smalltext {
+    font-size: 8pt;
+  }
+
+  ul.tabset {
+    display: none;
+  }
+
+  div.boxout {
+    border-top: 4px silver solid;
+    border-bottom: 1px silver solid;
+    border-left: 1px silver solid;
+    border-right: 1px silver solid;
+  }
+
+  p.callout,
+  div.callout {
+    border-top: 2px silver solid;
+    border-bottom: 2px silver solid;
+  }
+
+  div.frame table caption {
+    background-color: #eee;
+  }
+  div.frame table th,
+  div.frame table td {
+    border-right: 1px silver solid;
+  }
+  div.frame table td {
+    border-top: 1px silver solid;
+  }
+
+  div.frame div.footer {
+    background-color: #eee;
+    font-size: 10pt;
+  }
+
+  a.show-hide-link {
+    display: none;
+  }
+
+  div.mothballed {
+    padding: 0.25em 0.5em;
+  }
+}

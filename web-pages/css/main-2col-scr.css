@@ -1,0 +1,7 @@
+/* Styles used only by 2 column layouts */
+
+#content {
+  background-color: white; /* change to transparent */
+  padding: 0 0.5em 0 0;
+}
+
