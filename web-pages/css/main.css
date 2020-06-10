@@ -138,8 +138,6 @@
   }
 
   ul {
-    list-style-type: none;
-    list-style-image: url("/img/markup/list-bullet-black.gif");
     list-style-position: outside;
   }
 
