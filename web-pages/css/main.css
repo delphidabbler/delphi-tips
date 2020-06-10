@@ -24,24 +24,6 @@
   #wrapper {
   }
 
-  #header {
-  }
-
-  #header-right {
-  }
-
-  #main {
-  }
-
-  #navigation {
-  }
-
-  #content {
-  }
-
-  #extra {
-  }
-
   #footer {
     border-top: 1px silver solid;
     padding: 0.5em;
@@ -51,13 +33,6 @@
   }
   #footer a {
     color: gray;
-  }
-
-  #quicklink {
-  }
-  #quicklink a {
-  }
-  #quicklink a:hover {
   }
 
   div.para,
@@ -268,26 +243,8 @@
     font-weight: normal;
   }
 
-  .hide-from-css {
-    display: none;
-  }
-
-  .exclaim {
-    color: #C90;
-    font-weight: bold;
-  }
-
-  .highlight {
-    color: #336;
-    font-weight: bold;
-  }
-
   .error {
     color: #C03;
-  }
-
-  .disabled {
-    color: #999;
   }
 
   .ddab {
@@ -315,51 +272,8 @@
   .indent {
   }
 
-  .smalltext {
-  }
-
   .smallcaps {
     font-variant: small-caps;
-  }
-
-  ul.tabset {
-  }
-  ul.tabset li {
-  }
-  ul.tabset li:hover {
-  }
-  ul.tabset li.selected {
-  }
-  ul.tabset li a {
-  }
-  ul.tabset li a:link,
-  ul.tabset li a:visited,
-  ul.tabset li a:active {
-  }
-  ul.tabset li a:hover {
-  }
-
-  .scrollbox {
-  }
-
-  .img-scrollbox {
-  }
-
-  div.boxout {
-    float: right;
-    margin: 0 0 1em 1em;
-    padding: 4px;
-    font-size: 80%;
-    line-height: 120%;
-    width: 25%;
-  }
-  div.boxout div.caption {
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 0.25em;
-  }
-  div.boxout div.content {
-    margin: 0.25em 0;
   }
 
   p.callout,
@@ -390,32 +304,6 @@
   /* hack for IE6 and below */
   * html .xref {
     height: 16px;
-  }
-
-  .update-new {
-    background-image: url("/img/markup/update-new.gif");
-    background-repeat: no-repeat;
-    background-position: 4px 4px;
-    padding: 7px 0.25em 0.25em 48px;
-    margin: 0;
-    min-height: 24px; /* not supported in IE6 and below */
-  }
-  /* hack for IE6 and below */
-  * html .update-new {
-    height: 24px;
-  }
-
-  .update-rev {
-    background-image: url("/img/markup/update-rev.gif");
-    background-repeat: no-repeat;
-    background-position: 4px 4px;
-    padding: 7px 0.25em 0.25em 48px;
-    margin: 0;
-    min-height: 24px; /* not supported in IE6 and below */
-  }
-  /* hack for IE6 and below */
-  * html .update-rev {
-    height: 24px;
   }
 
   .form {
@@ -485,40 +373,6 @@
     font-style: italic;
   }
 
-  /* Style of links that show / hide blocks of text */
-  a.show-hide-link {
-  }
-  a.show-hide-link:link,
-  a.show-hide-link:visited,
-  a.show-hide-link:hover,
-  a.show-hide-link:active {
-  }
-
-  /* Div used to display messages about mothballed projects */
-  div.mothballed {
-    margin: 0.5em 0;
-    border: 1px silver dotted;
-  }
-  div.mothballed h2:first-child,
-  div.mothballed h3:first-child {
-    margin-top: 0;
-  }
-  div.mothballed h2 {
-    border-bottom: none;
-    margin-bottom: 0.25em;
-    padding-bottom: 0;
-  }
-
-  /* Div that draws box round contained text */
-  div.boxed {
-    margin: 0.5em 0;
-    padding: 0.25em 0.5em;
-    background-color: transparent;
-    border: 1px silver dotted;
-  }
-  div.boxed h3:first-child {
-    margin-top: 0;
-  }
 }
 
 @media screen {
@@ -538,36 +392,9 @@
     margin-right: auto;
   }
 
-  #header {
-    height: 76px;
-    background-image: url("/img/markup/logo-blue.gif");
-    background-repeat: no-repeat;
-    background-color: #336;
-    margin-bottom: 0.5em;
-  }
-
-  #header-right {
-    float: right;
-    text-align: right;
-    padding-right: 0.5em;
-    padding-top: 12px;
-  }
-
   #footer {
     font-size: 90%;
     background-color: transparent;
-  }
-
-  #quicklink {
-    color: white;
-    font-size: 90%;
-  }
-  #quicklink a {
-    color: white;
-    text-decoration: underline;
-  }
-  #quicklink a:hover {
-    background-color: #669;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -671,76 +498,6 @@
     margin-left: 2em;
   }
 
-  .smalltext {
-    font-size: 0.8em;
-  }
-
-  ul.tabset {
-    margin: 0;
-    margin-bottom: 1em;
-    padding-left: 4px;
-    padding-bottom: 2px;
-    border-bottom: 1px #cc9 solid;
-    line-height: normal;
-    list-style-type: none;
-    list-style-image: none;
-  }
-  ul.tabset li {
-    display: inline;
-    margin: 0 4px 0 0;
-    padding: 2px 6px 2px 6px;
-    border-left: 1px #cc9 solid;
-    border-right: 1px #cc9 solid;
-    border-top: 1px #cc9 solid;
-    background-color: #eeb;
-  }
-  ul.tabset li:hover {
-    background-color: #eec;
-  }
-  ul.tabset li.selected {
-    background-color: #eef;
-    border-left: 1px #aa7 solid;
-    border-top: 1px #aa7 solid;
-  }
-  ul.tabset li a {
-    color: #336;
-  }
-  ul.tabset li a:link,
-  ul.tabset li a:visited,
-  ul.tabset li a:active {
-    text-decoration: none;
-  }
-  ul.tabset li a:hover {
-    text-decoration: underline;
-  }
-
-  .scrollbox {
-    width: auto;      /* override this in style attribute to specify width */
-    height: 30em;     /* overrride this in style attribute to change height */
-    margin: 1em auto;
-    overflow: auto;
-    border: 1px #cc9 solid;
-    padding: 0.25em;
-  }
-
-  .img-scrollbox {
-    width: auto;      /* override this in style attribute to specify width */
-    height: auto;     /* overrride this in style attribute to change height */
-    margin: 1em auto;
-    overflow: auto;
-    border: 1px #cc9 solid;
-    padding: 0.5em;
-    text-align: center;
-  }
-
-  div.boxout {
-    border-top: 4px #669 solid;
-    border-bottom: 1px #669 solid;
-    border-left: 1px #669 solid;
-    border-right: 1px #669 solid;
-    background-color: #eef;
-  }
-
   p.callout,
   div.callout {
     border-top: 2px #669 solid;
@@ -751,14 +508,6 @@
   }
 
   .xref {
-    background-color: #ffc;
-  }
-
-  .update-new {
-    background-color: #ffc;
-  }
-
-  .update-rev {
     background-color: #ffc;
   }
 
@@ -789,25 +538,6 @@
     font-size: 0.8em;
   }
 
-  a.show-hide-link {
-    text-decoration: none;
-    font-weight: bold;
-  }
-  a.show-hide-link:link,
-  a.show-hide-link:visited,
-  a.show-hide-link:hover,
-  a.show-hide-link:active {
-    border-bottom: 1px #336 dotted;
-  }
-
-  div.mothballed {
-    min-height: 76px;
-    padding: 0.25em 0.5em 0.25em 90px;
-    background-image: url("/img/markup/moth-balls.png");
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-position: 4px 8px;
-  }
 }
 
 @media print {
@@ -815,18 +545,6 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 12pt;
     text-align: left;
-  }
-
-  #header {
-    display: none;
-  }
-
-  #navigation {
-    display: none;
-  }
-
-  #extra {
-    display: none;
   }
 
   #footer {
@@ -904,21 +622,6 @@
     margin-left: 20pt;
   }
 
-  .smalltext {
-    font-size: 8pt;
-  }
-
-  ul.tabset {
-    display: none;
-  }
-
-  div.boxout {
-    border-top: 4px silver solid;
-    border-bottom: 1px silver solid;
-    border-left: 1px silver solid;
-    border-right: 1px silver solid;
-  }
-
   p.callout,
   div.callout {
     border-top: 2px silver solid;
@@ -941,11 +644,4 @@
     font-size: 10pt;
   }
 
-  a.show-hide-link {
-    display: none;
-  }
-
-  div.mothballed {
-    padding: 0.25em 0.5em;
-  }
 }
