@@ -188,7 +188,6 @@ div.demo-block {
   border: 1px silver solid;
   background-color: #ffc;
   padding: 0 0.5em;
-  display: none;
 }
 .demo-block .credits {
   border-top: #cc9 1px dotted;
