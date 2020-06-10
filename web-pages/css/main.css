@@ -293,17 +293,12 @@
   }
 
   .xref {
-    background-image: url("/img/markup/xref.gif");
-    background-repeat: no-repeat;
-    background-position: 4px 4px;
     border: 1px #ccc dashed;
-    padding: 0.25em 0.25em 0.25em 50px;
+    padding: 0.25em;
     margin: 1em 0;
-    min-height: 16px; /* not supported in IE6 and below */
   }
-  /* hack for IE6 and below */
-  * html .xref {
-    height: 16px;
+  .xref:before {
+    content: '\25BA';
   }
 
   .form {
