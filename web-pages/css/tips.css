@@ -58,3 +58,34 @@ div.demo-block {
   background-color: #eeb;
   padding: 0.5em;
 }
+/* override #wrapper */
+#wrapper {
+    width: auto;
+    border: none;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  xpadding: 1em;
+  padding-bottom: 0;
+}
+#wrapper h1 {
+  background-color: transparent;
+}
+pre {
+  overflow-x: auto;
+  mmax-width:600px
+}
+/* Additional CSS for Redirection Note */
+.redirect-note {
+  background-color: #ffdddd;
+  color: darkred;
+  border: 1px darkred dotted;
+  border-left: 12px darkred solid;
+  padding: 1em;
+  margin: 0 0;
+}
+.redirect-note a {
+  display: block;
+  color: darkred;
+  margin-top: 1em;
+}
