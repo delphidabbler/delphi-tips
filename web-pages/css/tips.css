@@ -82,7 +82,7 @@ pre {
   border: 1px darkred dotted;
   border-left: 12px darkred solid;
   padding: 1em;
-  margin: 0 0;
+  margin: 1em 0;
 }
 .redirect-note a {
   display: block;
