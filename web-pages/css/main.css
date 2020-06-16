@@ -445,10 +445,6 @@
     text-decoration: underline;
   }
   a.offsite  {
-    background-image: url("/img/markup/off-site.gif");
-    background-repeat: no-repeat;
-    background-position: right 50%;
-    padding-right: 16px;
   }
 
   abbr, acronym {
@@ -582,7 +578,6 @@
     color: black;
   }
   a.offsite {
-    background-image: none; /* query if this needed */
   }
 
   textarea {
