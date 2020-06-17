@@ -10,17 +10,17 @@ baseurl: "/docs"
 
 exclude: [README.md, LICENSE.md, Gemfile, Gemfile.lock]
   
-# collections:
-#   tips:
-#     output: true
+collections:
+  tips:
+    output: true
 
 defaults:
-  # -
-    # scope:
-    #   path: ""
-    #   type: "tips"
-    # values:
-    #   layout: "tip"
+  -
+    scope:
+      path: ""
+      type: "tips"
+    values:
+      layout: "tip"
   -
     scope:
       path: ""
