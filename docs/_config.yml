@@ -1,0 +1,27 @@
+# set repo for use by github-metadata
+# https://github.com/mmistakes/mm-github-pages-starter/pull/2
+repository: "delphidabbler/delphi-tips"
+
+# inhibit github-pages from gerating unwanted style sheet
+# see https://github.com/jekyll/jekyll/issues/7478
+theme: null
+
+exclude: [README.md, LICENSE.md, Gemfile, Gemfile.lock]
+  
+# collections:
+#   tips:
+#     output: true
+
+defaults:
+  # -
+    # scope:
+    #   path: ""
+    #   type: "tips"
+    # values:
+    #   layout: "tip"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
