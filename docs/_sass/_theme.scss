@@ -1,0 +1,19 @@
+.page-header {
+    h1 {
+        padding-bottom: 8px;
+        border-bottom: 2px $color-primary solid;
+
+        .logo-highlight {
+            color: $color-primary;
+        }
+    }
+}
+
+#tips-box {
+    padding: 2px;
+    background-color: $color-grey-light;
+    ul {
+        max-height: 360px;
+        overflow-y: scroll;
+    }
+}
