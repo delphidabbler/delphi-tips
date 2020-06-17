@@ -1,0 +1,264 @@
+---
+---
+<div id="wrapper">
+
+<h1>
+	How to calculate the minimum distance between two polygons
+</h1>
+
+<!-- BEGIN Redirection Note -->
+<p class="redirect-note">
+  If got here by following a link such as <b>http://delphidabbler.com/tips/<em>999</em></b> (where <em>999</em> is a number) then you were re-directed because the tip is not yet available on the new delphidabbler.com website. <a href="https://delphidabbler.com/tips"><b>Go back to the delphidabbler.com tips page</b></a>
+</p>
+<!-- END OF Redirection Note -->
+
+<div class="question">
+  <div class="title">
+    Question 1
+  </div>
+  <div class="content">
+    Do you know how to calculate the minimum distance between two polygons if
+    they don't overlap?
+  </div>
+</div>
+
+<p>
+  Well, this is rather complex. I start with the basics (don't know if you
+  already know). I use UPPER letters for vectors and lower letters for numbers.
+  Well, and sorry that I repeat some things, I wrote the text and realized I
+  forgot something you have to know for a later step, so I went back and added
+  it, I didn't write this text line by line. If something isn't clear to you, I
+  recommend to make some small drawings, I had to do many, too.
+</p>
+
+<p>
+  A plane is defined by <code>(X - P) * N = 0</code> where <var>P</var> is a
+  vector to any point in your plane and <var>N</var> is the normal vector of
+  your plane. Sometimes another definition is used, which is easier to gain if
+  you have the corners of a polygon: <code>X = P + a * A + b * B</code>
+  (<var>a</var>, <var>b</var> are any real numbers). If you know 3 points
+  <var>X1</var>, <var>X2</var>, <var>X3</var> of the plane (3 corners of the
+  polygon), you can get <var>A</var> and <var>B</var> by
+  <code>A = X2 - X1</code> (subtract each component of the vector from the same
+  component of the other vector) and <code>B = X3 - X1</code> (and you can use
+  <code>P = X1</code>).
+</p>
+
+<p>
+  Unfortunately this definition is not good to calculate distances, so you have
+  to get <var>N</var> out of <var>A</var> and <var>B</var>. <code>A * N </code>
+  must be <code>0</code> and <code>B * N</code> must be <code>0</code> (which
+  means <code>a1 * n1 + a2 * n2 + a3 * n3 = 0</code> and
+  <code>b1 * n1 + b2 * n2 + b3 * n3 = 0</code>). Sorry I cannot remember how to
+  do this, but you have 2 equations with three unknown variables, so you can
+  choose one of them as you want (just be careful with <code>0</code> and not
+  <code>0</code>), the only difference is that the resulting <var>N</var>
+  differs in its length.
+</p>
+
+<p>
+  A line is defined by <code>X = P + v * V</code> where <var>P</var> is any one
+  point of your line and <var>V</var> is the line's direction (like <var>A</var>
+  and <var>B</var> of the plane). Again if you know two points <var>X1</var> and
+  <var>X2</var> of your line you get <var>V</var> by <code>V = X2 - X1</code>
+  (and you can use <code>P = X1</code>).
+</p>
+
+<p>
+  The length of a vector <code>V = (v1, v2, v3)</code> is
+  <code>length = sqrt(sqr(v1) + sqr(v2) + sqr(v3))</code> (just 3-dimensional
+  Pythagoras).
+<p>
+
+<p>
+  You add two vectors <code>A = (a1, a2, a3)</code> and
+  <code>B = (b1, b2, b3)</code> like that:
+  <code>A + B = (a1 + b1, a2 + b2, a3 + b3)</code> (which is a vector again).
+</p>
+
+<p>
+  You multiply two vectors <code>A = (a1, a2, a3)</code> and
+  <code>B = (b1, b2, b3)</code> like that:
+  <code>A * B = (a1 * b1 + a2 *b2 + a3 * b3)</code> (which is a number).
+</p>
+
+<p>
+  Use following formula to get the distance between any one point <var>X</var>
+  and a plane: <code>dist = 1 / n * (X - P) * N</code> where <var>X</var> is a
+  vector to the point you want to examine and <var>n</var> is the length of
+  <var>N</var> (you don't need <code>1/n</code> if <var>N</var> has already
+  length of <code>1</code>). If <var>X</var> is <code>(x1, x2, x3)</code> this is
+</p>
+
+<p>
+  <code>dist = 1 / n * ((x1 - p1) * n1 + (x2 - p2) * n2 + (x3 - p3) * n3)<br />
+  n = sqrt(sqr(n1) + sqr(n2) + sqr(n3))</code>
+</p>
+
+<p>
+  Now the distance between two polygons isn't that simple, because there are
+  many different cases (and a polygon is more than just a simple plane, even if
+  it's size is smaller).
+</p>
+
+<p>
+  What you also need is to calculate the distance between two lines. At first
+  you need a plane, that is parallel to both lines and includes one of the
+  lines:
+</p>
+
+<p>
+  <code>P(plane) = P(line1)<br />
+  A(plane) = V(line1)<br />
+  B(plane) = V(line2)</code>
+</p>
+
+<p>
+  where <var>A</var> and <var>B</var> are two vectors in the plane
+  <code>(N * A = 0 and N * B = 0)</code>, <var>V</var> is a vector in your line
+  (for polygons, you can take <code>V = X2 - X1</code> where <var>X2</var> and
+  <var>X1</var> are two corners). Now calculate the distance between this plane
+  and any one point of <var>line2</var> using the formula above (any point
+  because ALL points have the same distance to a plane that's parallel to the
+  line - nice trick, isn't it?
+</p>
+
+<p>
+  The last thing we need is not only the minimum distance between two lines, but
+  the points of the lines, that have minimum distance. You can do this (for the
+  point of <var>line1 M1</var> with minimum distance to <var>line2</var>) by
+  calculating a plane again with
+</p>
+
+<p>
+  <code>P(secondplane) = P(line2)<br />
+  A(secondplane) = V(line2)<br />
+  B(secondplane) = N(plane)</code> &lt;-- the plane we calculated above
+</p>
+
+<p>
+  The second plane includes <var>line2</var> and the point of line1 with the
+  minimum distance to <var>line2</var>. To get this point of minimum distance,
+  set <code>P(line1) + v * V(line1) = P(secondplane) + a * A(secondplane) + b * B(secondplane)</code>. Solve this, you should get the <var>v</var> and when you set this
+  <var>v</var> into <code>X = P + v * V</code> of <var>line1</var> you have the
+  point <var>X</var> (=<var>M1</var>) of minimum distance.
+</p>
+
+<p>
+  The bad news: To get <var>M2</var>, you have to repeat this for
+  <var>line2</var>. Another way would be to take the distance between the lines
+  (I call it <var>d</var>) and do following:
+  <code>M2 = M1 + d * 1 / n * N(plane)</code> (or
+  <code>M2 = M1 - d * 1 / n * N(plane)</code>, depends on the direction of
+  <var>N</var>). The distance between two points <var>X1</var> and <var>X2</var>
+  equals the length of the vector <code>X2 - X1</code>.
+</p>
+
+<p>
+  Okay, these were the basics. Now the different cases, you have to cope with:
+</p>
+
+<p>
+  <strong>1) The planes of both polygons are parallel
+  <code>(N1 = x * N2)</code>:</strong>
+</p>
+
+<p>
+  Transform both polygons the following way: <code>X' = X - P</code> for each
+  corner of the polygon (where <var>P</var> is any point in your plane). The new
+  polygons should now be in the same plane. Test whether both polygons overlap
+  (is not as simple as it sounds, to be honest I don't know how to do that).
+</p>
+
+<p>
+  <strong>1a) They overlap:</strong>
+</p>
+
+<p>
+  The minimum distance is the distance of the two planes (take any one point of
+  one plane and use the formula above to get the distance to the other plane).
+</p>
+
+<p>
+  <strong>1b) They do not overlap:</strong>
+</p>
+
+<p>
+  Use 2) to calculate the minimum distance.
+</p>
+
+<p>
+  <strong>2) The planes are not parallel (or case 1b):</strong>
+</p>
+
+<p>
+  Calculate the minimum distance of one line of one polygon and one line of the
+  other polygon. Calculate the points of minimum distance from the lines. The
+  edges of the polygons do not have infinite length (the lines do have), so
+  check whether the points of minimum distance are within the polygons (I'd
+  better say: within the edges of the poygons).
+</p>
+
+<p>
+  <strong>2a) Both points are within the polygons:</strong>
+</p>
+
+<p>
+  Store the minimum distance from the lines.
+</p>
+
+<p>
+  <strong>2b) One point or both points are not within the polygon:</strong>
+</p>
+
+<p>
+  Take the corner(s) of the polygon(s) within the line(s) you checked next to
+  the point(s) of minimum distance. Calculate the distance between these points
+  and store it. Now repeat this for each pair of lines (if you have 2 triangles
+  you get 9 combinations (3 times 3). When you are ready compare all the minimum
+  distances and take the smallest one.
+</p>
+
+<p>
+  Okay, this is quite much to do (realtime? difficult. perhaps if you don't have
+  many polygons) and there are several problems (a vector
+  <code>(x1, x2, x3)</code> and a vector <code>(x1, x2, 0)</code> may have to be
+  treated different, for example when you try to get <var>N</var> out of
+  <var>A</var> and <var>B</var>). If you really need the minimum distance, try
+  it, but perhaps you find an easier way, that is not that exact (take the
+  distance between the center of each polygon would be least exact, but very
+  much easier).
+</p>
+
+<p>
+  I want to add, that I don't know of other solutions, perhaps there are better
+  ones, and that I don't know if everything I told you is right, I haven't
+  tested it, everything is just theoretically.
+</p>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Jens Gruschel</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2013-04-09</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2013-04-09</td>
+  </tr>
+</table>
+
+
+
+<div id="footer">
+  Copyright &copy; Peter Johnson (<a href="https://gravatar.com/delphidabbler">DelphiDabbler</a>) 2002-2020
+</div> <!-- #footer -->
+</div> <!-- #wrapper -->

@@ -1,0 +1,1154 @@
+---
+---
+<div id="wrapper">
+
+<h1>
+	BDE API Overview
+</h1>
+
+<!-- BEGIN Redirection Note -->
+<p class="redirect-note">
+  If got here by following a link such as <b>http://delphidabbler.com/tips/<em>999</em></b> (where <em>999</em> is a number) then you were re-directed because the tip is not yet available on the new delphidabbler.com website. <a href="https://delphidabbler.com/tips"><b>Go back to the delphidabbler.com tips page</b></a>
+</p>
+<!-- END OF Redirection Note -->
+
+<p>
+  Available BDE 4.0 engine functions by type:
+</p>
+
+<h2>
+  1. Database functions
+</h2>
+
+<p>
+  Each function listed below returns information about a specific database,
+  available databases, or performs a database-related task, such as opening or
+  closing a database.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiCloseDatabase</var></td>
+<td class="top last">Closes a database and all tables associated with this database handle.</td>
+</tr>
+<tr>
+<td><var>DbiGetDatabaseDesc</var></td>
+<td class="last">Retrieves the description of the specified database from the configuration file.</td>
+</tr>
+<tr>
+<td><var>DbiGetDirectory</var></td>
+<td class="last">Retrieves the current working directory or the default directory.</td>
+</tr>
+<tr>
+<td><var>DbiOpenDatabase</var></td>
+<td class="last">Opens a database in the current session and returns a database handle.</td>
+</tr>
+<tr>
+<td><var>DbiOpenDatabaseList</var></td>
+<td class="last">Creates an in-memory table containing a list of accessible databases and their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFileList</var></td>
+<td class="last">Opens a cursor on the virtual table containing all the tables accessible by the client application and their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenIndexList</var></td>
+<td class="last">Opens a cursor on an in-memory table listing the indexes on a specified table, a-long with their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenTableList</var></td>
+<td class="last">Creates an in-memory table with information about all the tables accessible to the client application.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  2. Environment and configuration functions
+</h2>
+
+<p>
+  Each function listed below returns information about the client application
+  environment, such as the supported table, field and index types for the driver
+  type, or the available driver types. Functions in this category can also
+  perform tasks that affect the client application environment, such as loading
+  a driver.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiAddAlias</var></td>
+<td class="top last">Adds an alias to the BDE configuration file (IDAPI.CFG).</td>
+</tr>
+<tr>
+<td><var>DbiAddDriver</var></td>
+<td class="last">Adds a driver to the BDE configuration file (IDAPI.CFG). NEW FUNCTION BDE 4.0</td>
+</tr>
+<tr>
+<td><var>DbiAnsiToNative</var></td>
+<td class="last">Multipurpose translate function.</td>
+</tr>
+<tr>
+<td><var>DbiDebugLayerOptions</var></td>
+<td class="last">Activates, deactivates, or sets options for the BDE debug layer. OBSOLETE FUNCTION BDE 4.0</td>
+</tr>
+<tr>
+<td><var>DbiDeleteAlias</var></td>
+<td class="last">Deletes an alias from the BDE configuration file (IDAPI.CFG).</td>
+</tr>
+<tr>
+<td><var>DbiDeleteDriver</var></td>
+<td class="last">Deletes a driver from the BDE configuration file (IDAPI.CFG). NEW FUNCTION BDE 4.0</td>
+</tr>
+<tr>
+<td><var>DbiDllExit</var></td>
+<td class="last">Prepares the BDE to be disconnected within a DLL. NEW FUNCTION BDE 4.0</td>
+</tr>
+<tr>
+<td><var>DbiExit</var></td>
+<td class="last">Disconnects the client application from BDE.</td>
+</tr>
+<tr>
+<td><var>DbiGetClientInfo</var></td>
+<td class="last">Retrieves system-level information about the client application environment.</td>
+</tr>
+<tr>
+<td><var>DbiGetDriverDesc</var></td>
+<td class="last">Retrieves a description of a driver.</td>
+</tr>
+<tr>
+<td><var>DbiGetLdName</var></td>
+<td class="last">Retrieves the name of the language driver associated with the specified object name (table name).</td>
+</tr>
+<tr>
+<td><var>DbiGetLdObj</var></td>
+<td class="last">Retrieves the language driver object associated with the given cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetNetUserName</var></td>
+<td class="last">Retrieves the user's network login name. User names should be available for all networks supported by Microsoft Windows.</td>
+</tr>
+<tr>
+<td><var>DbiGetProp</var></td>
+<td class="last">Returns a property of an object.</td>
+</tr>
+<tr>
+<td><var>DbiGetSysConfig</var></td>
+<td class="last">Retrieves BDE system configuration information.</td>
+</tr>
+<tr>
+<td><var>DbiGetSysInfo</var></td>
+<td class="last">Retrieves system status and information.</td>
+</tr>
+<tr>
+<td><var>DbiGetSysVersion</var></td>
+<td class="last">Retrieves the system version information, including the BDE version number, date, and time, and the client interface version number.</td>
+</tr>
+<tr>
+<td><var>DbiInit</var></td>
+<td class="last">Initializes the BDE environment.</td>
+</tr>
+<tr>
+<td><var>DbiLoadDriver</var></td>
+<td class="last">Load a given driver.</td>
+</tr>
+<tr>
+<td><var>DbiNativeToAnsi</var></td>
+<td class="last">Translates a string in the native language driver to an ANSI string.</td>
+</tr>
+<tr>
+<td><var>DbiOpenCfgInfoList</var></td>
+<td class="last">Returns a handle to an in-memory table listing all the nodes in the configuration file accessible by the specified path.</td>
+</tr>
+<tr>
+<td><var>DbiOpenDriverList</var></td>
+<td class="last">Creates an in-memory table containing a list of driver names available to the client application.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFieldTypesList</var></td>
+<td class="last">Creates an in-memory table containing a list of field types supported by the table type for the driver type.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFunctionArgList</var></td>
+<td class="last">Returns a list of arguments to a data source function.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFunctionList</var></td>
+<td class="last">Returns a description of a data source function.</td>
+</tr>
+<tr>
+<td><var>DbiOpenIndexTypesList</var></td>
+<td class="last">Creates an in-memory table containing a list of all supported index types for the driver type.</td>
+</tr>
+<tr>
+<td><var>DbiOpenLdList</var></td>
+<td class="last">Creates an in-memory table containing a list of available language drivers.</td>
+</tr>
+<tr>
+<td><var>DbiOpenTableList</var></td>
+<td class="last">Creates an in-memory table with information about all the tables accessible to the client application.</td>
+</tr>
+<tr>
+<td><var>DbiOpenTableTypesList</var></td>
+<td class="last">Creates an in-memory table listing table type names for the given driver.</td>
+</tr>
+<tr>
+<td><var>DbiOpenUserList</var></td>
+<td class="last">Creates an in-memory table containing a list of users sharing the same network file.</td>
+</tr>
+<tr>
+<td><var>DbiSetProp</var></td>
+<td class="last">Sets the specified property of an object to a given value.</td>
+</tr>
+<tr>
+<td><var>DbiUseIdleTime</var></td>
+<td class="last">Allows BDE to accomplish background tasks during times when the client application is idle. OBSOLETE FUNCTION BDE 4.0</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  3. Session functions
+</h2>
+
+<p>
+  Each function listed below returns information about a session or performs a
+  task that affects the session, such as starting a session or adding a
+  password.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiAddPassword</var></td>
+<td class="top last">Adds a password to the current session.</td>
+</tr>
+<tr>
+<td><var>DbiCheckRefresh</var></td>
+<td class="last">Checks for remote updates to tables for all cursors in the current session, and refreshes the cursors if changed.</td>
+</tr>
+<tr>
+<td><var>DbiCloseSession</var></td>
+<td class="last">Closes the session associated with the given session handle.</td>
+</tr>
+<tr>
+<td><var>DbiDropPassword</var></td>
+<td class="last">Removes a password from the current session.</td>
+</tr>
+<tr>
+<td><var>DbiGetCallBack</var></td>
+<td class="last">Returns a pointer to the function previously registered by the client for the given callback type.</td>
+</tr>
+<tr>
+<td><var>DbiGetCurrSession</var></td>
+<td class="last">Returns the handle associated with the current session.</td>
+</tr>
+<tr>
+<td><var>DbiGetDateFormat</var></td>
+<td class="last">Gets the date format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiGetNumberFormat</var></td>
+<td class="last">Gets the number format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiGetSesInfo</var></td>
+<td class="last">Retrieves the environment settings for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiGetTimeFormat</var></td>
+<td class="last">Gets the time format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiRegisterCallBack</var></td>
+<td class="last">Registers a callback function for the client application.</td>
+</tr>
+<tr>
+<td><var>DbiSetCurrSession</var></td>
+<td class="last">Sets the current session of the client application to the session associated with hSes.</td>
+</tr>
+<tr>
+<td><var>DbiSetDateFormat</var></td>
+<td class="last">Sets the date format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiSetNumberFormat</var></td>
+<td class="last">Sets the number format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiSetPrivateDir</var></td>
+<td class="last">Sets the private directory for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiSetTimeFormat</var></td>
+<td class="last">Sets the time format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiStartSession</var></td>
+<td class="last">Starts a new session for the client application.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  4. Error-handling functions
+</h2>
+
+<p>
+  Each function listed below returns error handling information or performs a
+  task that relates to error handling.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiGetErrorContext</var></td>
+<td class="top last">After receiving an error code back from a call, enables the client to probe BDE for more specific error information.</td>
+</tr>
+<tr>
+<td><var>DbiGetErrorEntry</var></td>
+<td class="last">Returns the error description of a specified error stack entry.</td>
+</tr>
+<tr>
+<td><var>DbiGetErrorInfo</var></td>
+<td class="last">Provides descriptive error information about the last error that occurred.</td>
+</tr>
+<tr>
+<td><var>DbiGetErrorString</var></td>
+<td class="last">Returns the message associated with a given error code.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  5. Lock functions
+</h2>
+
+<p>
+  Each function listed below returns information about lock status or acquires
+  or releases a lock at the table or record level.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiAcqPersistTableLock</var></td>
+<td class="top last">Acquires an exclusive persistent lock on the table preventing other users from using the table or creating a table of the same name.</td>
+</tr>
+<tr>
+<td><var>DbiAcqTableLock</var></td>
+<td class="last">Acquires a table-level lock on the table associated with the given cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetRecord</var></td>
+<td class="last">Record positioning functions have a lock parameter.</td>
+</tr>
+<tr>
+<td><var>DbiIsRecordLocked</var></td>
+<td class="last">Checks the lock status of the current record.</td>
+</tr>
+<tr>
+<td><var>DbiIsTableLocked</var></td>
+<td class="last">Returns the number of locks of a specified type acquired on the table associated with the given session.</td>
+</tr>
+<tr>
+<td><var>DbiIsTableShared</var></td>
+<td class="last">Determines whether the table is physically shared or not.</td>
+</tr>
+<tr>
+<td><var>DbiOpenLockList</var></td>
+<td class="last">Creates an in-memory table containing a list of locks acquired on the table.</td>
+</tr>
+<tr>
+<td><var>DbiOpenUserList</var></td>
+<td class="last">Creates an in-memory table containing a list of users sharing the same network file.</td>
+</tr>
+<tr>
+<td><var>DbiRelPersistTableLock</var></td>
+<td class="last">Releases the persistent table lock on the specified table.</td>
+</tr>
+<tr>
+<td><var>DbiRelRecordLock</var></td>
+<td class="last">Releases the record lock on either the current record of the cursor or only the locks acquired in the current session.</td>
+</tr>
+<tr>
+<td><var>DbiRelTableLock</var></td>
+<td class="last">Releases table locks of the specified type associated with the current session (the session in which the cursor was created).</td>
+</tr>
+<tr>
+<td><var>DbiSetLockRetry</var></td>
+<td class="last">Sets the table and record lock retry time for the current session.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  6. Cursor functions
+</h2>
+
+<p>
+  Each function listed below returns information about a cursor, or performs a
+  task that performs a cursor-related task such as positioning of a cursor,
+  linking of cursors, creating and closing cursors, counting of records
+  associated with a cursor, filtering, setting and comparing bookmarks, and
+  refreshing all buffers associated with a cursor.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiActivateFilter</var></td>
+<td class="top last">Activates a filter.</td>
+</tr>
+<tr>
+<td><var>DbiAddFilter</var></td>
+<td class="last">Adds a filter to a table, but does not activate the filter (the record set is not yet altered).</td>
+</tr>
+<tr>
+<td><var>DbiApplyDelayedUpdates</var></td>
+<td class="last">When cached updates cursor layer is active, writes all modifications made to cached data to the underlying database.</td>
+</tr>
+<tr>
+<td><var>DbiBeginDelayedUpdates</var></td>
+<td class="last">Creates a cached updates cursor layer so that users can make extended changes to temporarily cached table data without writing to the actual table, thereby minimizing resource locking.</td>
+</tr>
+<tr>
+<td><var>DbiBeginLinkMode</var></td>
+<td class="last">Converts a cursor to a link cursor. Given an open cursor, prepares for linked access. Returns a new cursor.</td>
+</tr>
+<tr>
+<td><var>DbiCloneCursor</var></td>
+<td class="last">Creates a new cursor (clone cursor) which has the same result set as the given cursor (source cursor).</td>
+</tr>
+<tr>
+<td><var>DbiCloseCursor</var></td>
+<td class="last">Closes a previously opened cursor.</td>
+</tr>
+<tr>
+<td><var>DbiCompareBookMarks</var></td>
+<td class="last">Compares the relative positions of two bookmarks in the result set associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiDeactivateFilter</var></td>
+<td class="last">Temporarily stops the specified filter from affecting the record set by turning the filter off.</td>
+</tr>
+<tr>
+<td><var>DbiDropFilter</var></td>
+<td class="last">Deactivates and removes a filter from memory, and frees all resources.</td>
+</tr>
+<tr>
+<td><var>DbiEndDelayedUpdates</var></td>
+<td class="last">Closes a cached updates cursor layer ending the cached updates mode.</td>
+</tr>
+<tr>
+<td><var>DbiEndLinkMode</var></td>
+<td class="last">Ends linked cursor mode, and returns the original cursor.</td>
+</tr>
+<tr>
+<td><var>DbiExtractKey</var></td>
+<td class="last">Retrieves the key value for the current record of the given cursor or from the supplied record buffer.</td>
+</tr>
+<tr>
+<td><var>DbiForceRecordReread</var></td>
+<td class="last">Rereads a single record from the server on demand, refreshing one row only, rather than clearing the cache.</td>
+</tr>
+<tr>
+<td><var>DbiForceReread</var></td>
+<td class="last">Refreshes all buffers associated with the cursor, if necessary.</td>
+</tr>
+<tr>
+<td><var>DbiFormFullName</var></td>
+<td class="last">Returns the fully qualified table name.</td>
+</tr>
+<tr>
+<td><var>DbiGetBookMark</var></td>
+<td class="last">Saves the current position of a cursor to the client-supplied buffer called a bookmark.</td>
+</tr>
+<tr>
+<td><var>DbiGetCursorForTable</var></td>
+<td class="last">Finds the cursor for the given table.</td>
+</tr>
+<tr>
+<td><var>DbiGetCursorProps</var></td>
+<td class="last">Returns the properties of the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetExactRecordCount</var></td>
+<td class="last">Retrieves the current exact number of records associated with the cursor. NEW FUNCTION BDE 4.0</td>
+</tr>
+<tr>
+<td><var>DbiGetFieldDescs</var></td>
+<td class="last">Retrieves a list of descriptors for all the fields in the table associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetLinkStatus</var></td>
+<td class="last">Returns the link status of the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetNextRecord</var></td>
+<td class="last">Retrieves the next record in the table associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetPriorRecord</var></td>
+<td class="last">Retrieves the previous record in the table associated with the given cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetProp</var></td>
+<td class="last">Returns a property of an object.</td>
+</tr>
+<tr>
+<td><var>DbiGetRecord</var></td>
+<td class="last">Retrieves the current record, if any, in the table associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetRecordCount</var></td>
+<td class="last">Retrieves the current number of records associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetRecordForKey</var></td>
+<td class="last">Finds and retrieves a record matching a key and positions the cursor on that record.</td>
+</tr>
+<tr>
+<td><var>DbiGetRelativeRecord</var></td>
+<td class="last">Positions the cursor on a record in the table relative to the current position of the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetSeqNo</var></td>
+<td class="last">Retrieves the sequence number of the current record in the table associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiLinkDetail</var></td>
+<td class="last">Establishes a link between two tables such that the detail table has its record set limited to the set of records matching the linking key values of the master table cursor.</td>
+</tr>
+<tr>
+<td><var>DbiLinkDetailToExp</var></td>
+<td class="last">Links the detail cursor to the master cursor using an expression.</td>
+</tr>
+<tr>
+<td><var>DbiMakePermanent</var></td>
+<td class="last">Changes a temporary table created by DbiCreateTempTable into a permanent table.</td>
+</tr>
+<tr>
+<td><var>DbiOpenTable</var></td>
+<td class="last">Opens the given table for access and associates a cursor handle with the opened table.</td>
+</tr>
+<tr>
+<td><var>DbiResetRange</var></td>
+<td class="last">Removes the specified table's limited range previously established by the function DbiSetRange.</td>
+</tr>
+<tr>
+<td><var>DbiSaveChanges</var></td>
+<td class="last">Forces all updated records associated with the cursor to disk.</td>
+</tr>
+<tr>
+<td><var>DbiSetFieldMap</var></td>
+<td class="last">Sets a field map of the table associated with the given cursor.</td>
+</tr>
+<tr>
+<td><var>DbiSetProp</var></td>
+<td class="last">Sets the specified property of an object to a given value.</td>
+</tr>
+<tr>
+<td><var>DbiSetRange</var></td>
+<td class="last">Sets a range on the result set associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiSetToBegin</var></td>
+<td class="last">Positions the cursor to BOF (just before the first record).</td>
+</tr>
+<tr>
+<td><var>DbiSetToBookMark</var></td>
+<td class="last">Positions the cursor to the location saved in the specified bookmark.</td>
+</tr>
+<tr>
+<td><var>DbiSetToCursor</var></td>
+<td class="last">Sets the position of one cursor (the destination cursor) to that of another (the source cursor).</td>
+</tr>
+<tr>
+<td><var>DbiSetToEnd</var></td>
+<td class="last">Positions the cursor to EOF (just after the last record).</td>
+</tr>
+<tr>
+<td><var>DbiSetToKey</var></td>
+<td class="last">Positions an index-based cursor on a key value.</td>
+</tr>
+<tr>
+<td><var>DbiSetToRecordNo</var></td>
+<td class="last">Positions the cursor of a dBASE table to the given physical record number.</td>
+</tr>
+<tr>
+<td><var>DbiSetToSeqNo</var></td>
+<td class="last">Positions the cursor to the specified sequence number of a Paradox table.</td>
+</tr>
+<tr>
+<td><var>DbiUnlinkDetail</var></td>
+<td class="last">Removes a link between two cursors.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  7. Index functions
+</h2>
+
+<p>
+  Each function listed below returns information about an index or indexes, or
+  performs a task that affects an index, such as dropping it, deleting it, or
+  adding it.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiAddIndex</var></td>
+<td class="top last">Creates an index on an existing table.</td>
+</tr>
+<tr>
+<td><var>DbiCloseIndex</var></td>
+<td class="last">Closes the specified index on a cursor.</td>
+</tr>
+<tr>
+<td><var>DbiCompareKeys</var></td>
+<td class="last">Compares two key values based on the current index of the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiDeleteIndex</var></td>
+<td class="last">Drops an index on a table.</td>
+</tr>
+<tr>
+<td><var>DbiExtractKey</var></td>
+<td class="last">Retrieves the key value for the current record of the given cursor or from the supplied record buffer.</td>
+</tr>
+<tr>
+<td><var>DbiGetIndexDesc</var></td>
+<td class="last">Retrieves the properties of the given index associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetIndexDescs</var></td>
+<td class="last">Retrieves index properties.</td>
+</tr>
+<tr>
+<td><var>DbiGetIndexForField</var></td>
+<td class="last">Returns the description of any useful index on the specified field.</td>
+</tr>
+<tr>
+<td><var>DbiGetIndexSeqNo</var></td>
+<td class="last">Retrieves the ordinal number of the index in the index list of the specified cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetIndexTypeDesc</var></td>
+<td class="last">Retrieves a description of the index type.</td>
+</tr>
+<tr>
+<td><var>DbiOpenIndex</var></td>
+<td class="last">Opens the index for the table associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiRegenIndex</var></td>
+<td class="last">Regenerates an index to make sure that it is up-to-date (all records currently in the table are included in the index and are in the index order).</td>
+</tr>
+<tr>
+<td><var>DbiRegenIndexes</var></td>
+<td class="last">Regenerates all out-of-date indexes on a given table.</td>
+</tr>
+<tr>
+<td><var>DbiSwitchToIndex</var></td>
+<td class="last">Allows the user to change the active index order of the given cursor.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  8. Query functions
+</h2>
+
+<p>
+  Each function listed below performs a query task, such as preparing and
+  executing a SQL or QBE query.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiGetProp</var></td>
+<td class="top last">Returns a property of an object.</td>
+</tr>
+<tr>
+<td><var>DbiQAlloc</var></td>
+<td class="last">Allocates a new statement handle for a prepared query.</td>
+</tr>
+<tr>
+<td><var>DbiQExec</var></td>
+<td class="last">Executes the previously prepared query identified by the supplied statement handle and returns a cursor to the result set, if one is generated.</td>
+</tr>
+<tr>
+<td><var>DbiQExecDirect</var></td>
+<td class="last">Executes a SQL or QBE query and returns a cursor to the result set, if one is generated.</td>
+</tr>
+<tr>
+<td><var>DbiQExecProcDirect</var></td>
+<td class="last">Executes a stored procedure and returns a cursor to the result set, if one is generated.</td>
+</tr>
+<tr>
+<td><var>DbiQFree</var></td>
+<td class="last">Frees the resources associated with a previously prepared query identified by the supplied statement handle.</td>
+</tr>
+<tr>
+<td><var>DbiQGetBaseDescs</var></td>
+<td class="last">Returns the original database, table, and field names of the fields that make up the result set of a query.</td>
+</tr>
+<tr>
+<td><var>DbiQInstantiateAnswer</var></td>
+<td class="last">Creates a permanent table from the cursor to the result set.</td>
+</tr>
+<tr>
+<td><var>DbiQPrepare</var></td>
+<td class="last">Prepares a SQL or QBE query for execution, and returns a handle to a statement containing the prepared query.</td>
+</tr>
+<tr>
+<td><var>DbiQPrepareProc</var></td>
+<td class="last">Prepares and optionally binds parameters for a stored procedure.</td>
+</tr>
+<tr>
+<td><var>DbiQSetParams</var></td>
+<td class="last">Associates data with parameter markers embedded within a prepared query.</td>
+</tr>
+<tr>
+<td><var>DbiQSetProcParams</var></td>
+<td class="last">Binds parameters for a stored procedure prepared with DbiQPrepareProc.</td>
+</tr>
+<tr>
+<td><var>DbiSetProp</var></td>
+<td class="last">Sets the specified property of an object to a given value.</td>
+</tr>
+<tr>
+<td><var>DbiValidateProp</var></td>
+<td class="last">Validates a property.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  9. Table functions
+</h2>
+
+<p>
+  Each function listed below returns information about a specific table, such as
+  all the locks acquired on the table, all the referential integrity links on
+  the table, the indexes open on the table, or whether or not the table is
+  shared. Functions in this category can also perform a table-wide operation,
+  such as copying and deleting.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiBatchMove</var></td>
+<td class="top last">Appends, updates, subtracts, and copies records or fields from a source table to a destination table.</td>
+</tr>
+<tr>
+<td><var>DbiCopyTable</var></td>
+<td class="last">Duplicates the specified source table to a destination table.</td>
+</tr>
+<tr>
+<td><var>DbiCreateInMemTable</var></td>
+<td class="last">Creates a temporary, in-memory table.</td>
+</tr>
+<tr>
+<td><var>DbiCreateTable</var></td>
+<td class="last">Creates a table.</td>
+</tr>
+<tr>
+<td><var>DbiCreateTempTable</var></td>
+<td class="last">Creates a temporary table that is deleted when the cursor is closed, unless the call is followed by a call to DbiMakePermanent.</td>
+</tr>
+<tr>
+<td><var>DbiDeleteTable</var></td>
+<td class="last">Deletes a table.</td>
+</tr>
+<tr>
+<td><var>DbiDoRestructure</var></td>
+<td class="last">Changes the properties of a table.</td>
+</tr>
+<tr>
+<td><var>DbiEmptyTable</var></td>
+<td class="last">Deletes all records from the table associated with the specified table cursor handle or table name.</td>
+</tr>
+<tr>
+<td><var>DbiGetTableOpenCount</var></td>
+<td class="last">Returns the total number of cursors that are open on the specified table.</td>
+</tr>
+<tr>
+<td><var>DbiGetTableTypeDesc</var></td>
+<td class="last">Returns a description of the capabilities of the table type for the driver type.</td>
+</tr>
+<tr>
+<td><var>DbiIsTableLocked</var></td>
+<td class="last">Returns the number of locks of a specified type acquired on the table associated with the given session.</td>
+</tr>
+<tr>
+<td><var>DbiIsTableShared</var></td>
+<td class="last">Determines whether the table is physically shared or not.</td>
+</tr>
+<tr>
+<td><var>DbiMakePermanent</var></td>
+<td class="last">Changes a temporary table created by DbiCreateTempTable into a permanent table.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFamilyList</var></td>
+<td class="last">Creates an in-memory table listing the family members associated with a specified table.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFieldList</var></td>
+<td class="last">Creates an in-memory table listing the fields in a specified table and their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenIndexList</var></td>
+<td class="last">Opens a cursor on an in-memory table listing the indexes on a specified table, along with their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenLockList</var></td>
+<td class="last">Creates an in-memory table containing a list of locks acquired on the table associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiOpenRintList</var></td>
+<td class="last">Creates an in-memory table listing the referential integrity links for a specified table, along with their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenSecurityList</var></td>
+<td class="last">Creates an in-memory table listing record-level security information about a specified table.</td>
+</tr>
+<tr>
+<td><var>DbiOpenTable</var></td>
+<td class="last">Opens the given table for access and associates a cursor handle with the opened table.</td>
+</tr>
+<tr>
+<td><var>DbiPackTable</var></td>
+<td class="last">Optimizes table space by rebuilding the table associated with the cursor and releasing any free space.</td>
+</tr>
+<tr>
+<td><var>DbiQInstantiateAnswer</var></td>
+<td class="last">Creates a permanent table from a cursor handle.</td>
+</tr>
+<tr>
+<td><var>DbiRegenIndexes</var></td>
+<td class="last">Regenerates all out-of-date indexes on a given table.</td>
+</tr>
+<tr>
+<td><var>DbiRenameTable</var></td>
+<td class="last">Renames the table and all of its resources to the new name specified.</td>
+</tr>
+<tr>
+<td><var>DbiSaveChanges</var></td>
+<td class="last">Forces all updated records associated with the table to disk.</td>
+</tr>
+<tr>
+<td><var>DbiSortTable</var></td>
+<td class="last">Sorts an opened or closed table, either into itself or into a destination table. There are options to remove duplicates, to enable case-insensitive sorts and special sort functions, and to control the number of records sorted.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  10. Data access functions
+</h2>
+
+<p>
+  Each function listed below accesses data in a table, such as retrieving data
+  from a specified BLOB field or from the record buffer.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiAppendRecord</var></td>
+<td class="top last">Appends a record to the end of the table associated with the given cursor.</td>
+</tr>
+<tr>
+<td><var>DbiDeleteRecord</var></td>
+<td class="last">Deletes the current record of the given cursor.</td>
+</tr>
+<tr>
+<td><var>DbiFreeBlob</var></td>
+<td class="last">Closes the BLOB handle located within the specified record buffer.</td>
+</tr>
+<tr>
+<td><var>DbiGetBlob</var></td>
+<td class="last">Retrieves data from the specified BLOB field.</td>
+</tr>
+<tr>
+<td><var>DbiGetBlobHeading</var></td>
+<td class="last">Retrieves information about a BLOB field from the BLOB heading in the record buffer.</td>
+</tr>
+<tr>
+<td><var>DbiGetBlobSize</var></td>
+<td class="last">Retrieves the size of the specified BLOB field in bytes.</td>
+</tr>
+<tr>
+<td><var>DbiGetField</var></td>
+<td class="last">Retrieves the data contents of the requested field from the record buffer.</td>
+</tr>
+<tr>
+<td><var>DbiGetFieldDescs</var></td>
+<td class="last">Retrieves a list of descriptors for all the fields in the table associated with the cursor.</td>
+</tr>
+<tr>
+<td><var>DbiGetFieldTypeDesc</var></td>
+<td class="last">Retrieves a description of the specified field type.</td>
+</tr>
+<tr>
+<td><var>DbiInitRecord</var></td>
+<td class="last">Initializes the record buffer to a blank record according to the data types of the fields.</td>
+</tr>
+<tr>
+<td><var>DbiInsertRecord</var></td>
+<td class="last">Inserts a new record into the table associated with the given cursor.</td>
+</tr>
+<tr>
+<td><var>DbiModifyRecord</var></td>
+<td class="last">Modifies the current record of table associated with the cursor with the data supplied.</td>
+</tr>
+<tr>
+<td><var>DbiOpenBlob</var></td>
+<td class="last">Prepares the cursor's record buffer to access a BLOB field.</td>
+</tr>
+<tr>
+<td><var>DbiPutBlob</var></td>
+<td class="last">Writes data into an open BLOB field.</td>
+</tr>
+<tr>
+<td><var>DbiPutField</var></td>
+<td class="last">Writes the field value to the correct location in the supplied record buffer.</td>
+</tr>
+<tr>
+<td><var>DbiReadBlock</var></td>
+<td class="last">Reads a specified number of records (starting from the next position of the cursor) into a buffer.</td>
+</tr>
+<tr>
+<td><var>DbiSaveChanges</var></td>
+<td class="last">Forces all updated records associated with the cursor to disk.</td>
+</tr>
+<tr>
+<td><var>DbiSetFieldMap</var></td>
+<td class="last">Sets a field map of the table associated with the given cursor.</td>
+</tr>
+<tr>
+<td><var>DbiTruncateBlob</var></td>
+<td class="last">Shortens the size of the contents of a BLOB field, or deletes the contents of a BLOB field from the record, by shortening it to zero.</td>
+</tr>
+<tr>
+<td><var>DbiUndeleteRecord</var></td>
+<td class="last">Undeletes a dBASE record that has been marked for deletion (a "soft" delete).</td>
+</tr>
+<tr>
+<td><var>DbiVerifyField</var></td>
+<td class="last">Verifies that the data specified is a valid data type for the field specified, and that all validity checks in place for the field are satisfied. It can also be used to check if a field is blank.</td>
+</tr>
+<tr>
+<td><var>DbiWriteBlock</var></td>
+<td class="last">Writes a block of records to the table associated with the cursor.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  11. Transaction functions
+</h2>
+
+<p>
+  Each function listed below begins, ends, or inquires about the status of a
+  transaction.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiBeginTran</var></td>
+<td class="top last">Begins a transaction.</td>
+</tr>
+<tr>
+<td><var>DbiEndTran</var></td>
+<td class="last">Ends a transaction.</td>
+</tr>
+<tr>
+<td><var>DbiGetTranInfo</var></td>
+<td class="last">Retrieves the transaction state.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  12. Capability or schema functions
+</h2>
+
+<p>
+  Each function listed below returns information about capabilities or the
+  schema.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiOpenCfgInfoList</var></td>
+<td class="top last">Returns a handle to an in-memory table listing all the nodes in the configuration file accessible by the specified path.</td>
+</tr>
+<tr>
+<td><var>DbiOpenDatabaseList</var></td>
+<td class="last">Creates an in-memory table containing a list of accessible databases and their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenDriverList</var></td>
+<td class="last">Creates an in-memory table containing a list of driver names available to the client application.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFamilyList</var></td>
+<td class="last">Creates an in-memory table listing the family members associated with a specified table.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFieldList</var></td>
+<td class="last">Creates an in-memory table listing the fields in a specified table and their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFieldTypesList</var></td>
+<td class="last">Creates an in-memory table containing a list of field types supported by the table type for the driver type.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFunctionArgList</var></td>
+<td class="last">Returns a list of arguments to a data source function.</td>
+</tr>
+<tr>
+<td><var>DbiOpenFunctionList</var></td>
+<td class="last">Returns a description of a data source function.</td>
+</tr>
+<tr>
+<td><var>DbiOpenIndexList</var></td>
+<td class="last">Opens a cursor on an in-memory table listing the indexes on a specified table, along with their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenIndexTypesList</var></td>
+<td class="last">Creates an in-memory table containing a list of all supported index types for the driver type.</td>
+</tr>
+<tr>
+<td><var>DbiOpenLockList</var></td>
+<td class="last">Creates an in-memory table containing a list of locks acquired on the table.</td>
+</tr>
+<tr>
+<td><var>DbiOpenRintList</var></td>
+<td class="last">Creates an in-memory table listing the referential integrity links for a specified table, along with their descriptions.</td>
+</tr>
+<tr>
+<td><var>DbiOpenSecurityList</var></td>
+<td class="last">Creates an in-memory table listing record-level security information about a specified table.</td>
+</tr>
+<tr>
+<td><var>DbiOpenTableList</var></td>
+<td class="last">Creates an in-memory table with information about all the tables accessible to the client application.</td>
+</tr>
+<tr>
+<td><var>DbiOpenTableTypesList</var></td>
+<td class="last">Creates an in-memory table listing table type names for the given driver.</td>
+</tr>
+<tr>
+<td><var>DbiOpenVchkList</var></td>
+<td class="last">Creates an in-memory table containing records with information about validity checks for fields within the specified table.</td>
+</tr>
+</table>
+</div>
+
+<h2>
+  13. Date/time/number format functions
+</h2>
+
+<p>
+  Each function listed below sets or retrieves date or time, or decodes/encodes
+  date and time into or from a timestamp.
+</p>
+
+<div class="frame">
+<table>
+<tr>
+<td class="top"><var>DbiBcdFromFloat</var></td>
+<td class="top last">Converts FLOAT data to binary coded decimal (BCD) format.</td>
+</tr>
+<tr>
+<td><var>DbiBcdToFloat</var></td>
+<td class="last">Converts binary coded decimal (BCD) data to FLOAT format.</td>
+</tr>
+<tr>
+<td><var>DbiDateDecode</var></td>
+<td class="last">ecodes DBIDATE into separate month, day and year components.</td>
+</tr>
+<tr>
+<td><var>DbiDateEncode</var></td>
+<td class="last">Encodes separate date components into date for use by DbiPutField and other functions.</td>
+</tr>
+<tr>
+<td><var>DbiGetDateFormat</var></td>
+<td class="last">Gets the date format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiGetNumberFormat</var></td>
+<td class="last">Gets the number format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiGetTimeFormat</var></td>
+<td class="last">Gets the time format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiSetDateFormat</var></td>
+<td class="last">Sets the date format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiSetNumberFormat</var></td>
+<td class="last">Sets the number format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiSetTimeFormat</var></td>
+<td class="last">Sets the time format for the current session.</td>
+</tr>
+<tr>
+<td><var>DbiTimeDecode</var></td>
+<td class="last">Decodes time into separate components (hours, minutes, milliseconds).</td>
+</tr>
+<tr>
+<td><var>DbiTimeEncode</var></td>
+<td class="last">Encodes separate time components into time for use by DbiPutField and other functions.</td>
+</tr>
+<tr>
+<td><var>DbiTimeStampDecode</var></td>
+<td class="last">Extracts separate encoded date and time components from the timestamp.</td>
+</tr>
+<tr>
+<td><var>DbiTimeStampEncode</var></td>
+<td class="last">Encodes the encoded date and encoded time into a timestamp.</td>
+</tr>
+</table>
+</div>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2013-01-28</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2013-01-28</td>
+  </tr>
+</table>
+
+
+
+<div id="footer">
+  Copyright &copy; Peter Johnson (<a href="https://gravatar.com/delphidabbler">DelphiDabbler</a>) 2002-2020
+</div> <!-- #footer -->
+</div> <!-- #wrapper -->

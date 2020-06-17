@@ -1,0 +1,75 @@
+---
+---
+<div id="wrapper">
+
+<h1>
+	How to calculate the area of a polygon
+</h1>
+
+<!-- BEGIN Redirection Note -->
+<p class="redirect-note">
+  If got here by following a link such as <b>http://delphidabbler.com/tips/<em>999</em></b> (where <em>999</em> is a number) then you were re-directed because the tip is not yet available on the new delphidabbler.com website. <a href="https://delphidabbler.com/tips"><b>Go back to the delphidabbler.com tips page</b></a>
+</p>
+<!-- END OF Redirection Note -->
+
+<p>
+  The signed area can be computed in linear time by a simple sum. The key
+  formula is this: If the coordinates of vertex <var>v_i</var> are
+  <var>x_i</var> and <var>y_i</var>, twice the signed area of a polygon is given
+  by:
+</p>
+
+<div class="frame">
+<pre class="source-body">2 A( P ) = sum_{i = 0}^{n - 1} (x_i y_{i + 1} - y_i x_{i + 1})</pre>
+</div>
+
+<p>
+  Here <var>n</var> is the number of vertices of the polygon. A rearrangement of
+  terms in this equation can save multiplications and operate on coordinate
+  differences, and so may be both faster and more accurate:
+</p>
+
+<div class="frame">
+<pre class="source-body">2 A( P ) = sum_{i = 0}^{n - 1} ((x_i + x_{i + 1}) (y_{i + 1} - y_i))</pre>
+</div>
+
+<p>
+  To find the area of a planar polygon not in the x-y plane, use:
+</p>
+
+<div class="frame">
+<pre class="source-body">2 A(P) = abs(N . (sum_{i = 0}^{n - 1} (v_i &times; v_{i + 1})))</pre>
+</div>
+
+<p>
+  where <var>N</var> is a unit vector normal to the plane. The '.' represents
+  the dot product operator, the '&times;' represents the cross product operator,
+  and <code>abs()</code> is the absolute value function.
+</p>
+
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2013-04-09</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2013-04-09</td>
+  </tr>
+</table>
+
+
+
+<div id="footer">
+  Copyright &copy; Peter Johnson (<a href="https://gravatar.com/delphidabbler">DelphiDabbler</a>) 2002-2020
+</div> <!-- #footer -->
+</div> <!-- #wrapper -->

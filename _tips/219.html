@@ -1,0 +1,58 @@
+---
+---
+<div id="wrapper">
+
+<h1>
+	How to rotate a 2D point
+</h1>
+
+<!-- BEGIN Redirection Note -->
+<p class="redirect-note">
+  If got here by following a link such as <b>http://delphidabbler.com/tips/<em>999</em></b> (where <em>999</em> is a number) then you were re-directed because the tip is not yet available on the new delphidabbler.com website. <a href="https://delphidabbler.com/tips"><b>Go back to the delphidabbler.com tips page</b></a>
+</p>
+<!-- END OF Redirection Note -->
+
+<p>
+  In 2-D, the 2 &times; 2 matrix is very simple. If you want to rotate a column
+  vector <var>v</var> by <var>t</var> degrees using matrix <var>M</var>, use
+</p>
+
+<p>
+  <code>M = {{cos t, -sin t}, {sin t, cos t}}</code>
+</p>
+
+<p>
+  in <code>M * v</code>.
+</p>
+
+<p>
+  If you have a row vector, use the transpose of <var>M</var> (turn rows into
+  columns and vice versa). If you want to combine rotations, in 2-D you can just
+  add their angles, but in higher dimensions you must multiply their matrices.
+</p>
+<table class="infotable">
+  <tr>
+    <th scope="row">Original resource:</th>
+    <td>The Delphi Pool</td>
+  </tr>
+  <tr>
+    <th scope="row">Author:</th>
+    <td>Joseph O'Rourke</td>
+  </tr>
+  <tr>
+    <th scope="row">Added:</th>
+    <td>2013-04-09</td>
+  </tr>
+  <tr>
+    <th scope="row">Last updated:</th>
+    <td>
+    2013-04-09</td>
+  </tr>
+</table>
+
+
+
+<div id="footer">
+  Copyright &copy; Peter Johnson (<a href="https://gravatar.com/delphidabbler">DelphiDabbler</a>) 2002-2020
+</div> <!-- #footer -->
+</div> <!-- #wrapper -->
