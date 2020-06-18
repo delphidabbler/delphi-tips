@@ -9,10 +9,9 @@ a, a:hover, a:visited, a:active {
 }
 
 .list-group {
-    border: $color-grey-light 2px solid; 
-    border-radius: 0;   
+    border: $color-grey-light 2px solid;
+    border-radius: 0;
 }
-
 
 // Custom styles
 
@@ -20,7 +19,7 @@ a, a:hover, a:visited, a:active {
     h1 {
         padding-bottom: 8px;
         border-bottom: 2px $color-primary solid;
- 
+
         .logo-highlight {
             color: $color-primary;
         }
@@ -34,12 +33,53 @@ a, a:hover, a:visited, a:active {
     }
 }
 
-div.go-back {
-    text-align: left;
-    margin-bottom: 12px;
-    font-weight: bold;
-    a:before {
-        content: "\AB\ab\20";
+.nav-btn {
+    // background-color: darken($color-grey, 15%);
+    background-color: lighten($color-primary, 10%);
+    border: none;
+    border-radius: 10px;
+    color: $white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    &:hover {
+        background-color: $color-primary-darker;
+        text-decoration: none;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+  }
+
+ul.nav-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        &.nav-2 {
+            margin: 8px 0;
+        }
+    }
+
+    @media (min-width: 600px) {
+        li {
+            display: inline-block;
+            &.nav-1 {
+                margin: 0 0 8px 0;
+            }
+            &.nav-2 {
+                float: right;
+                margin: 0 0 8px 0;
+            }
+           }
     }
 }
 
@@ -53,13 +93,13 @@ footer {
     until this can be fixed we hide the <div>
 */
 #footer {
-    display: none;
+    mdisplay: none;
 }
 
 pre {
     overflow-x: auto;
   }
-  
+
 div.frame {
     margin: 0.5em 0;
     padding: 0;
@@ -74,7 +114,7 @@ div.frame {
         box-sizing: border-box; ;
         margin: 0px;
         padding: 20px;
-        
+
         caption {
             caption-side: top;
             padding: 4px;
@@ -106,7 +146,7 @@ div.frame {
                 }
             }
         }
-        
+
     }
 }
 
@@ -144,7 +184,7 @@ div.callout {
 }
 
 .xref {
-    background-color: $color-complement-pale;  
+    background-color: $color-complement-pale;
     border: $color-complement-lighter 1px solid;
     border-left-width: 4px;
     padding: 4px;
@@ -180,8 +220,8 @@ p.credits {
     background-color: $color-primary-pale;
     border:  $color-primary-lighter 1px solid;
     border-left-width: 4px;
-    padding: 4px; 
-    margin-left: 40px;  
+    padding: 4px;
+    margin-left: 40px;
     text-align: right;
     font-size: 80%;
 }
@@ -192,7 +232,7 @@ div.demo-block {
     padding: 0 0.5em;
     .reporef {
         font-size: 80%;
-        background-color: $color-complement-pale;  
+        background-color: $color-complement-pale;
         border: $color-complement-lighter 1px solid;
         padding: 0.5em;
         a {
