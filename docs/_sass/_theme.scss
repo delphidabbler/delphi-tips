@@ -88,14 +88,6 @@ footer {
     color: $color-grey-dark;
 }
 
-/*  TODO: remove this class once problem is fixed
-    Tips have acquired both a <div id="footer"> and a <footer>
-    until this can be fixed we hide the <div>
-*/
-#footer {
-    mdisplay: none;
-}
-
 pre {
     overflow-x: auto;
   }
