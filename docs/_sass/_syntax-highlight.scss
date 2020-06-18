@@ -1,0 +1,75 @@
+/*
+    The following syntax highlighting code is for DelphiDabbler
+    Pashi **v1**. Not suitable for source highlighted by PasHi v2.
+*/
+
+// Background for highlighted & unhighlighted code
+
+.source-body,
+.pas-source {
+    // font-family: "Courier New", Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: $body-color;
+    margin: 0;
+    padding: 0.25em;
+}
+
+// PasHi comment style
+.pas-comment {
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000080;
+}
+
+// PasHi keyword style
+.pas-kwd {
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+// PasHi string literal style 
+.pas-str {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #800080;
+}
+
+// PasHi integer, floating point & hex styles 
+.pas-num,
+.pas-float,
+.pas-hex {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #800000;
+}
+
+// PasHi pre-processor (directive) style 
+.pas-preproc {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #008000;
+}
+
+// PasHi assembler style
+.pas-asm {
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+// PasHi error style 
+.pas-err {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #FF0000;
+}

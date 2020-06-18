@@ -1,8 +1,26 @@
+// Bootstrap overrides
+
+code {
+    color: $color-grey-dark;
+}
+
+a, a:hover, a:visited, a:active {
+    color: $color-primary-dark;
+}
+
+.list-group {
+    border: $color-grey-light 2px solid; 
+    border-radius: 0;   
+}
+
+
+// Custom styles
+
 .page-header {
     h1 {
         padding-bottom: 8px;
         border-bottom: 2px $color-primary solid;
-
+ 
         .logo-highlight {
             color: $color-primary;
         }
@@ -10,10 +28,175 @@
 }
 
 #tips-box {
-    padding: 2px;
-    background-color: $color-grey-light;
     ul {
-        max-height: 360px;
-        overflow-y: scroll;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+}
+
+div.go-back {
+    text-align: left;
+    margin-bottom: 12px;
+    font-weight: bold;
+    a:before {
+        content: "\AB\ab\20";
+    }
+}
+
+footer {
+    font-size: 80%;
+    color: $color-grey-dark;
+}
+
+/*  TODO: remove this class once problem is fixed
+    Tips have acquired both a <div id="footer"> and a <footer>
+    until this can be fixed we hide the <div>
+*/
+#footer {
+    display: none;
+}
+
+pre {
+    overflow-x: auto;
+  }
+  
+div.frame {
+    margin: 0.5em 0;
+    padding: 0;
+    border: 1px $color-grey solid;
+    background-color: $color-grey-light;
+    font-size: 90%;
+}
+
+div.frame {
+    table {
+        width: 100%;
+        box-sizing: border-box; ;
+        margin: 0px;
+        padding: 20px;
+        
+        caption {
+            caption-side: top;
+            padding: 4px;
+            margin: 0;
+            background-color: $color-grey-dark;
+            color: $white;
+        }
+
+        tr {
+            border-bottom: 1px solid $color-grey;
+            &:last-child {
+                border-bottom: none;
+            }
+            td {
+                background-color: $color-grey-lighter;
+                border-right: 1px solid $color-grey;
+                vertical-align: top;
+                &:last-child {
+                    border: none;
+                }
+            }
+            th {
+                background-color: $color-grey-light;
+                border-right: 1px solid $color-grey;
+                vertical-align: middle;
+                text-align: center;
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+        
+    }
+}
+
+table.infotable{
+    font-size: 80%;
+    color: $color-grey-dark;
+    margin: 2em 0 0 0;
+    border-top: 1px $color-grey solid;
+    width: 100%;
+    th {
+        text-align: left;
+        font-weight: normal;
+        width: 33%;
+    }
+}
+
+p.callout,
+div.callout {
+    background-color: $color-secondary-1-pale;
+    border:  $color-secondary-1-lighter 1px solid;
+    border-left-width: 4px;
+    padding: 4px;
+
+    .caption {
+        font-weight: bold;
+        margin-bottom: 4px;
+     }
+    .content {
+        margin-bottom: 4px;
+    }
+
+    a {
+        color: $color-secondary-1-dark;
+    }
+}
+
+.xref {
+    background-color: $color-complement-pale;  
+    border: $color-complement-lighter 1px solid;
+    border-left-width: 4px;
+    padding: 4px;
+    a {
+        color: $color-complement-dark;
+    }
+}
+
+.question {
+    margin-left: 0;
+    margin-right: 0em;
+    margin-bottom: 8px;
+    border:$color-secondary-2-lighter 1px dotted;
+    border-left: $color-secondary-2-lighter 2em solid;
+    background-color: $color-secondary-2-pale;
+    padding: 0.25em 0.25em 0.25em 0.5em;
+    a {
+        color: $color-secondary-2-darker;
+    }
+    .title {
+        font-style: italic;
+        font-weight: bold;
+        font-variant: small-caps;
+        color: $color-secondary-2-darker;
+    }
+    .content {
+        margin-top: 0.5em;
+    }
+}
+
+div.credits,
+p.credits {
+    background-color: $color-primary-pale;
+    border:  $color-primary-lighter 1px solid;
+    border-left-width: 4px;
+    padding: 4px; 
+    margin-left: 40px;  
+    text-align: right;
+    font-size: 80%;
+}
+
+div.demo-block {
+    border: 1px silver solid;
+    background-color: $color-grey-lighter;
+    padding: 0 0.5em;
+    .reporef {
+        font-size: 80%;
+        background-color: $color-complement-pale;  
+        border: $color-complement-lighter 1px solid;
+        padding: 0.5em;
+        a {
+            color: $color-complement-dark;
+        }
     }
 }
