@@ -6,7 +6,7 @@ repository: "delphidabbler/delphi-tips"
 # see https://github.com/jekyll/jekyll/issues/7478
 theme: null
 
-baseurl: "/docs"
+baseurl: "/delphi-tips"
 
 exclude: [README.md, LICENSE.md, Gemfile, Gemfile.lock]
   
