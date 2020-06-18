@@ -10,13 +10,15 @@ There are the following folders:
 
 ## `db`
 
-Contains a single SQL file that provides meta data about the tips: can be used with the content of the `src` folder and some suitable CSS to generate complete tips web pages.
+Contains a single SQL file that provides meta data about the tips. The SQL can be used to create a database.
+
+Such a database could can be used with the content of the `docs/_tips` folder and some suitable CSS and HTML templates to generate complete web pages for each tip.
 
 ## `docs`
 
-This folder contains the source code of a **mini website** that displays the tips that were previously on [delphidabbler.com](https://delphidabbler.com/).
+This folder contains the source code of a **[mini website](https://delphidabbler.github.io/delphi-tips/)** that displays the tips that were previously on [delphidabbler.com](https://delphidabbler.com/).
 
-The site is developed and deployed using Jekyll. Builds are stored in the `_site` directory. The site is published at [https://delphidabbler.github.io/delphi-tips/](https://delphidabbler.github.io/delphi-tips/).
+The site is developed and deployed using Jekyll. Builds are stored in the `_site` directory and are published as a GitHub Pages website.
 
 ## `extra`
 
@@ -29,8 +31,8 @@ There may be some duplication of tips between the PDF files and these documents.
 
 ## `tips`
 
-Contains a PDF "print out" of each of the DelphiDabbler.com tips page.
+Contains a PDF "print out" of each of old the DelphiDabbler.com tips page.
 
 ----
 
-> Bear in mind that all the tips are old now. Very few of the tips in the `tips` folder and none of those in the `extra` folder have been tested. **Use with care and at your own risk!**
+> Bear in mind that all the tips are old now. Very few of the tips in the `tips` or `docs/_tips` folders and none of those in the `extra` folder have been tested. **Use with care and at your own risk!**
