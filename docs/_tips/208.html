@@ -24,7 +24,7 @@
 <span class="pas-space">  </span><span class="pas-kwd">protected</span>
 <span class="pas-space">    </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">WMPaint</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-kwd">Message</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWMPaint</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">message</span><span class="pas-space"> </span><span class="pas-ident">WM_PAINT</span><span class="pas-sym">;</span>
 <span class="pas-space">  </span><span class="pas-kwd">end</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TMyMemo</span><span class="pas-sym">.</span><span class="pas-ident">WMPaint</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-kwd">Message</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWMPaint</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
 <span class="pas-kwd">var</span>
 <span class="pas-space">  </span><span class="pas-ident">MCanvas</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TControlCanvas</span><span class="pas-sym">;</span>
@@ -109,16 +109,16 @@
 <pre class="pas-source">
 <span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">WMEraseBkGnd</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-kwd">Message</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWMEraseBkGnd</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">message</span><span class="pas-space"> </span><span class="pas-ident">WM_ERASEBKGND</span><span class="pas-sym">;</span>
 <span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">WMPaint</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-kwd">Message</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWMPaint</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">message</span><span class="pas-space"> </span><span class="pas-ident">WM_PAINT</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-comment">{...}</span>
- 
+
 <span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TMyMemo</span><span class="pas-sym">.</span><span class="pas-ident">WMEraseBkGnd</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-kwd">Message</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWMEraseBkGnd</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
 <span class="pas-kwd">begin</span>
 <span class="pas-space">  </span><span class="pas-comment">{assuming we get a good DC in Message - you should check this of course}</span>
 <span class="pas-space">  </span><span class="pas-ident">BitBlt</span><span class="pas-sym">(</span><span class="pas-kwd">Message</span><span class="pas-sym">.</span><span class="pas-ident">dc</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Width</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">Height</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">FImage</span><span class="pas-sym">.</span><span class="pas-ident">Canvas</span><span class="pas-sym">.</span><span class="pas-ident">Handle</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">SRCCOPY</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
 <span class="pas-space">  </span><span class="pas-kwd">Message</span><span class="pas-sym">.</span><span class="pas-ident">Result</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-sym">-</span><span class="pas-space"> </span><span class="pas-num">1</span><span class="pas-sym">;</span>
 <span class="pas-kwd">end</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">TMyMemo</span><span class="pas-sym">.</span><span class="pas-ident">WMPaint</span><span class="pas-sym">(</span><span class="pas-kwd">var</span><span class="pas-space"> </span><span class="pas-kwd">Message</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWMPaint</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
 <span class="pas-kwd">var</span>
 <span class="pas-space">  </span><span class="pas-ident">bm</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TBitmap</span><span class="pas-sym">;</span>
@@ -159,7 +159,7 @@
   transparency while typing). Obviously this example has no error checking.
   Also, the <var>Message</var> parameter for <var>WM_PAINT</var> may contain a
   device context to use in lieu of <var>GetDeviceContext</var>. The text always
-  draws at <code>X = 0</code< so it ignores the border style & width. Finally,
+  draws at <code>X = 0</code> so it ignores the border style & width. Finally,
   you should check for clipping to improve performance (I did this last).
 </p>
 
