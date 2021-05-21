@@ -2,9 +2,9 @@
 
 This is a bunch of Delphi language tips migrated from the old version of the [delphidabbler.com](https://delphidabbler.com/) website, plus some others.
 
-> The main reason for this repo was to ensure the survival of the tips beyond the June 2020 closure of the old delphidabbler.com web site.
->
-> Unexpectedly the site has been rescued and moved to a new server but, as at late June 2020, the tips have not been restored. Consequently, this repo is still required.
+The main reason for this repo was to ensure the survival of the tips beyond the June 2020 closure of the old delphidabbler.com web site. The site was subsequently rescued and moved to a new server but the tips have not been restored and remain in this repo and associated website.
+
+> **Health Warning!** All the tips are very old now. Very few have been tested, and those that have were tested quite some time back on a old version of Delphi. Consider yourself warned!
 
 There are the following folders:
 
@@ -18,7 +18,7 @@ Such a database could can be used with the content of the `docs/_tips` folder an
 
 This folder contains the source code of a **[mini website](https://delphidabbler.github.io/delphi-tips/)** that displays the tips that were previously on [delphidabbler.com](https://delphidabbler.com/).
 
-The site is developed and deployed using Jekyll. Builds are stored in the `_site` directory and are published as a GitHub Pages website.
+The site is developed and deployed using Jekyll. Builds are published as a GitHub Pages website.
 
 ## `extra`
 
@@ -32,7 +32,3 @@ There may be some duplication of tips between the PDF files and these documents.
 ## `tips`
 
 Contains a PDF "print out" of each of old the DelphiDabbler.com tips page.
-
-----
-
-> Bear in mind that all the tips are old now. Very few of the tips in the `tips` or `docs/_tips` folders and none of those in the `extra` folder have been tested. **Use with care and at your own risk!**
