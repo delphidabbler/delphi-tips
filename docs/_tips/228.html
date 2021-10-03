@@ -8,29 +8,35 @@
 
 
 <p>
-  Dialog windows you use to display critical information to the user are, in
+  Dialog windows that you use to display critical information to the user are, in
   most cases, displayed modally. A modal form is one where the application can't
-  continue to run until the modal (information) form is closed. Delphi's
-  <var>ShowMessage</var>, <var>InputBox</var> and <var>MessageDlg</var>, for
-  example, display a modal form to the user waiting for some action. Your custom
-  dialogs are displayed using the <var>ShowModal</var> method of a form. To
-  emphasize the importance of a modal form and the information it presents, you
+  continue to run until the modal form is closed. Delphi's
+  <var>ShowMessage</var>, <var>InputBox</var> and <var>MessageDlg</var> routines, for
+  example, display a modal form and wait for the user to take some action. Your custom
+  dialogs are displayed modally using the <var>ShowModal</var> method of a form.
+</p>
+<p>
+  To emphasize the importance of a modal form and the information it presents, you
   could gray out the main form of the application when the modal form is
-  activated. Here's how to add a dim-out effect to your main form when modal
+  activated. Here's how to add a &quot;dim-out&quot; effect to your main form when modal
   forms are waiting for the user input.
 </p>
 
+<ul>
+  <li>Create a new application with a main form and name it <var>MainForm</var>.</li>
+  <li>Add a new form to the project and name it <var>DimmerForm</var>. This will
+  be the &quot;dimmer&quot; form. Ensure this form is created on application startup.</li>
+  <li>Drop a <var>TApplicationEvents</var>
+  component on the main form. Create handlers for its  <var>OnModalBegin</var> and
+  <var>OnModalEnd</var> events.</li>
+</ul>
 <p>
-  Have a Main Form of your application Add a new form to the project. This will
-  be the &quot;dimmer&quot; form. Drop the <var>TApplicationEvents</var>
-  component on the main form. Handle the <var>OnModalBegin</var> and
-  <var>OnModalEnd</var> events. The <var>TDimmerForm</var> is created at
+  Since <var>TDimmerForm</var> is created at
   application startup - and since it is not the main form, it will not be
-  displayed initially. The <var>Display</var> procedure aligns the dimmer form
-  above the main form and gets displayed before any modal form is shown. This
+  displayed initially. Its <var>Display</var> procedure aligns the dimmer form
+  above the main form and gets displayed just before any modal form is shown. This
   happens in the <var>TApplicationEvent</var>'s <var>OnModalBegin</var> event.
-  <var>OnModalEnd</var> ensures that dimmer form is hidden until needed next
-  time.
+  <var>OnModalEnd</var> ensures that dimmer form is hidden when a modal form is closed. It remains hidden until needed next time.
 </p>
 
 <div class ="frame">
@@ -47,7 +53,7 @@
 
 <p>
   The above is the <var>OnCreate</var> event handler for the dimmer form. By
-  using the <var>AlphaBlend</var> property and the <var>AlphaBlendValue</var>
+  using the <var>AlphaBlend</var> and <var>AlphaBlendValue</var> properties
   you can make the form translucent. As it will be displayed over the main form,
   we want it to create the dim-out effect. <var>BorderStyle</var> ensures this
   form has no border, no caption bar, no title buttons. The <var>Display</var>
@@ -99,7 +105,7 @@
 
 <p>
   In MDI (multiple document interface) Delphi applications, more than one form
-  can be opened within a single parent window - main form. MDI application are
+  can be opened within a single parent window - i.e. the main form. MDI applications are
   ideal candidates for the dimmer form :)
 </p>
 <table class="infotable">
