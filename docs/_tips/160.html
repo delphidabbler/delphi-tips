@@ -13,8 +13,8 @@
   </div>
   <div class="content">
     Does anyone have an example of using <var>CopyFileEx</var> with a
-    <var>CopyProgressRoutine</var>? I have created a function that takes the
-    same parameters as the <var>CopyProgressRoutine</var>, but when I pass
+    <var>CopyProgressRoutine</var> callback? I have created a function that takes the
+    same parameters as <var>CopyProgressRoutine</var>, but when I pass
     it using <var>@</var> or <var>Addr()</var> I get a &quot;Variable
     Required&quot; error message.
   </div>
@@ -22,10 +22,10 @@
 
 <p>
   Let's assume you call <var>CopyFileEx</var> and want the callback to update
-  a progress bar. The callback cannot be an object's method but you can use the
+  a progress bar. The callback cannot be a method of an object, but you can use the
   <var>lpData</var> parameter of <var>CopyFileEx</var> to pass any kind of
-  data to the callback, e.g. a form reference. So, if you want to serve a
-  progress form in the callback here's a little project that does the job.
+  data to the callback, e.g. a form reference. So, if you want to update a
+  progress form from the callback, here's a little project that does the job.
 </p>
 
 <p>
@@ -99,14 +99,14 @@
 </div>
 
 <p>
-  <var>DoFileCopy</var> set up the file copy operation and displays the progress
-  dialog box (which we'll come to in a moment) and <var>CopyCallback</var> is
+  <var>DoFileCopy</var> sets up the file copy operation and displays the progress
+  dialog box (which we'll come to in a moment). <var>CopyCallback</var> is
   the <var>CopyProgressRoutine</var>. This callback calculates the progress of
-  the file copy and updates the progress bar on the progress form.
+  the file copy to date and updates the progress bar on the progress form accordingly.
 </p>
 
 <p>
-  New for the progress form. Drop a <var>TProgessBar</var> named
+  Now for the progress form. Drop a <var>TProgessBar</var> named
   <var>ProgressBar</var> and a <var>TButton</var> named <var>AbortButton</var>
   on <var>ProgressForm</var>. Add a public Boolean field named
   <var>fCancel</var> to <var>TProgressForm</var> and add an <var>OnClick</var>
@@ -129,9 +129,9 @@
   You can now compile and run the program. Click the button in the main form
   to display the open file dialog box. Select a file to copy &ndash; something
   largish, say 60MB should enable the progress dialog to display for long enough
-  to see what's happening. OK the dialog box and the file copy begins and the
-  progress dialog displays, updating the progress bar as the file copy proceeds.
-  Try clicking the progress dialog's abort button to cancel the copy.
+  to see what's happening. OK the dialog box to start the file copy. The
+  progress dialog will now be displayed, and will update the progress bar as the copying proceeds.
+  Try clicking the progress dialog's Abort button to cancel the copy.
 </p>
 
 <p class="credits">
@@ -153,8 +153,7 @@
   </tr>
   <tr>
     <th scope="row">Last updated:</th>
-    <td>
-    2011-01-20</td>
+    <td>2011-01-20</td>
   </tr>
 </table>
 
