@@ -8,12 +8,13 @@
 
 
 <p>
-  This is a very simple method to create a new drive which links to a folder, 
-  for example: let's say we want a new drive letter (<code>W</code>) which 
+  This is a very simple method to create a new drive which links to a folder. For example: let's say we want a new drive letter (<code>W</code>) which 
   points to our Delphi components folder (<code>D:\Delphi\Components\</code>).
-  Create a new VCL application, drop 2 buttons on the form, change caption of 
+</p>
+<p>
+  Create a new VCL application. Drop 2 buttons on the form and change the caption of 
   <var>Button1</var> to <code>CreateDrive</code> and the caption of 
-  <var>Button2</var> to <code>RemoveDrive</code>, paste the fallowing 3 methods 
+  <var>Button2</var> to <code>RemoveDrive</code>. Paste the following 3 methods 
   after the <strong>implementation</strong> keyword.
 </p>
 
@@ -54,7 +55,7 @@
 
 <p>
   Now press <span class="smallcaps">F12</span> to see the form, double-click the 
-  <code>CreateDrive</code> button and paste the following code:
+  <code>CreateDrive</code> button and paste the following code into the event handler that is created:
 </p>
 
 <div class="frame">
@@ -65,9 +66,9 @@
 </div>
 
 <p>
-  Replace <code>D:\Delphi\Components</code> with your delphi component folder,
-  press <span class="smallcaps">F12</span> again and double-click the 
-  <code>RemoveDrive</code> button and paste this code:
+  Replace <code>D:\Delphi\Components</code> with your own Delphi component folder.
+  Press <span class="smallcaps">F12</span> again, double-click the 
+  <code>RemoveDrive</code> button and paste the following code into its event handler:
 </p>
 
 <div class="frame">
@@ -78,7 +79,7 @@
 </div>
 
 <p>
-  Don't forget to add <var>ShellApi</var> to uses clause.
+  Finally, add the <var>ShellApi</var> unit to the uses clause.
 </p>
 
 <table class="infotable">
