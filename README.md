@@ -10,7 +10,9 @@ There are the following folders:
 
 ## `db`
 
-Contains a single SQL file that provides meta data about the tips. The SQL can be used to create a database.
+Contains a pair of SQL files - `tips.sql` and `tips-v2.sql` - that provide meta data about the tips. The SQL can be used to create a database.
+
+These files contain two versions of the database. They both have the same content except that `tips-v2.sql` has had two columns removed that contain email addresses in `tips.sql`.
 
 Such a database could can be used with the content of the `docs/_tips` folder and some suitable CSS and HTML templates to generate complete web pages for each tip.
 
