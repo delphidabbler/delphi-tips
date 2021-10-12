@@ -8,6 +8,13 @@ a, a:hover, a:visited, a:active {
     color: $color-primary-dark;
 }
 
+ul.spaced,
+ol.spaced {
+    > li {
+        margin-bottom: 1rem;
+    }
+}
+
 .list-group {
     border: $color-grey-light 2px solid;
     border-radius: 0;
