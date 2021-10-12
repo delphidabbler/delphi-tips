@@ -15,22 +15,22 @@
 <span class="pas-space">  </span><span class="pas-comment">// Local system has a valid connection to the Internet, but it might or might</span>
 <span class="pas-space">  </span><span class="pas-comment">// not be currently connected.</span>
 <span class="pas-space">  </span><span class="pas-ident">INTERNET_CONNECTION_CONFIGURED</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-hex">$40</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-space">  </span><span class="pas-comment">// Local system uses a local area network to connect to the Internet.</span>
 <span class="pas-space">  </span><span class="pas-ident">INTERNET_CONNECTION_LAN</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-hex">$02</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-space">  </span><span class="pas-comment">// Local system uses a modem to connect to the Internet</span>
 <span class="pas-space">  </span><span class="pas-ident">INTERNET_CONNECTION_MODEM</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-hex">$01</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-space">  </span><span class="pas-comment">// Local system is in offline mode.</span>
 <span class="pas-space">  </span><span class="pas-ident">INTERNET_CONNECTION_OFFLINE</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-hex">$20</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-space">  </span><span class="pas-comment">// Local system uses a proxy server to connect to the Internet</span>
 <span class="pas-space">  </span><span class="pas-ident">INTERNET_CONNECTION_PROXY</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-hex">$04</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-space">  </span><span class="pas-comment">// Local system has RAS installed.</span>
 <span class="pas-space">  </span><span class="pas-ident">INTERNET_RAS_INSTALLED</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-hex">$10</span><span class="pas-sym">;</span>
- 
+
 <span class="pas-kwd">var</span>
 <span class="pas-space">  </span><span class="pas-ident">InetState</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">DWORD</span><span class="pas-sym">;</span>
 <span class="pas-space">  </span><span class="pas-ident">hHttpSession</span><span class="pas-sym">,</span><span class="pas-space"> </span><span class="pas-ident">hReqUrl</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">HInternet</span><span class="pas-sym">;</span>
@@ -53,7 +53,7 @@
 <span class="pas-space">    </span><span class="pas-kwd">try</span>
 <span class="pas-space">      </span><span class="pas-ident">hReqUrl</span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">InternetOpenURL</span><span class="pas-sym">(</span>
 <span class="pas-space">        </span><span class="pas-ident">hHttpSession</span><span class="pas-sym">,</span><span class="pas-space"> </span>
-<span class="pas-space">        </span><span class="pas-ident">PChar</span><span class="pas-sym">(</span><span class="pas-str">'http://wwww.example.com'</span><span class="pas-comment">{ the URL to check }</span><span class="pas-sym">)</span><span class="pas-sym">,</span><span class="pas-space"> </span>
+<span class="pas-space">        </span><span class="pas-ident">PChar</span><span class="pas-sym">(</span><span class="pas-str">'https://www.example.com'</span><span class="pas-comment">{ the URL to check }</span><span class="pas-sym">)</span><span class="pas-sym">,</span><span class="pas-space"> </span>
 <span class="pas-space">        </span><span class="pas-kwd">nil</span><span class="pas-sym">,</span><span class="pas-space"> </span>
 <span class="pas-space">        </span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span>
 <span class="pas-space">        </span><span class="pas-num">0</span><span class="pas-sym">,</span><span class="pas-space"> </span>
