@@ -1,12 +1,5 @@
 ---
 ---
-<div id="wrapper">
-
-<h1>
-	How to refresh file icons
-</h1>
-
-
 <p>
   Whenever changes are made to the system's icons you must notify Windows of
   this. It (Windows) alone does not check this, you have to call code
@@ -22,23 +15,3 @@
   SHChangeNotify(SHCNE_ASSOCCHANGED, SHCNF_IDLIST, <span class="pas-kwd">nil</span>, <span class="pas-kwd">nil</span>);
 ...</pre>
 </div>
-
-<table class="infotable">
-  <tr>
-    <th scope="row">Author:</th>
-    <td>Unknown</td>
-  </tr>
-  <tr>
-    <th scope="row">Added:</th>
-    <td>2007-06-02</td>
-  </tr>
-  <tr>
-    <th scope="row">Last updated:</th>
-    <td>
-    2007-06-02</td>
-  </tr>
-</table>
-
-
-
-</div> <!-- #wrapper -->

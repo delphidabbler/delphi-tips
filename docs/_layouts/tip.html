@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{%- assign pg = page.url | split: "." -%}
+{%- assign id = pg.first | split: "/"  | last  | minus: 1 -%}
+{%- assign tip = site.data.tips[id] -%}
 <nav>
     <ul class="nav-list">
         <li class="nav-1">
@@ -12,4 +15,57 @@ layout: default
     </ul>
 </nav>
 
+<div id="wrapper">
+
+<h1>
+    {{ tip.title | escape }} <span class="badge badge-dark"><small>#{{ tip.id | escape }}</small></span>
+</h1>
+
+<!-- BEGIN CONTENT -->
 {{ content }}
+<!--END CONTENT -->
+
+<table class="infotable">
+    {% if tip.resource != "" -%}
+    <tr>
+        <th scope="row">Original resource:</th>
+        {%- if tip.resource_website != "" %}
+        <td><a href="{{tip.resource_website}}" target="_blank">{{ tip.resource | escape }}</a></td>
+        {%- else %}
+        <td>{{ tip.resource | escape }}</td>
+        {%- endif %}
+    </tr>
+    {% endif -%}
+    <tr>
+        <th scope="row">Author:</th>
+        {% if tip.author != "" -%}
+        {%- if tip.author_website != "" -%}
+        <td><a href="{{tip.author_website}}" target="_blank">{{ tip.author | escape }}</a></td>
+        {%- else -%}
+        <td>{{ tip.author | escape }}</td>
+        {%- endif -%}
+        {%- else -%}
+        <td>Unknown</td>
+        {%- endif %}
+    </tr>
+    {% if tip.contributor != "" -%}
+    <tr>
+        <th scope="row">Contributor:</th>
+        {%- if tip.contributor_website != "" %}
+        <td><a href="{{tip.contributor_website}}" target="_blank">{{ tip.contributor | escape }}</a></td>
+        {%- else %}
+        <td>{{ tip.contributor | escape }}</td>
+        {%- endif %}
+    </tr>
+    {% endif -%}
+    <tr>
+        <th scope="row">Added:</th>
+        <td>{{ tip.added | date: "%Y/%m/%d"  | escape }}</td>
+    </tr>
+    <tr>
+        <th scope="row">Last updated:</th>
+        <td>{{ tip.updated | date: "%Y/%m/%d"  | escape }}</td>
+    </tr>
+</table>
+
+</div> <!-- /#wrapper -->

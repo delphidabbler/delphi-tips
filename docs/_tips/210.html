@@ -1,12 +1,5 @@
 ---
 ---
-<div id="wrapper">
-
-<h1>
-	How to create a transparent TPanel
-</h1>
-
-
 <h2>
   Answer 1
 </h2>
@@ -34,7 +27,7 @@
 <pre class="pas-source">
 <span class="pas-kwd">type</span>
  
-
+<span class="pas-space">  </span><span class="pas-ident">TTransparentPanel</span><span class="pas-space"> </span><span class="pas-sym">=</span><span class="pas-space"> </span><span class="pas-kwd">class</span><span class="pas-sym">(</span><span class="pas-ident">TPanel</span><span class="pas-sym">)</span>
 <span class="pas-kwd">private</span>
 <span class="pas-space">  </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">SetParent</span><span class="pas-sym">(</span><span class="pas-ident">AParent</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWinControl</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">override</span><span class="pas-sym">;</span>
 <span class="pas-space">  </span><span class="pas-kwd">procedure</span><span class="pas-space"> </span><span class="pas-ident">WMEraseBkGnd</span><span class="pas-sym">(</span><span class="pas-kwd">Var</span><span class="pas-space"> </span><span class="pas-kwd">Message</span><span class="pas-sym">:</span><span class="pas-space"> </span><span class="pas-ident">TWMEraseBkGnd</span><span class="pas-sym">)</span><span class="pas-sym">;</span><span class="pas-space"> </span><span class="pas-kwd">message</span><span class="pas-space"> </span><span class="pas-ident">WM_EraseBkGnd</span><span class="pas-sym">;</span>
@@ -348,27 +341,3 @@
 <p class="credits">
   Tip by Serge Gubenko
 </p>
-
-<table class="infotable">
-  <tr>
-    <th scope="row">Original resource:</th>
-    <td>The Delphi Pool</td>
-  </tr>
-  <tr>
-    <th scope="row">Author:</th>
-    <td>Various</td>
-  </tr>
-  <tr>
-    <th scope="row">Added:</th>
-    <td>2013-01-27</td>
-  </tr>
-  <tr>
-    <th scope="row">Last updated:</th>
-    <td>
-    2013-01-27</td>
-  </tr>
-</table>
-
-
-
-</div> <!-- #wrapper -->

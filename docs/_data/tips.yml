@@ -1,474 +1,2542 @@
+%YAML 1.1
 ---
-- id: '1'
-  title: Move the mouse cursor from code
-- id: '2'
-  title: How to call Internet Explorer from Delphi
-- id: '3'
-  title: How to tell Netscape Navigator which web pages to load from your Delphi program
-- id: '4'
-  title: Calling CreateProcess() the easy way
-- id: '5'
-  title: Open documents and URLs in their associated applications
-- id: '6'
-  title: Convert between long and short file names
-- id: '7'
-  title: How to programmatically make your programs run on Windows startup
-- id: '8'
-  title: Search for help
-- id: '9'
-  title: When was that file last accessed?
-- id: '10'
-  title: Delete files with the ability to undo or recycle
-- id: '11'
-  title: How to flash the taskbar
-- id: '12'
-  title: How to perform a Shell Sort
-- id: '13'
-  title: How to copy data between TWebBrowsers
-- id: '14'
-  title: How to access the Registry using Windows API
-- id: '15'
-  title: How to add a context menu item to Windows Explorer
-- id: '16'
-  title: How to register a global hotkey
-- id: '17'
-  title: Execute a program and wait until it is done
-- id: '18'
-  title: How to refresh file icons
-- id: '19'
-  title: How to read bitmap file information
-- id: '20'
-  title: How to determine the screen resolution
-- id: '21'
-  title: How to read image pixels fast
-- id: '22'
-  title: Drawing rotated text
-- id: '23'
-  title: How to empty a TImage
-- id: '24'
-  title: How to get a screen shot of a control
-- id: '25'
-  title: How to resolve a host name
-- id: '26'
-  title: How to turn numlock on by code
-- id: '27'
-  title: How to check if a string is a number
-- id: '28'
-  title: How to check if the BDE is installed
-- id: '29'
-  title: How to read the installed ADO version
-- id: '30'
-  title: How to convert TDateTime to a UNIX timestamp and vice versa
-- id: '31'
-  title: How to detect text and font size changes
-- id: '32'
-  title: How to print text and text files in Delphi
-- id: '33'
-  title: How to create non-hiding hints
-- id: '34'
-  title: How to create multiline hints
-- id: '35'
-  title: How to know if the mouse has entered the component area
-- id: '36'
-  title: How to snap a window to the screen edge
-- id: '37'
-  title: How to have a form that never activates
-- id: '38'
-  title: How can I add my own custom menu item to another application?
-- id: '39'
-  title: Incremental search of list box
-- id: '40'
-  title: Adding component help to Delphi
-- id: '41'
-  title: Boyer-Moore-Horspool text searching
-- id: '42'
-  title: Fast string file searching
-- id: '43'
-  title: Prevent flicker on graphics controls
-- id: '44'
-  title: How to block input to the system until released
-- id: '45'
-  title: How to check if a key is pressed
-- id: '46'
-  title: Animate windows as they are opened and closed
-- id: '47'
-  title: Find the taskbar and system tray window handles
-- id: '48'
-  title: Animate tray application windows as they open and close
-- id: '49'
-  title: Message box that works with a Delphi Service Application
-- id: '50'
-  title: How to get the size of a file
-- id: '51'
-  title: Communicate between processes using windows messaging
-- id: '52'
-  title: How to disable form movement using the mouse
-- id: '53'
-  title: Triggering default menu items from code
-- id: '54'
-  title: Drawing disabled text
-- id: '55'
-  title: Drawing outlined text
-- id: '56'
-  title: Finding HTML elements by ID in a TWebBrowser document
-- id: '57'
-  title: Inserting RTF code into a rich edit control
-- id: '58'
-  title: How to prevent a TWebBrowser from displaying a document's background
-- id: '59'
-  title: Reading and writing INI files
-- id: '60'
-  title: Merging files
-- id: '61'
-  title: Execute a DOS command and capture the output
-- id: '62'
-  title: Get the network computer and domain names
-- id: '63'
-  title: Display the Browse for Folder dialog box
-- id: '64'
-  title: Getting and setting the user and system environment variables
-- id: '65'
-  title: Making LMD buttons work when clicked
-- id: '66'
-  title: How to convert Delphi forms from binary to text and vice versa
-- id: '67'
-  title: Auto-resizing and centring forms on screen
-- id: '68'
-  title: Extract keywords from an HTML document
-- id: '69'
-  title: Check if an HTML element is displayed
-- id: '70'
-  title: File Open/Save Common Dialog Control IDs
-- id: '71'
-  title: How to extract the title of an HTML document
-- id: '72'
-  title: Check that a HTML document has completely loaded
-- id: '73'
-  title: Encrypt and decrypt functions
-- id: '74'
-  title: How to create components with a transparent background
-- id: '75'
-  title: How to use a TControlCanvas in a component
-- id: '76'
-  title: How to implement drag and drop at design time
-- id: '77'
-  title: How to set boundaries for newly created controls
-- id: '78'
-  title: How to enable scrollbars at design time
-- id: '79'
-  title: How to define a minimum size for a component
-- id: '80'
-  title: How to trap the ALT key state in a visual component
-- id: '81'
-  title: How to implement a multi-line caption on a TButton
-- id: '82'
-  title: How to create a TCheckBox with a transparent caption
-- id: '83'
-  title: How to create a TComboBox with incremental search capabilities
-- id: '84'
-  title: How to create a borderless TComboBox
-- id: '85'
-  title: How to centre text in a TEdit
-- id: '86'
-  title: How to create a TEdit that accepts only numeric input
-- id: '87'
-  title: How to create a TMemo with alternating colours to paint the lines
-- id: '88'
-  title: How to write a list of strings to the registry
-- id: '89'
-  title: How to make a child form listen to broadcasted messages
-- id: '90'
-  title: How to check if a TTreeView is fully expanded or collapsed
-- id: '91'
-  title: How to create a TTreeView without scrollbars
-- id: '92'
-  title: How to create a resizable TPanel with a size grip
-- id: '93'
-  title: How to resize a TPanel at runtime
-- id: '94'
-  title: How to create a non-rectangular TPanel
-- id: '95'
-  title: How to get the RGB value of a pixel under the mouse cursor
-- id: '96'
-  title: How to use the alpha transparency features included in Windows 2000 and later
-- id: '97'
-  title: How to convert a *.bmp file to a *.jpg file
-- id: '98'
-  title: How to create a brush using CreateBrushIndirect
-- id: '99'
-  title: How to resize a *.jpg image and save the result to a file
-- id: '100'
-  title: How to save several TBitmaps into one file
-- id: '101'
-  title: How to convert an integer value to a Roman Numeral representation
-- id: '102'
-  title: How to control the scroll buffer of a TMemo
-- id: '103'
-  title: How to get the physical caret position in a TMemo, TEdit or TRichEdit
-- id: '104'
-  title: How to save and load printer settings to / from the registry
-- id: '105'
-  title: How to send a message to a specific control on a TForm
-- id: '106'
-  title: Install components and IDE extensions into the Delphi IDE
-- id: '107'
-  title: Remove recently opened projects from the CodeGear RAD Studio IDE welcome
-    page
-- id: '108'
-  title: How to reduce the number of Set methods in a component
-- id: '109'
-  title: How to make a TCollectionItem contain a TCollection
-- id: '110'
-  title: How to add text completion capability to a TComboBox
-- id: '111'
-  title: How to implement autocompletion in a TEdit
-- id: '112'
-  title: How to create a TGroupBox with a checkbox that disables / enables all contained
-    controls when checked
-- id: '113'
-  title: How to use a scroll event in a TListBox
-- id: '114'
-  title: How to create a TListBox that is resizable at runtime
-- id: '115'
-  title: How to create a TListBox with Drag and Drop capabilities
-- id: '116'
-  title: How to expand a TMemo while keying in
-- id: '117'
-  title: How to add an OnMouseDown event to a TPopupMenu
-- id: '118'
-  title: How to create a TTreeView with a three state checkbox
-- id: '119'
-  title: How to change the drag cursor image when dragging in a TTreeView
-- id: '120'
-  title: How to create a TScrollBar with a background bitmap
-- id: '121'
-  title: How to create a TScrollBox with its own background
-- id: '122'
-  title: How to implement an OnMouseDown event for the buttons of a TRadioGroup
-- id: '123'
-  title: How to detach and re-attach an event
-- id: '124'
-  title: Detect if an application has stopped responding
-- id: '125'
-  title: Find the position of the text cursor in a memo control
-- id: '126'
-  title: Scanning MS Office documents using the MS Anti-virus API
-- id: '127'
-  title: Prevent system sleep
-- id: '128'
-  title: Right align main menu items
-- id: '129'
-  title: How to use a function or a procedure as a parameter to another function
-- id: '130'
-  title: Using the TStrings.ValueFromIndex property
-- id: '131'
-  title: Print any type of document using Delphi
-- id: '132'
-  title: Which COM objects to use?
-- id: '133'
-  title: Serialize application settings
-- id: '134'
-  title: Different ways of executing applications and files from Delphi
-- id: '135'
-  title: Programatically log users off
-- id: '136'
-  title: How to replace text in a Word document
-- id: '137'
-  title: Communicate with Windows Program Manager using DDE
-- id: '138'
-  title: How to get the system's colour palette
-- id: '139'
-  title: How to create gradient colour schemes
-- id: '140'
-  title: How to convert hex colour values into Delphi formatted ones
-- id: '141'
-  title: How to mix or separate three color channels
-- id: '142'
-  title: How to adjust RGB values using TTrackBars
-- id: '143'
-  title: How to draw dotted or dashed lines using a pen with a width greater than
-    1
-- id: '144'
-  title: How to generate a circle through three points
-- id: '145'
-  title: How to compare two pf24bit images
-- id: '146'
-  title: How to implement a 'Lasso'
-- id: '147'
-  title: How to blend two pf24bit images using ScanLine
-- id: '148'
-  title: How to create a pie chart
-- id: '149'
-  title: How to change the corner size of RoundRect
-- id: '150'
-  title: How to determine the track of the current CD
-- id: '151'
-  title: Force a TEdit to accept only numeric input
-- id: '152'
-  title: How to save the canvas of a TPaintBox to a .bmp file
-- id: '153'
-  title: How to retrieve rich text from a resource file and save it to disk
-- id: '154'
-  title: How to delete files with wildcards
-- id: '155'
-  title: How to search for a pattern in a file
-- id: '156'
-  title: Solution for problem with auto update feature in Rad Studio 2010 and Win
-    Vista/7 UAC
-- id: '157'
-  title: A general purpose Base64 decoding routine using Indy
-- id: '158'
-  title: How to prevent a TListView from displaying tool tips for long items
-- id: '159'
-  title: How to centre text in a TEdit (alternative approach)
-- id: '160'
-  title: How to call CopyFileEx and let the callback update a progress bar
-- id: '161'
-  title: How to paste files from Windows Explorer into your application
-- id: '162'
-  title: How to delete lines from a text file
-- id: '163'
-  title: How to save and restore font selections to a text file
-- id: '164'
-  title: How to generate a temporary file name
-- id: '165'
-  title: How to copy multiple files into one
-- id: '166'
-  title: How to get the size of a text file without opening it
-- id: '167'
-  title: How to get data from a file without reading it into memory
-- id: '168'
-  title: How to read Unicode text files
-- id: '169'
-  title: How to read very large text files fast
-- id: '170'
-  title: How to send a simulated key press to the active control
-- id: '171'
-  title: How to get and set the local computer name
-- id: '172'
-  title: Sort TStrings objects with extra functionality ala UNIX style parameters
-- id: '173'
-  title: Change the button captions in a message dialog box
-- id: '174'
-  title: How to minimize the controls in a form
-- id: '175'
-  title: Display the Windows Disconnect Network Drive dialog box
-- id: '176'
-  title: How to download a file using FTP
-- id: '177'
-  title: How to save and load a TStringGrid to and from a file
-- id: '178'
-  title: How to make a single instance of your application
-- id: '179'
-  title: How to fade forms in and out
-- id: '180'
-  title: How to swap two integers without using a temporary variable
-- id: '181'
-  title: Simulate the Visual Basic SendKeys and AppActivate routines in Delphi
-- id: '182'
-  title: Draw a DBGrid with alternating row colours
-- id: '183'
-  title: Prevent a Delphi form from being moved off screen
-- id: '184'
-  title: How to wipe a file
-- id: '185'
-  title: How to detect and prevent Windows shut down
-- id: '186'
-  title: Take a screen shot of an inactive window
-- id: '187'
-  title: Prevent a Delphi form from being moved
-- id: '188'
-  title: Add animation effects to your forms
-- id: '189'
-  title: Ensure a form stays in the background
-- id: '190'
-  title: Terminate a process instantly
-- id: '191'
-  title: Delete or clear rows in a TStringGrid
-- id: '192'
-  title: How to save the font settings of a control to the registry
-- id: '193'
-  title: How to subclass the default Delphi Dock Manager
-- id: '194'
-  title: How to create data-aware components
-- id: '195'
-  title: How to implement a custom component paint method that is dependent on outside
-    data
-- id: '196'
-  title: How to get the update region in a TGraphicControl
-- id: '197'
-  title: Force display of a ToolButton's PopupMenu when the button is clicked
-- id: '198'
-  title: How to draw on the Windows desktop
-- id: '199'
-  title: Change the font used in hints
-- id: '200'
-  title: How to display icons in a combo box
-- id: '201'
-  title: How to get the image size of a JPG, GIF and PNG image file
-- id: '202'
-  title: How to save 32 bit bitmaps in 24 bit bmp format
-- id: '203'
-  title: How to paint a translucent (not transparent) rectangle
-- id: '204'
-  title: How to write a custom TAction to control the visibility of a TStatusBar
-- id: '205'
-  title: How to implement an OnAfterExecute event in a TActionList
-- id: '206'
-  title: How to create a TDrawGrid where all cells act as buttons
-- id: '207'
-  title: How to block pasting of text from the clipboard into an enabled TEdit
-- id: '208'
-  title: How to paint on a TControlCanvas in a TMemo
-- id: '209'
-  title: How to create a transparent TMemo
-- id: '210'
-  title: How to create a transparent TPanel
-- id: '211'
-  title: List of BDE error codes
-- id: '212'
-  title: BDE API Overview
-- id: '213'
-  title: How to get rid of the BDE
-- id: '214'
-  title: How to create a GUID
-- id: '215'
-  title: How to create a greyscale palette
-- id: '216'
-  title: What is a DispInterface?
-- id: '217'
-  title: The purpose and use of DispInterface
-- id: '218'
-  title: How to calculate the minimum distance between two polygons
-- id: '219'
-  title: How to rotate a 2D point
-- id: '220'
-  title: How to calculate intersection points of lines or line sections with rectangles
-- id: '221'
-  title: How to calculate the area of a polygon
-- id: '222'
-  title: How to retrieve all available TBrushStyle values as a list of strings
-- id: '223'
-  title: Check if computer is connected to the internet
-- id: '224'
-  title: Change the Delphi Object Inspector font size
-- id: '225'
-  title: Double quote a string that has spaces
-- id: '226'
-  title: Implementing a custom loop
-- id: '227'
-  title: How to handle a system time change
-- id: '228'
-  title: Dim the main application form when a dialog box is displayed
-- id: '229'
-  title: How to create a virtual drive
-- id: '230'
-  title: Optimised replacements for DecodeDate and EncodeDate
-- id: '231'
-  title: How to retrieve the CPU vendor ID
-- id: '232'
-  title: How to find the minimum and maximum of three integers
-- id: '233'
-  title: How to check if a program is installed using its program identifier
-- id: '234'
-  title: Convert strings to character sets and vice versa
+#
+# Exported from SQL database dabbler_tips.tips on delphidabbler.com web server
+#
+# ** REQUIREMENTS:
+#    1) id MUST start at 1 and be sequential with no gaps
+#    2) each id MUST have a matching tip HTML document with path relative to base URL of tips/(id+1).html
+#
+-
+  id: 1
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "Move the mouse cursor from code"
+  author: "Jerry Gagnon"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 2
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to call Internet Explorer from Delphi"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 3
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to tell Netscape Navigator which web pages to load from your Delphi program"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 4
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "Calling CreateProcess() the easy way"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 5
+  added: "2007-06-02"
+  updated: "2007-10-12 00:00:00"
+  title: "Open documents and URLs in their associated applications"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 6
+  added: "2007-06-02"
+  updated: "2013-10-12 00:00:00"
+  title: "Convert between long and short file names"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 7
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to programmatically make your programs run on Windows startup"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 8
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "Search for help"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 9
+  added: "2007-06-02"
+  updated: "2009-08-27 00:00:00"
+  title: "When was that file last accessed?"
+  author: ""
+  author_website: ""
+  resource: "Chami.com Tips"
+  resource_website: "http://www.chami.com/tips/"
+  contributor: ""
+  contributor_website: ""
+-
+  id: 10
+  added: "2007-06-02"
+  updated: "2013-10-12 00:00:00"
+  title: "Delete files with the ability to undo or recycle"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 11
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to flash the taskbar"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 12
+  added: "2007-06-02"
+  updated: "2010-03-16 00:00:00"
+  title: "How to perform a Shell Sort"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 13
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to copy data between TWebBrowsers"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 14
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to access the Registry using Windows API"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 15
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to add a context menu item to Windows Explorer"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 16
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to register a global hotkey"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 17
+  added: "2007-06-02"
+  updated: "2013-10-12 00:00:00"
+  title: "Execute a program and wait until it is done"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 18
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to refresh file icons"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 19
+  added: "2007-06-02"
+  updated: "2009-05-04 00:00:00"
+  title: "How to read bitmap file information"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 20
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to determine the screen resolution"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 21
+  added: "2007-06-02"
+  updated: "2011-01-16 15:06:00"
+  title: "How to read image pixels fast"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 22
+  added: "2007-06-02"
+  updated: "2013-10-12 00:00:00"
+  title: "Drawing rotated text"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 23
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to empty a TImage"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 24
+  added: "2007-06-02"
+  updated: "2011-01-16 15:05:00"
+  title: "How to get a screen shot of a control"
+  author: "Various"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 25
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to resolve a host name"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 26
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to turn numlock on by code"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 27
+  added: "2007-06-02"
+  updated: "2013-10-12 00:00:00"
+  title: "How to check if a string is a number"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 28
+  added: "2007-06-02"
+  updated: "2013-10-12 00:00:00"
+  title: "How to check if the BDE is installed"
+  author: "Various"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 29
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to read the installed ADO version"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 30
+  added: "2007-06-02"
+  updated: "2013-10-12 00:00:00"
+  title: "How to convert TDateTime to a UNIX timestamp and vice versa"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 31
+  added: "2007-06-02"
+  updated: "2007-09-24 00:00:00"
+  title: "How to detect text and font size changes"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 32
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to print text and text files in Delphi"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 33
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to create non-hiding hints"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 34
+  added: "2007-06-02"
+  updated: "2007-10-12 00:00:00"
+  title: "How to create multiline hints"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 35
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to know if the mouse has entered the component area"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 36
+  added: "2007-06-02"
+  updated: "2008-08-14 00:00:00"
+  title: "How to snap a window to the screen edge"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 37
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How to have a form that never activates"
+  author: "logman0u812"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 38
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "How can I add my own custom menu item to another application?"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 39
+  added: "2007-06-02"
+  updated: "2007-06-02 00:00:00"
+  title: "Incremental search of list box"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 40
+  added: "2007-06-02"
+  updated: "2007-09-24 00:00:00"
+  title: "Adding component help to Delphi"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 41
+  added: "2007-06-11"
+  updated: "2010-03-16 00:00:00"
+  title: "Boyer-Moore-Horspool text searching"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 42
+  added: "2007-06-11"
+  updated: "2007-06-11 00:00:00"
+  title: "Fast string file searching"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 43
+  added: "2007-06-11"
+  updated: "2007-06-11 00:00:00"
+  title: "Prevent flicker on graphics controls"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 44
+  added: "2007-06-11"
+  updated: "2007-06-11 00:00:00"
+  title: "How to block input to the system until released"
+  author: "DennisLV"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 45
+  added: "2007-07-04"
+  updated: "2013-10-12 00:00:00"
+  title: "How to check if a key is pressed"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 46
+  added: "2007-08-14"
+  updated: "2007-08-14 00:00:00"
+  title: "Animate windows as they are opened and closed"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 47
+  added: "2007-08-14"
+  updated: "2013-10-12 00:00:00"
+  title: "Find the taskbar and system tray window handles"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 48
+  added: "2007-08-14"
+  updated: "2007-08-14 00:00:00"
+  title: "Animate tray application windows as they open and close"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 49
+  added: "2007-08-14"
+  updated: "2007-08-14 00:00:00"
+  title: "Message box that works with a Delphi Service Application"
+  author: "Joe Donth"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Joe Donth"
+  contributor_website: ""
+-
+  id: 50
+  added: "2007-08-14"
+  updated: "2007-08-14 00:00:00"
+  title: "How to get the size of a file"
+  author: "Joe Donth"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Joe Donth"
+  contributor_website: ""
+-
+  id: 51
+  added: "2007-08-31"
+  updated: "2007-08-31 00:00:00"
+  title: "Communicate between processes using windows messaging"
+  author: "Dennis LV"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Dennis LV"
+  contributor_website: ""
+-
+  id: 52
+  added: "2007-09-20"
+  updated: "2007-09-20 00:00:00"
+  title: "How to disable form movement using the mouse"
+  author: "Dennis LV"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Dennis LV"
+  contributor_website: ""
+-
+  id: 53
+  added: "2007-10-12"
+  updated: "2007-10-12 00:00:00"
+  title: "Triggering default menu items from code"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 54
+  added: "2007-10-15"
+  updated: "2013-10-12 00:00:00"
+  title: "Drawing disabled text"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 55
+  added: "2007-10-15"
+  updated: "2013-10-12 00:00:00"
+  title: "Drawing outlined text"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 56
+  added: "2007-10-23"
+  updated: "2007-10-29 00:00:00"
+  title: "Finding HTML elements by ID in a TWebBrowser document"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 57
+  added: "2007-10-29"
+  updated: "2007-10-29 00:00:00"
+  title: "Inserting RTF code into a rich edit control"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 58
+  added: "2007-10-29"
+  updated: "2010-03-16 00:00:00"
+  title: "How to prevent a TWebBrowser from displaying a document's background"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 59
+  added: "2007-10-29"
+  updated: "2007-10-29 00:00:00"
+  title: "Reading and writing INI files"
+  author: "Joe Donth"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Joe Donth"
+  contributor_website: ""
+-
+  id: 60
+  added: "2008-03-31"
+  updated: "2008-03-31 00:00:00"
+  title: "Merging files"
+  author: "R Nascimento da Rocha/P Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Rubem Nascimento da Rocha"
+  contributor_website: ""
+-
+  id: 61
+  added: "2008-03-31"
+  updated: "2009-12-26 00:00:00"
+  title: "Execute a DOS command and capture the output"
+  author: "Joe Donth"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Joe Donth"
+  contributor_website: ""
+-
+  id: 62
+  added: "2008-03-31"
+  updated: "2008-03-31 00:00:00"
+  title: "Get the network computer and domain names"
+  author: "Joe Donth"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Joe Donth"
+  contributor_website: ""
+-
+  id: 63
+  added: "2003-03-31"
+  updated: "2003-03-31 00:00:00"
+  title: "Display the Browse for Folder dialog box"
+  author: "Joe Donth"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Joe Donth"
+  contributor_website: ""
+-
+  id: 64
+  added: "2008-04-12"
+  updated: "2008-04-12 00:00:00"
+  title: "Getting and setting the user and system environment variables"
+  author: "Joe Donth"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Joe Donth"
+  contributor_website: ""
+-
+  id: 65
+  added: "2008-04-29"
+  updated: "2008-04-29 00:00:00"
+  title: "Making LMD buttons work when clicked"
+  author: "Alan Bailey"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Alan Bailey"
+  contributor_website: ""
+-
+  id: 66
+  added: "2008-06-16"
+  updated: "2008-06-16 00:00:00"
+  title: "How to convert Delphi forms from binary to text and vice versa"
+  author: "Bill Miller"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Bill Miller"
+  contributor_website: ""
+-
+  id: 67
+  added: "2008-10-17"
+  updated: "2008-10-17 00:00:00"
+  title: "Auto-resizing and centring forms on screen"
+  author: "Alan Bailey"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Alan Bailey"
+  contributor_website: ""
+-
+  id: 68
+  added: "2008-11-26"
+  updated: "2008-11-26 00:00:00"
+  title: "Extract keywords from an HTML document"
+  author: "nybnybnybnyb"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 69
+  added: "2008-11-26"
+  updated: "2008-11-26 00:00:00"
+  title: "Check if an HTML element is displayed"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 70
+  added: "2009-04-26"
+  updated: "2009-04-26 00:00:00"
+  title: "File Open/Save Common Dialog Control IDs"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 71
+  added: "2009-06-17"
+  updated: "2009-06-17 00:00:00"
+  title: "How to extract the title of an HTML document"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 72
+  added: "2009-06-17"
+  updated: "2009-11-13 00:00:00"
+  title: "Check that a HTML document has completely loaded"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: "Peter Johnson"
+  contributor_website: "http://www.delphidabbler.com/"
+-
+  id: 73
+  added: "2009-06-23"
+  updated: "2009-08-11 00:00:00"
+  title: "Encrypt and decrypt functions"
+  author: "Steve Schafer"
+  author_website: "http://www.teamb.com/"
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 74
+  added: "2009-08-12"
+  updated: "2010-03-16 00:00:00"
+  title: "How to create components with a transparent background"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 75
+  added: "2009-08-12"
+  updated: "2009-08-12 00:00:00"
+  title: "How to use a TControlCanvas in a component"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 76
+  added: "2009-08-12"
+  updated: "2009-08-12 00:00:00"
+  title: "How to implement drag and drop at design time"
+  author: "Renate Schaaf"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 77
+  added: "2009-08-12"
+  updated: "2009-08-12 00:00:00"
+  title: "How to set boundaries for newly created controls"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 78
+  added: "2009-08-12"
+  updated: "2009-08-12 00:00:00"
+  title: "How to enable scrollbars at design time"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 79
+  added: "2009-08-12"
+  updated: "2011-01-16 15:09:00"
+  title: "How to define a minimum size for a component"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 80
+  added: "2009-08-12"
+  updated: "2009-08-12 00:00:00"
+  title: "How to trap the ALT key state in a visual component"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 81
+  added: "2009-08-24"
+  updated: "2009-08-24 00:00:00"
+  title: "How to implement a multi-line caption on a TButton"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 82
+  added: "2009-08-24"
+  updated: "2010-01-29 00:00:00"
+  title: "How to create a TCheckBox with a transparent caption"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 83
+  added: "2009-08-24"
+  updated: "2009-08-24 00:00:00"
+  title: "How to create a TComboBox with incremental search capabilities"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 84
+  added: "2009-08-24"
+  updated: "2009-08-24 00:00:00"
+  title: "How to create a borderless TComboBox"
+  author: "Xavier Pacheco"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 85
+  added: "2009-08-24"
+  updated: "2010-04-08 15:55:00"
+  title: "How to centre text in a TEdit"
+  author: "Steve Zimmelman"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 86
+  added: "2009-08-24"
+  updated: "2009-12-05 00:00:00"
+  title: "How to create a TEdit that accepts only numeric input"
+  author: "Ralph Friedman & Chris Luck"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 87
+  added: "2009-08-28"
+  updated: "2010-03-16 00:00:00"
+  title: "How to create a TMemo with alternating colours to paint the lines"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 88
+  added: "2009-08-24"
+  updated: "2009-08-24 00:00:00"
+  title: "How to write a list of strings to the registry"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 89
+  added: "2009-08-24"
+  updated: "2009-08-24 00:00:00"
+  title: "How to make a child form listen to broadcasted messages"
+  author: "Charles Hacker"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 90
+  added: "2009-08-24"
+  updated: "2009-08-24 00:00:00"
+  title: "How to check if a TTreeView is fully expanded or collapsed"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 91
+  added: "2009-09-07"
+  updated: "2009-09-07 00:00:00"
+  title: "How to create a TTreeView without scrollbars"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 92
+  added: "2009-09-07"
+  updated: "2010-03-16 00:00:00"
+  title: "How to create a resizable TPanel with a size grip"
+  author: "Peter Below & Eddie Shipman"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 93
+  added: "2009-09-07"
+  updated: "2010-03-16 00:00:00"
+  title: "How to resize a TPanel at runtime"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 94
+  added: "2009-09-07"
+  updated: "2010-03-16 00:00:00"
+  title: "How to create a non-rectangular TPanel"
+  author: "Eddie Shipman"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 95
+  added: "2009-09-07"
+  updated: "2010-03-16 00:00:00"
+  title: "How to get the RGB value of a pixel under the mouse cursor"
+  author: "Cristian Alejo Zujew"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 96
+  added: "2009-09-14"
+  updated: "2009-09-14 00:00:00"
+  title: "How to use the alpha transparency features included in Windows 2000 and later"
+  author: "Serhiy Perevoznyk"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 97
+  added: "2009-09-14"
+  updated: "2009-09-14 00:00:00"
+  title: "How to convert a *.bmp file to a *.jpg file"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 98
+  added: "2009-09-14"
+  updated: "2009-09-14 00:00:00"
+  title: "How to create a brush using CreateBrushIndirect"
+  author: "Earl F. Glynn"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 99
+  added: "2009-09-14"
+  updated: "2009-09-14 00:00:00"
+  title: "How to resize a *.jpg image and save the result to a file"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 100
+  added: "2009-09-14"
+  updated: "2010-03-16 00:00:00"
+  title: "How to save several TBitmaps into one file"
+  author: "Charles Hacker"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 101
+  added: "2009-09-14"
+  updated: "2010-03-16 00:00:00"
+  title: "How to convert an integer value to a Roman Numeral representation"
+  author: "Philippe Ranger"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 102
+  added: "2009-09-14"
+  updated: "2009-09-14 00:00:00"
+  title: "How to control the scroll buffer of a TMemo"
+  author: "Eddie Shipman"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 103
+  added: "2009-09-14"
+  updated: "2009-09-14 00:00:00"
+  title: "How to get the physical caret position in a TMemo, TEdit or TRichEdit"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 104
+  added: "2009-09-14"
+  updated: "2009-09-14 00:00:00"
+  title: "How to save and load printer settings to / from the registry"
+  author: "Peter Below & David Beardwood"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 105
+  added: "2009-09-14"
+  updated: "2010-03-16 00:00:00"
+  title: "How to send a message to a specific control on a TForm"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 106
+  added: "2009-10-06"
+  updated: "2010-02-22 00:00:00"
+  title: "Install components and IDE extensions into the Delphi IDE"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 107
+  added: "2009-10-20"
+  updated: "2009-10-20 00:00:00"
+  title: "Remove recently opened projects from the CodeGear RAD Studio IDE welcome page"
+  author: "Jeff DeVore"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Jeff DeVore"
+  contributor_website: ""
+-
+  id: 108
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to reduce the number of Set methods in a component"
+  author: "Wayne Niddery"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 109
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to make a TCollectionItem contain a TCollection"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 110
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to add text completion capability to a TComboBox"
+  author: "Anon & Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 111
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to implement autocompletion in a TEdit"
+  author: "Woody & Mike Warren"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 112
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to create a TGroupBox with a checkbox that disables / enables all contained controls when checked"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 113
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to use a scroll event in a TListBox"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 114
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to create a TListBox that is resizable at runtime"
+  author: "Yorai Aminov"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 115
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to create a TListBox with Drag and Drop capabilities"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 116
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to expand a TMemo while keying in"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 117
+  added: "2009-10-26"
+  updated: "2009-10-26 00:00:00"
+  title: "How to add an OnMouseDown event to a TPopupMenu"
+  author: "Kalman Hadarics"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 118
+  added: "2009-10-28"
+  updated: "2009-10-28 00:00:00"
+  title: "How to create a TTreeView with a three state checkbox"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 119
+  added: "2009-10-28"
+  updated: "2009-10-28 00:00:00"
+  title: "How to change the drag cursor image when dragging in a TTreeView"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 120
+  added: "2009-10-28"
+  updated: "2009-10-28 00:00:00"
+  title: "How to create a TScrollBar with a background bitmap"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 121
+  added: "2009-10-28"
+  updated: "2009-10-28 00:00:00"
+  title: "How to create a TScrollBox with its own background"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 122
+  added: "2009-10-28"
+  updated: "2009-10-28 00:00:00"
+  title: "How to implement an OnMouseDown event for the buttons of a TRadioGroup"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 123
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "How to detach and re-attach an event"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 124
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Detect if an application has stopped responding"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 125
+  added: "2009-11-05"
+  updated: "2013-10-12 00:00:00"
+  title: "Find the position of the text cursor in a memo control"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 126
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Scanning MS Office documents using the MS Anti-virus API"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 127
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Prevent system sleep"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 128
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Right align main menu items"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 129
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "How to use a function or a procedure as a parameter to another function"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 130
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Using the TStrings.ValueFromIndex property"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 131
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Print any type of document using Delphi"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 132
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Which COM objects to use?"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 133
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Serialize application settings"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 134
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Different ways of executing applications and files from Delphi"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 135
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Programatically log users off"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 136
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "How to replace text in a Word document"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 137
+  added: "2009-11-05"
+  updated: "2009-11-05 00:00:00"
+  title: "Communicate with Windows Program Manager using DDE"
+  author: "Shlomo Abuisak"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 138
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to get the system's colour palette"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 139
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to create gradient colour schemes"
+  author: "Carl Olsen"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 140
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to convert hex colour values into Delphi formatted ones"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 141
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to mix or separate three color channels"
+  author: "Jens Gruschel"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 142
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to adjust RGB values using TTrackBars"
+  author: "Sue D. Nom & Mauro Patino"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 143
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to draw dotted or dashed lines using a pen with a width greater than 1"
+  author: "Gary Williams"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 144
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to generate a circle through three points"
+  author: "Joseph O'Rourke"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 145
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to compare two pf24bit images"
+  author: "Paul Loht & Bernt Wold"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 146
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to implement a 'Lasso'"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 147
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to blend two pf24bit images using ScanLine"
+  author: "Harm"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 148
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to create a pie chart"
+  author: "Earl F. Glynn"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 149
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to change the corner size of RoundRect"
+  author: "Eddie Shipman"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 150
+  added: "2009-11-06"
+  updated: "2009-11-06 00:00:00"
+  title: "How to determine the track of the current CD"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 151
+  added: "2009-12-05"
+  updated: "2009-12-05 00:00:00"
+  title: "Force a TEdit to accept only numeric input"
+  author: "JM"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "JM"
+  contributor_website: ""
+-
+  id: 152
+  added: "2010-02-22"
+  updated: "2010-02-22 00:00:00"
+  title: "How to save the canvas of a TPaintBox to a .bmp file"
+  author: "Steve Schafer"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 153
+  added: "2010-02-22"
+  updated: "2010-02-22 00:00:00"
+  title: "How to retrieve rich text from a resource file and save it to disk"
+  author: "Martin Holmes"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 154
+  added: "2010-02-22"
+  updated: "2010-02-22 00:00:00"
+  title: "How to delete files with wildcards"
+  author: "Various"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 155
+  added: "2010-02-22"
+  updated: "2010-02-22 00:00:00"
+  title: "How to search for a pattern in a file"
+  author: "P Below & L Troyanovsky"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 156
+  added: "2010-03-09"
+  updated: "2010-03-09 00:00:00"
+  title: "Solution for problem with auto update feature in Rad Studio 2010 and Win Vista/7 UAC"
+  author: "Jeff DeVore"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Jeff DeVore"
+  contributor_website: ""
+-
+  id: 157
+  added: "2010-03-12"
+  updated: "2010-03-12 00:00:00"
+  title: "A general purpose Base64 decoding routine using Indy"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com"
+  resource: ""
+  resource_website: ""
+  contributor: "Jeff DeVore"
+  contributor_website: ""
+-
+  id: 158
+  added: "2010-03-17"
+  updated: "2010-03-17 10:33:00"
+  title: "How to prevent a TListView from displaying tool tips for long items"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 159
+  added: "2010-04-08"
+  updated: "2010-04-08 15:55:00"
+  title: "How to centre text in a TEdit (alternative approach)"
+  author: "JMS"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "JMS"
+  contributor_website: ""
+-
+  id: 160
+  added: "2010-06-02"
+  updated: "2011-01-20 21:00:00"
+  title: "How to call CopyFileEx and let the callback update a progress bar"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 161
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to paste files from Windows Explorer into your application"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 162
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to delete lines from a text file"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 163
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to save and restore font selections to a text file"
+  author: "Various"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 164
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to generate a temporary file name"
+  author: "Various"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 165
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to copy multiple files into one"
+  author: "Various"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 166
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to get the size of a text file without opening it"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 167
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to get data from a file without reading it into memory"
+  author: "Eyal Post"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 168
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to read Unicode text files"
+  author: "Jens Geyer"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 169
+  added: "2010-06-02"
+  updated: "2010-06-02 00:00:00"
+  title: "How to read very large text files fast"
+  author: "Various"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 170
+  added: "2010-10-12"
+  updated: "2013-10-12 00:00:00"
+  title: "How to send a simulated key press to the active control"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Mike"
+  contributor_website: ""
+-
+  id: 171
+  added: "2010-12-17"
+  updated: "2010-12-17 00:00:00"
+  title: "How to get and set the local computer name"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Topellina"
+  contributor_website: ""
+-
+  id: 172
+  added: "2010-12-17"
+  updated: "2010-12-17 00:00:00"
+  title: "Sort TStrings objects with extra functionality ala UNIX style parameters"
+  author: "Mike Heydon"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Loris Luise"
+  contributor_website: ""
+-
+  id: 173
+  added: "2010-12-17"
+  updated: "2010-12-17 00:00:00"
+  title: "Change the button captions in a message dialog box"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Topellina"
+  contributor_website: ""
+-
+  id: 174
+  added: "2010-12-17"
+  updated: "2010-12-17 00:00:00"
+  title: "How to minimize the controls in a form"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "geotech"
+  contributor_website: ""
+-
+  id: 175
+  added: "2010-12-17"
+  updated: "2010-12-17 00:00:00"
+  title: "Display the Windows Disconnect Network Drive dialog box"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Shlomo Abuisak"
+  contributor_website: ""
+-
+  id: 176
+  added: "2010-12-17"
+  updated: "2010-12-17 00:00:00"
+  title: "How to download a file using FTP"
+  author: "Thomas Stutz"
+  author_website: ""
+  resource: "Swiss Delphi Center"
+  resource_website: "http://www.swissdelphicenter.com"
+  contributor: "Frederik Smith"
+  contributor_website: ""
+-
+  id: 177
+  added: "2010-12-17"
+  updated: "2010-12-17 00:00:00"
+  title: "How to save and load a TStringGrid to and from a file"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Michael Rockett"
+  contributor_website: ""
+-
+  id: 178
+  added: "2011-01-02"
+  updated: "2011-01-04 17:44:00"
+  title: "How to make a single instance of your application"
+  author: "Montor"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Montor"
+  contributor_website: ""
+-
+  id: 179
+  added: "2011-01-15"
+  updated: "2011-01-15 00:00:00"
+  title: "How to fade forms in and out"
+  author: "K Smith"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "K Smith"
+  contributor_website: ""
+-
+  id: 180
+  added: "2012-06-18"
+  updated: "2012-06-18 00:00:00"
+  title: "How to swap two integers without using a temporary variable"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Muhammad Saied"
+  contributor_website: ""
+-
+  id: 181
+  added: "2012-07-05"
+  updated: "2012-07-05 00:00:00"
+  title: "Simulate the Visual Basic SendKeys and AppActivate routines in Delphi"
+  author: "Ken Henderson"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Irfan Karazor"
+  contributor_website: ""
+-
+  id: 182
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "Draw a DBGrid with alternating row colours"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 183
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "Prevent a Delphi form from being moved off screen"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 184
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "How to wipe a file"
+  author: "Dorin Duminica"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 185
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "How to detect and prevent Windows shut down"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 186
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "Take a screen shot of an inactive window"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 187
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "Prevent a Delphi form from being moved"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 188
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "Add animation effects to your forms"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 189
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "Ensure a form stays in the background"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 190
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "Terminate a process instantly"
+  author: "Dorin Duminica"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 191
+  added: "2012-07-06"
+  updated: "2012-07-06 00:00:00"
+  title: "Delete or clear rows in a TStringGrid"
+  author: "Dorin Duminica"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Riccardo Faiella (Topellina)"
+  contributor_website: ""
+-
+  id: 192
+  added: "2012-07-08"
+  updated: "2012-07-08 00:00:00"
+  title: "How to save the font settings of a control to the registry"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 193
+  added: "2012-07-08"
+  updated: "2012-07-08 00:00:00"
+  title: "How to subclass the default Delphi Dock Manager"
+  author: "Mike Potter"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 194
+  added: "2012-07-08"
+  updated: "2012-07-08 00:00:00"
+  title: "How to create data-aware components"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 195
+  added: "2012-07-08"
+  updated: "2012-07-08 00:00:00"
+  title: "How to implement a custom component paint method that is dependent on outside data"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 196
+  added: "2012-07-08"
+  updated: "2012-07-08 00:00:00"
+  title: "How to get the update region in a TGraphicControl"
+  author: "Various"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 197
+  added: "2012-09-17"
+  updated: "2012-09-17 00:00:00"
+  title: "Force display of a ToolButton's PopupMenu when the button is clicked"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "topellina"
+  contributor_website: ""
+-
+  id: 198
+  added: "2012-09-17"
+  updated: "2012-09-17 00:00:00"
+  title: "How to draw on the Windows desktop"
+  author: "Dorin Duminica"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "topellina"
+  contributor_website: ""
+-
+  id: 199
+  added: "2012-09-17"
+  updated: "2012-09-17 00:00:00"
+  title: "Change the font used in hints"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "topellina"
+  contributor_website: ""
+-
+  id: 200
+  added: "2012-09-17"
+  updated: "2012-09-17 00:00:00"
+  title: "How to display icons in a combo box"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "topellina"
+  contributor_website: ""
+-
+  id: 201
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to get the image size of a JPG, GIF and PNG image file"
+  author: "Various"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 202
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to save 32 bit bitmaps in 24 bit bmp format"
+  author: "Andrew Rybenkov"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 203
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to paint a translucent (not transparent) rectangle"
+  author: "Steve Schafer"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 204
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to write a custom TAction to control the visibility of a TStatusBar"
+  author: "Serge Gubenko"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 205
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to implement an OnAfterExecute event in a TActionList"
+  author: "Igor Glukhov"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 206
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to create a TDrawGrid where all cells act as buttons"
+  author: "Peter Below"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 207
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to block pasting of text from the clipboard into an enabled TEdit"
+  author: "Serdar Guven"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 208
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to paint on a TControlCanvas in a TMemo"
+  author: "Anon & Jon T Camp"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 209
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to create a transparent TMemo"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 210
+  added: "2013-01-27"
+  updated: "2013-01-27 00:00:00"
+  title: "How to create a transparent TPanel"
+  author: "Various"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 211
+  added: "2013-01-28"
+  updated: "2013-01-28 00:00:00"
+  title: "List of BDE error codes"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 212
+  added: "2013-01-28"
+  updated: "2013-01-28 00:00:00"
+  title: "BDE API Overview"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 213
+  added: "2013-01-28"
+  updated: "2013-01-28 00:00:00"
+  title: "How to get rid of the BDE"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 214
+  added: "2013-03-13"
+  updated: "2013-03-13 00:00:00"
+  title: "How to create a GUID"
+  author: "Anon & Ivan Kozhuharov"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 215
+  added: "2013-03-13"
+  updated: "2013-03-13 00:00:00"
+  title: "How to create a greyscale palette"
+  author: "Taras Bregin"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 216
+  added: "2013-03-13"
+  updated: "2013-03-13 00:00:00"
+  title: "What is a DispInterface?"
+  author: "Deborah Pate"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 217
+  added: "2013-03-13"
+  updated: "2013-03-13 00:00:00"
+  title: "The purpose and use of DispInterface"
+  author: "Marc Rohloff"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 218
+  added: "2013-04-09"
+  updated: "2013-04-09 00:00:00"
+  title: "How to calculate the minimum distance between two polygons"
+  author: "Jens Gruschel"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 219
+  added: "2013-04-09"
+  updated: "2013-04-09 00:00:00"
+  title: "How to rotate a 2D point"
+  author: "Joseph O'Rourke"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 220
+  added: "2013-04-09"
+  updated: "2013-04-09 00:00:00"
+  title: "How to calculate intersection points of lines or line sections with rectangles"
+  author: "Cliff W. Estes"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 221
+  added: "2013-04-09"
+  updated: "2013-04-09 00:00:00"
+  title: "How to calculate the area of a polygon"
+  author: ""
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 222
+  added: "2013-04-09"
+  updated: "2013-04-09 00:00:00"
+  title: "How to retrieve all available TBrushStyle values as a list of strings"
+  author: "Sen"
+  author_website: ""
+  resource: "The Delphi Pool"
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 223
+  added: "2013-04-24"
+  updated: "2013-04-24 00:00:00"
+  title: "Check if computer is connected to the internet"
+  author: ""
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: "Don Rowlett"
+  contributor_website: ""
+-
+  id: 224
+  added: "2013-06-02"
+  updated: "2013-06-02 00:00:00"
+  title: "Change the Delphi Object Inspector font size"
+  author: "Mike Fletcher"
+  author_website: ""
+  resource: ""
+  resource_website: ""
+  contributor: ""
+  contributor_website: ""
+-
+  id: 225
+  added: "2013-07-30"
+  updated: "2013-07-30 00:00:00"
+  title: "Double quote a string that has spaces"
+  author: "Don Rowlett"
+  contributor: "Don Rowlett"
+-
+  id: 226
+  added: "2013-09-06"
+  updated: "2013-09-06 00:00:00"
+  title: "Implementing a custom loop"
+  author: "Dorin Duminica"
+  contributor: "topellina"
+-
+  id: 227
+  added: "2013-09-06"
+  updated: "2013-09-06 00:00:00"
+  title: "How to handle a system time change"
+  author: ""
+  contributor: "topellina"
+-
+  id: 228
+  added: "2013-09-06"
+  updated: "2013-09-06 00:00:00"
+  title: "Dim the main application form when a dialog box is displayed"
+  author: ""
+  contributor: "topellina"
+-
+  id: 229
+  added: "2013-09-06"
+  updated: "2013-09-06 00:00:00"
+  title: "How to create a virtual drive"
+  author: "Dorin Duminica"
+  contributor: "topellina"
+-
+  id: 230
+  added: "2014-01-22"
+  updated: "2014-01-22 00:00:00"
+  title: "Optimised replacements for DecodeDate and EncodeDate"
+  contributor: "Bill Miller"
+-
+  id: 231
+  added: "2014-01-22"
+  updated: "2014-01-22 00:00:00"
+  title: "How to retrieve the CPU vendor ID"
+  contributor: "Bill Miller"
+-
+  id: 232
+  added: "2014-01-22"
+  updated: "2014-01-22 00:00:00"
+  title: "How to find the minimum and maximum of three integers"
+  contributor: "Bruce Wernick"
+-
+  id: 233
+  added: "2014-01-23"
+  updated: "2014-01-23 00:00:00"
+  title: "How to check if a program is installed using its program identifier"
+  author: "Peter Johnson"
+  author_website: "http://www.delphidabbler.com/"
+  contributor: "Michael Rockett"
+-
+  id: 234
+  added: "2014-05-22"
+  updated: "2014-05-29 16:48:00"
+  title: "Convert strings to character sets and vice versa"
+  author: "Thomas Morschhaeuser"
+  contributor: "Thomas Morschhaeuser"
+...

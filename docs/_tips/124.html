@@ -1,12 +1,5 @@
 ---
 ---
-<div id="wrapper">
-
-<h1>
-	Detect if an application has stopped responding
-</h1>
-
-
 <p>
   In many situations you might like to detect if an application is blocked.
   For example while automating Internet Explorer, you'd like to know if
@@ -47,7 +40,7 @@
 <span class="pas-kwd">begin</span>
 <span class="pas-space">  </span><span class="pas-ident">modObjIE</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">CreateOleObject</span><span class="pas-sym">(</span><span class="pas-str">'InternetExplorer.Application'</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
 <span class="pas-space">  </span><span class="pas-ident">modObjIE</span><span class="pas-sym">.</span><span class="pas-ident">Visible</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">true</span><span class="pas-sym">;</span>
-<span class="pas-space">  </span><span class="pas-ident">modObjIE</span><span class="pas-sym">.</span><span class="pas-ident">Navigate2</span><span class="pas-sym">(</span><span class="pas-str">'http://www.borland.com'</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
+<span class="pas-space">  </span><span class="pas-ident">modObjIE</span><span class="pas-sym">.</span><span class="pas-ident">Navigate2</span><span class="pas-sym">(</span><span class="pas-str">'https://www.borland.com'</span><span class="pas-sym">)</span><span class="pas-sym">;</span>
 <span class="pas-space">  </span><span class="pas-ident">modlngWndIE</span><span class="pas-space"> </span><span class="pas-sym">:=</span><span class="pas-space"> </span><span class="pas-ident">modObjIE</span><span class="pas-sym">.</span><span class="pas-ident">hwnd</span><span class="pas-sym">;</span>
 <span class="pas-kwd">end</span><span class="pas-sym">;</span>
 
@@ -131,27 +124,3 @@
 
 <span class="pas-kwd">end</span><span class="pas-sym">.</span></pre>
 </div>
-
-<table class="infotable">
-  <tr>
-    <th scope="row">Author:</th>
-    <td>Shlomo Abuisak</td>
-  </tr>
-  <tr>
-    <th scope="row">Contributor:</th>
-    <td>Shlomo Abuisak</td>
-  </tr>
-  <tr>
-    <th scope="row">Added:</th>
-    <td>2009-11-05</td>
-  </tr>
-  <tr>
-    <th scope="row">Last updated:</th>
-    <td>
-    2009-11-05</td>
-  </tr>
-</table>
-
-
-
-</div> <!-- #wrapper -->
