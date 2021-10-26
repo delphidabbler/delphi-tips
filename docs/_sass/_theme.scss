@@ -38,6 +38,19 @@ ol.spaced {
     }
 }
 
+.nav-btns {
+    &.nav-btns-top {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    &.nav-btns-bottom {
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
 .nav-btn {
     background-color: lighten($color-primary, 10%);
     border: none;
@@ -55,6 +68,11 @@ ol.spaced {
     a {
         color: $white;
         text-decoration: none;
+    }
+    &:disabled {
+        color: $color-grey-light;
+        background-color: $color-grey;
+        border-color: $color-grey-dark;
     }
 }
 
