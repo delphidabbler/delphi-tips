@@ -4,7 +4,9 @@ layout: default
 {%- assign pg = page.url | split: "." -%}
 {%- assign id = pg.first | split: "/"  | last  | minus: 1 -%}
 {%- assign tip = site.data.tips[id] -%}
-<nav>
+{%- assign prevId = tip.id | minus: 1 -%}
+{%- assign nextId = tip.id | plus: 1 -%}
+<nav id="main-btns">
     <ul class="nav-list">
         <li class="nav-1">
             <button type="button" class="nav-btn"><a href="../index.html" class="button">Go back to the list of tips</a></button>
@@ -15,10 +17,29 @@ layout: default
     </ul>
 </nav>
 
-<div id="wrapper">
-
 <script async src="https://cse.google.com/cse.js?cx=9b61e9db5f8c5a818"></script>
 <div class="gcse-search"></div>
+
+<div id="wrapper">
+
+<nav class="nav-btns nav-btns-top">
+    <ul class="nav-list">
+        <li class="nav-1">
+            {%- if prevId >= 1 -%}
+            <button type="button" class="nav-btn"><a href="./{{ prevId }}" class="button">Previous Tip</a></button>
+            {%- else -%}
+            <button type="button" class="nav-btn xdisabled" disabled>Previous Tip</button>
+            {%- endif %}
+        </li>
+        <li class="nav-2">
+            {%- if nextId <= site.data.tips.size -%}
+            <button type="button" class="nav-btn"><a href="./{{ nextId }}">Next Tip</a></button>
+            {%- else -%}
+            <button type="button" class="nav-btn xdisabled" disabled>Next Tip</button>
+            {%- endif %}
+        </li>
+    </ul>
+</nav>
 
 <h1>
     {{ tip.title | escape }} <span class="badge badge-dark"><small>#{{ tip.id | escape }}</small></span>
@@ -27,6 +48,25 @@ layout: default
 <!-- BEGIN CONTENT -->
 {{ content }}
 <!--END CONTENT -->
+
+<nav class="nav-btns nav-btns-bottom">
+    <ul class="nav-list">
+        <li class="nav-1">
+            {%- if prevId >= 1 -%}
+            <button type="button" class="nav-btn"><a href="./{{ prevId }}" class="button">Previous Tip</a></button>
+            {%- else -%}
+            <button type="button" class="nav-btn xdisabled" disabled>Previous Tip</button>
+            {%- endif %}
+        </li>
+        <li class="nav-2">
+            {%- if nextId <= site.data.tips.size -%}
+            <button type="button" class="nav-btn"><a href="./{{ nextId }}">Next Tip</a></button>
+            {%- else -%}
+            <button type="button" class="nav-btn xdisabled" disabled>Next Tip</button>
+            {%- endif %}
+        </li>
+    </ul>
+</nav>
 
 <table class="infotable">
     {% if tip.resource != "" -%}
