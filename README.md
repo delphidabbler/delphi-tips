@@ -2,9 +2,9 @@
 
 This is a bunch of Delphi language tips migrated from the old version of the [delphidabbler.com](https://delphidabbler.com/) website, plus some others.
 
-The main reason for this repo was to ensure the survival of the tips beyond the June 2020 closure of the old delphidabbler.com web site. The site was subsequently rescued and moved to a new server but the tips have not been restored and remain in this repo and associated website.
+The main reason for this repo was to ensure the survival of the tips beyond the June 2020 closure of the old delphidabbler.com web site. The site was subsequently rescued and moved to a new server but the tips have not been restored and remain in this repo and its associated [website](https://delphidabbler.github.io/delphi-tips/).
 
-> **Health Warning!** All the tips are very old now. Very few have been tested, and those that have were tested quite some time back on a old version of Delphi. Consider yourself warned!
+> **Health Warning!** All the tips are very old now. Very few have been tested, and those that have were tested quite some time back on an old version of Delphi. Consider yourself warned!
 
 There are the following folders:
 
@@ -22,15 +22,20 @@ This folder contains the source code of a **[mini website](https://delphidabbler
 
 The site is developed and deployed using Jekyll. Builds are published as a GitHub Pages website.
 
+> **Note:** The tips in this folder were derived from those in the `tips` folder, but have since been updated. These tips are the most current.
+
 ## `extra`
 
-There are two open document format documents.
+There are two open document format documents in this directory.
 
 * One contains a large number of tips downloaded from the former _Delphi Pool_ website.
 * The second contains tips collected online by _"topellina"_.
 
-There may be some duplication of tips between the PDF files and these documents. Conversely, some tips that appear in the PDFs may have been sourced and deleted from these files.
+There may be some duplication of tips between the PDF files and these documents. Conversely, some tips that appear in the `docs/_tips` and `tips` directories may have been sourced,  and later deleted, from these files.
 
 ## `tips`
 
-Contains a PDF "print out" of each of old the DelphiDabbler.com tips page.
+Contains a PDF "print out" of each of old the DelphiDabbler.com tips pages.
+
+> **Note:** The tips in the `docs/_tips` directory represent the most recent version if the collection. These PDF versions are now **deprecated** and may be removed at some point.
+
