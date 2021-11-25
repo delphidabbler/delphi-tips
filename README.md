@@ -16,6 +16,14 @@ These files contain two versions of the database. They both have the same conten
 
 Such a database could can be used with the content of the `docs/_tips` folder and some suitable CSS and HTML templates to generate complete web pages for each tip.
 
+## `demos`
+
+Contains Delphi Pascal demo projects associated with some of the tips in the `docs/_tips` directory.
+
+Each demo has its own sub-directory whose name is the number of the associated tip. Where there is more than one demo for a single tip there are further sub-directories for each demo.
+
+> **Warning:** Tips `.html` files in `docs/_tips` link to the associated demo directory. If this directory, or any of its sub-directories, are renamed or moved then links in the affected `.html` files must be updated accordingly.
+
 ## `docs`
 
 This folder contains the source code of a **[mini website](https://delphidabbler.github.io/delphi-tips/)** that displays the tips that were previously on [delphidabbler.com](https://delphidabbler.com/).
@@ -38,4 +46,3 @@ There may be some duplication of tips between the PDF files and these documents.
 Contains a PDF "print out" of each of old the DelphiDabbler.com tips pages.
 
 > **Note:** The tips in the `docs/_tips` directory represent the most recent version if the collection. These PDF versions are now **deprecated** and may be removed at some point.
-
