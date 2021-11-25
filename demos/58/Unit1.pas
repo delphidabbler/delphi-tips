@@ -83,7 +83,7 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 
-  // from http://www.delphidabbler.com/tips/72
+  // from https://www.delphidabbler.com/tips/72
   procedure Pause(ADelay: Cardinal);
   var
     StartTC: Cardinal;
