@@ -1,15 +1,18 @@
 # set repo for use by github-metadata
-# https://github.com/mmistakes/mm-github-pages-starter/pull/2
+# see https://github.com/mmistakes/mm-github-pages-starter/pull/2
 repository: "delphidabbler/delphi-tips"
 
 # inhibit github-pages from gerating unwanted style sheet
 # see https://github.com/jekyll/jekyll/issues/7478
 theme: null
 
-baseurl: "/delphi-tips"
+# removed "/delphi-tips" baseurl following change of URL from
+# https://delphidabbler.com/delphi-tips to
+# https://tips.delphidabbler.com
+baseurl: ""
 
 exclude: [README.md, LICENSE.md, Gemfile, Gemfile.lock]
-  
+
 collections:
   tips:
     output: true
