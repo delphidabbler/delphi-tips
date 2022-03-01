@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "github-pages", "~> 219", group: :jekyll_plugins
+gem "github-pages", "~> 223", group: :jekyll_plugins
 
 gem "activesupport", ">= 6.0.3.1" # fix security issue
 
