@@ -233,9 +233,9 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.15.0)
     multipart-post (2.1.1)
-    nokogiri (1.13.5-x64-mingw32)
+    nokogiri (1.13.6-x64-mingw32)
       racc (~> 1.4)
-    nokogiri (1.13.5-x86_64-linux)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     octokit (4.22.0)
       faraday (>= 0.9)
@@ -286,7 +286,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport (>= 6.0.3.1)
   github-pages (~> 225)
-  nokogiri (~> 1.13.5)
+  nokogiri (~> 1.13.6)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
