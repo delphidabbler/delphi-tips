@@ -1,1192 +1,1179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://tips.delphidabbler.com/</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/157.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/156</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/188.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/158</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/40.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/187</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/48.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/189</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/46.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/39</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/67.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/41</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/212.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/47</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/41.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/49</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/4.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/45</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/173.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/66</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/224.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/68</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/199.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/211</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/69.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/213</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/223.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/40</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/72.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/42</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/51.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/3</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/137.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/5</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/6.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/172</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/234.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/174</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/10.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/223</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/191.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/225</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/124.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/198</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/134.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/200</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/228.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/70</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/63.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/222</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/175.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/224</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/225.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/71</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/182.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/73</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/54.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/50</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/55.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/52</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/22.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/136</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/73.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/138</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/189.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/7</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/61.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/233</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/17.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/9</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/68.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/11</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/42.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/190</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/70.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/192</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/125.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/123</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/47.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/125</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/56.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/133</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/151.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/135</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/197.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/227</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/62.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/229</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/64.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/62</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/38.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/64</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/14.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/176</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/15.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/226</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/117.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/181</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/110.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/183</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/142.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/53</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/147.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/55</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/44.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/54</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/207.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/56</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/220.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/21</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/221.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/23</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/218.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/72</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/160.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/74</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/2.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/188</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/85.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/60</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/159.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/16</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/149.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/18</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/119.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/67</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/45.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/69</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/233.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/43</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/27.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/124</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/90.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/126</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/28.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/46</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/145.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/48</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/102.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/57</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/97.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/150</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/101.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/152</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/66.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/196</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/140.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/61</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/30.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/63</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/13.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/65</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/165.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/37</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/84.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/13</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/98.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/15</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/215.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/14</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/214.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/116</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/94.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/118</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/148.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/109</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/92.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/111</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/82.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/141</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/83.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/143</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/206.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/146</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/86.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/148</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/112.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/206</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/114.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/208</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/115.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/219</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/87.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/221</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/209.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/220</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/210.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/217</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/120.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/159</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/121.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/161</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/118.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/1</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/91.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/84</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/229.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/86</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/74.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/160</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/194.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/120</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/139.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/44</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/34.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/232</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/33.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/234</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/79.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/26</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/154.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/28</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/162.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/89</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/123.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/91</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/185.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/27</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/31.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/29</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/20.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/144</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/150.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/101</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/52.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/103</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/200.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/96</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/176.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/98</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/143.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/100</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/198.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/102</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/23.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/139</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/78.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/31</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/116.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/12</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/71.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/164</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/179.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/166</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/232.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/83</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/11.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/85</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/144.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/97</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/164.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/99</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/24.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/214</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/171.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/216</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/167.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/215</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/213.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/93</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/201.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/95</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/103.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/147</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/95.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/149</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/50.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/81</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/166.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/82</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/138.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/205</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/196.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/207</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/227.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/87</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/37.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/113</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/146.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/115</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/195.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/114</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/81.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/88</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/205.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/210</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/122.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/209</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/111.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/119</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/76.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/121</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/35.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/122</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/89.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/117</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/178.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/90</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/109.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/92</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/174.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/228</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/141.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/230</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/203.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/75</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/208.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/193</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/161.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/195</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/12.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/140</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/158.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/33</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/58.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/35</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/32.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/32</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/7.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/34</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/19.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/78</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/21.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/80</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/29.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/153</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/168.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/155</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/169.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/163</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/108.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/184</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/18.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/186</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/16.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/30</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/136.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/19</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/99.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/151</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/93.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/51</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/25.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/199</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/222.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/201</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/153.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/175</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/231.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/177</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/219.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/142</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/202.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/197</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/177.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/22</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/104.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/24</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/163.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/77</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/100.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/79</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/152.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/178</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/192.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/180</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/155.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/231</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/105.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/10</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/170.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/145</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/77.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/165</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/36.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/25</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/193.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/170</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/180.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/168</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/3.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/212</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/80.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/202</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/26.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/104</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/129.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/94</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/113.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/167</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/75.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/137</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/96.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/36</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/184.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/38</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/204.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/194</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/88.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/204</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/226.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/110</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/39.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/112</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/57.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/179</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/106.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/108</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/211.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/173</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/65.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/162</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/60.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/157</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/49.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/59</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/1.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/6</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/5.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/8</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/230.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/20</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/187.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/169</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/183.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/107</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/43.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/17</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/127.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/154</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/131.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/218</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/135.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/203</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/59.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/105</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/107.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/191</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/128.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/106</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/126.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/171</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/8.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/76</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/133.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/2</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/181.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/4</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/156.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/128</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/172.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/130</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/186.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/185</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/190.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/58</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/217.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/182</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/53.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/132</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/130.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/134</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/216.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/127</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/9.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/129</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://delphidabbler.github.io/delphi-tips/tips/132.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://tips.delphidabbler.com/tips/131</loc>
+<lastmod>2022-07-23T05:47:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-<url>
-  <loc>https://delphidabbler.github.io/delphi-tips/index.html</loc>
-  <lastmod>2021-09-16T02:50:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>
