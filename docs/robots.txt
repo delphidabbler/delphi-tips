@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://delphidabbler.github.io/delphi-tips/sitemap.xml
+Sitemap: https://tips.delphidabbler.com/sitemap.xml
