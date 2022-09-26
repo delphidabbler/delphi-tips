@@ -1,5 +1,3 @@
 # Delphi Tips Project Website
 
-This project contains a GitHub Pages project used to build a mini-website for the `delphidabller/delphi-tips` project.
-
-The website can be viewed at <https://tips.delphidabbler.com>. 
+This directory contains a Jekyl project that builds the [Delphi Tips](https://tips.delphidabbler.com) website that is hosted on GitHub Pages.
