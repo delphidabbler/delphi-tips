@@ -5,8 +5,7 @@
 #
 # ** REQUIREMENTS:
 #    1) id MUST start at 1 and be sequential with no gaps
-#    2) each id MUST have a matching tip HTML document with path relative to base URL of tips/(id+1).html
-#
+#    2) each id MUST have a matching tip HTML document with path relative to base URL of tips/(id+1)
 -
   id: 1
   added: "2007-06-02"
