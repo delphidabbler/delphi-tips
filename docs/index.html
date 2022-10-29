@@ -15,7 +15,7 @@ layout: default
             <ul class="list-group">
                 {% assign tips = site.data.tips | sort_natural : "title" %}
                 {% for tip in tips %}
-                <li class="list-group-item"><a href="./tips/{{ tip.id}}.html">{{ tip.title | escape }}</a> (#{{ tip.id | escape }})</li>
+                <li class="list-group-item"><a href="./tips/{{ tip.id}}">{{ tip.title | escape }}</a> (#{{ tip.id | escape }})</li>
                 {% endfor %}
             </ul>
         </div>
