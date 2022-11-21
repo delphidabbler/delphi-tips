@@ -191,7 +191,7 @@ div.callout {
     .caption {
         font-weight: bold;
         margin-bottom: 4px;
-     }
+    }
     .content {
         margin-bottom: 4px;
     }
@@ -199,6 +199,20 @@ div.callout {
     a {
         color: $color-secondary-1-dark;
     }
+}
+
+blockquote {
+    border-left: 5px solid $color-grey-light;
+    padding-left: 1rem;
+}
+
+.blockquote{
+    margin-bottom: 1rem;
+    font-size: 1.25rem
+}
+
+.card {
+    margin-bottom: 1rem;
 }
 
 .xref {
@@ -257,4 +271,58 @@ div.demo-block {
             color: $color-complement-dark;
         }
     }
+}
+
+// Styling for cookie confirmation pop-up
+// ** Custom
+#cookie-popup {
+
+    background-color: $color-primary-darker;
+    color: white;
+    border: 1px white solid;
+    padding: 1rem;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999;
+    margin: 0;
+    width: 100%;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    p.cookie-msg {
+        padding: 0;
+        margin-bottom: 0.3rem;
+
+        a {
+            text-decoration: underline;
+            color: white;
+        }
+    }
+
+    p.cookie-btn {
+
+        padding: 0;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        button {
+
+            border: 1px white solid;
+            margin-right: 1rem;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+#cookie-consent--opt-out-text {
+    display: none;
 }
