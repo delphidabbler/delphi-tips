@@ -201,6 +201,20 @@ div.callout {
     }
 }
 
+blockquote {
+    border-left: 5px solid $color-grey-light;
+    padding-left: 1rem;
+}
+
+.blockquote{
+    margin-bottom: 1rem;
+    font-size: 1.25rem
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
 .xref {
     background-color: $color-complement-pale;
     border: $color-complement-lighter 1px solid;
