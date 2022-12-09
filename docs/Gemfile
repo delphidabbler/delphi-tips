@@ -19,5 +19,5 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # Vulnerability  fixes
-gem "nokogiri", "~> 1.13.9"
+gem "nokogiri", "~> 1.13.10"
 gem "commonmarker", ">= 0.23.6"    # Dependabot alert #10
