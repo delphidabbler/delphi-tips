@@ -37,4 +37,4 @@ There are two open document format files in this directory.
 * One contains a large number of tips downloaded from the former _Delphi Pool_ website.
 * The second contains tips collected online by _"topellina"_.
 
-There may be some duplication of tips between the PDF files. Further, some tips that appear in the `docs/_tips` directory may have been sourced, and later deleted, from these files.
+Some tips that appear in the `docs/_tips` directory may have been sourced, and sometimes deleted, from these files.
